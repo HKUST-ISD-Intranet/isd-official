@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* TODO add global font styles */
+
 /* Design tokens */
 :root {
     /* Primary colors */
@@ -51,6 +53,17 @@
     --color-isd-font-1: var(--isd-font-1);
     --color-isd-font-2: var(--isd-font-2);
     --color-isd-font-3: var(--isd-font-3);
+
+    /* Spacing tokens */
+    --spacing-section-gap: var(--section-gap);
+    --spacing-section-title-gap: var(--section-title-gap);
+    --spacing-component-gap: var(--component-gap);
+    --spacing-component-gap-sm: var(--component-gap-sm);
+    --spacing-element-gap: var(--element-gap);
+    --spacing-footer-gap: var(--footer-gap);
+
+    /* Container max width */
+    --max-width-container: var(--container-max-width);
 }
 
 /* Simple container helper */
@@ -94,27 +107,4 @@
     --border: 1.5px;
     --depth: 1;
     --noise: 0;
-}
-
-@plugin "daisyui/theme" {
-    name: "isd-official";
-    default: true;
-    prefersdark: false;
-    color-scheme: "light";
-    --color-base-100: #FFFFFF;
-    --color-primary: var(--isd-primary);
-    --color-primary-content: #FFFFFF;
-    --color-secondary: var(--isd-secondary);
-    --color-secondary-content: #FFFFFF;
-    --color-accent: var(--isd-primary-2);
-    --color-accent-content: var(--isd-primary);
-    --radius-selector: 0.25rem;
-    --radius-field: 2rem;
-    --radius-box: 2rem;
-    --size-selector: 0.25rem;
-    --size-field: 0.25rem;
-    --border: 1.5px;
-    --depth: 1;
-    --noise: 0;
-
 }
