@@ -74,6 +74,8 @@
     --text-sm: 15px;
     --text-footer-header: 15px;
     --text-footer: 15px;
+    --text-callout: 12px;
+    --text-callout-link: 12px;
 
     /* Line heights */
     --text-h1--line-height: 60px;
@@ -84,12 +86,20 @@
     --text-sm--line-height: 24px;
     --text-footer-header--line-height: 18px;
     --text-footer--line-height: 18px;
+    --text-callout--line-height: 12px;
+    --text-callout-link--line-height: 12px;
 
     /* Font weights */
     --text-h1--font-weight: bold;
     --text-h2--font-weight: bold;
     --text-nav--font-weight: bold;
     --text-footer-header--font-weight: bold;
+    --text-callout-link--font-weight: bold;
+
+    /* Letter spacing */
+    --text-footer--letter-spacing: -0.8%;
+    --text-callout--letter-spacing: -0.8%;
+    --text-callout-link--letter-spacing: -0.8%;
 }
 
 /* Simple container helper */

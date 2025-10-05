@@ -63,14 +63,14 @@ export default function Footer() {
         <footer className="bg-isd-primary text-white px-section-gap py-[61px]">
             <div className="container flex flex-col gap-[60px]">
                 <div>
-                    <div className="flex flex-row justify-start divide-x-1 divide-white gap-component-gap pb-[24px]">
-                        <div className="flex flex-row justify-start gap-component-gap-sm pr-component-gap w-full">
+                    <div className="flex flex-row justify-start divide-x-1 divide-white gap-component-gap-sm pb-[24px]">
+                        <div className="flex flex-row justify-start gap-component-gap-sm w-full">
                             {navTitles.map((nav) => (
                                 <div key={nav.title} className="flex flex-col">
                                     <h3 className="font-bold uppercase mb-[24px]">
                                         {nav.title}
                                     </h3>
-                                    <div className="flex flex-col gap-[24px] text-sm">
+                                    <div className="flex flex-col gap-[24px] text-footer">
                                         {nav.subheadings.map((sub) => (
                                             // TODO: add hrefs
                                             <Link key={sub} href="">
@@ -87,7 +87,7 @@ export default function Footer() {
                                     <h3 className="font-bold uppercase mb-[24px]">
                                         {nav.title}
                                     </h3>
-                                    <div className="flex flex-col gap-[24px] text-sm">
+                                    <div className="flex flex-col gap-[24px] text-footer">
                                         {nav.subtexts.map((sub) => (
                                             <p key={sub}>{sub}</p>
                                         ))}
@@ -112,11 +112,11 @@ export default function Footer() {
                             // className="object-cover"
                         />
                         <div className="flex flex-col justify-center">
-                            <div className="flex flex-row gap-[36px] text-sm font-bold">
+                            <div className="flex flex-row gap-[36px] text-callout-link">
                                 <span>Privacy</span>
                                 <span>Sitemap</span>
                             </div>
-                            <p className="text-xs mt-2">
+                            <p className="text-callout mt-2">
                                 Copyright &copy; The Hong Kong University of
                                 Science and Technology. All rights reserved.
                             </p>
@@ -130,7 +130,7 @@ export default function Footer() {
                             width={100}
                             height={100}
                         />
-                        <span className="text-sm">Follow HKUST on</span>
+                        <span className="text-callout">Follow HKUST on</span>
                         <div className="flex flex-row gap-[12px] items-center h-full">
                             <Image
                                 src={FacebookIcon}

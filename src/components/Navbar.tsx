@@ -39,7 +39,7 @@ export default function Navbar() {
                         <Link
                             key={item.name}
                             href={item.href}
-                            className="text-isd-font-3 font-medium"
+                            className="text-isd-font-3 text-nav"
                         >
                             {item.name}
                         </Link>
