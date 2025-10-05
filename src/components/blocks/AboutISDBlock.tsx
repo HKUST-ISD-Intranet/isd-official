@@ -9,7 +9,7 @@ export default function AboutISDBlock() {
     ];
 
     return (
-        <div className="container flex flex-col py-section-gap gap-section-title-gap">
+        <div className="container flex flex-col py-section-gap gap-section-title-gap dot-pattern before:top-[-95px] before:right-0 [--dot-color:var(--isd-secondary-1)]">
             <h1 className="text-h1 offset-text-background uppercase">
                 ABOUT ISD
             </h1>
@@ -29,7 +29,7 @@ export default function AboutISDBlock() {
                             href={link.href}
                             className="flex flex-1 items-center justify-between h-component-gap p-element-gap bg-isd-primary rounded-sm"
                         >
-                            <span className="text-lg font-bold">
+                            <span className="text-h2 font-bold">
                                 {link.title}
                             </span>
                             <ArrowRight size={20} strokeWidth={3} />
