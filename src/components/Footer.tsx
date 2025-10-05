@@ -1,4 +1,12 @@
+import Image from 'next/image';
 import Link from 'next/link';
+import HKUSTFooterLogo from '@/assets/hkust-footer-logo.png';
+import LinkedinIcon from '@/assets/linkedin-icon.png';
+import FacebookIcon from '@/assets/facebook-icon.png';
+import WechatIcon from '@/assets/wechat-icon.png';
+import YoutubeIcon from '@/assets/youtube-icon.png';
+import InstagramIcon from '@/assets/instagram-icon.png';
+import FooterImage from '@/assets/footer-image.png';
 
 export default function Footer() {
     const navTitles = [
@@ -94,12 +102,68 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* TODO - bottom row undone */}
-                <div>
-                    <p className="text-center text-xs">
-                        Copyright &copy; The Hong Kong University of Science and
-                        Technology. All rights reserved.
-                    </p>
+                <div className="flex flex-row justify-between">
+                    <div className="flex flex-row gap-[24px]">
+                        <Image
+                            src={HKUSTFooterLogo}
+                            alt="HKUST Logo"
+                            width={160}
+                            height={50}
+                            // className="object-cover"
+                        />
+                        <div className="flex flex-col justify-center">
+                            <div className="flex flex-row gap-[36px] text-sm font-bold">
+                                <span>Privacy</span>
+                                <span>Sitemap</span>
+                            </div>
+                            <p className="text-xs mt-2">
+                                Copyright &copy; The Hong Kong University of
+                                Science and Technology. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-row gap-[24px] items-center">
+                        <Image
+                            src={FooterImage}
+                            alt="HKUST Logo"
+                            width={100}
+                            height={100}
+                        />
+                        <span className="text-sm">Follow HKUST on</span>
+                        <div className="flex flex-row gap-[12px] items-center h-full">
+                            <Image
+                                src={FacebookIcon}
+                                alt="Facebook Logo"
+                                width={36}
+                                height={36}
+                            />
+                            <Image
+                                src={InstagramIcon}
+                                alt="Instagram Logo"
+                                width={36}
+                                height={36}
+                            />
+                            <Image
+                                src={LinkedinIcon}
+                                alt="LinkedIn Logo"
+                                width={36}
+                                height={36}
+                            />
+                            <Image
+                                src={YoutubeIcon}
+                                alt="YouTube Logo"
+                                width={36}
+                                height={36}
+                            />
+                            <Image
+                                src={WechatIcon}
+                                alt="WeChat Logo"
+                                width={36}
+                                height={36}
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
