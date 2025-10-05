@@ -10,14 +10,16 @@ export default function AboutISDBlock() {
 
     return (
         <div className="container flex flex-col py-section-gap gap-section-title-gap">
-            <h1 className="text-h1 offset-text-background">ABOUT ISD</h1>
+            <h1 className="text-h1 offset-text-background uppercase">
+                ABOUT ISD
+            </h1>
 
             <div className="flex flex-col gap-component-gap-sm">
                 <p className="text-md text-isd-font-1">
                     The mission of the Division of Integrative Systems and
                     Design is to nurture a new generation of innovators who can
                     work across multiple disciplines and create disruptive
-                    innovations to solve the world's great challenges.
+                    innovations to solve the world&apos;s great challenges.
                 </p>
 
                 <div className="flex flex-row gap-component-gap-sm text-white">
