@@ -1,3 +1,9 @@
+import AboutISDBlock from '@/components/blocks/AboutISDBlock';
+
 export default function Home() {
-    return <div className="container"></div>;
+    return (
+        <div>
+            <AboutISDBlock />
+        </div>
+    );
 }

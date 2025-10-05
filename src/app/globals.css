@@ -123,6 +123,24 @@
     color: var(--isd-font-1) !important;
 }
 
+.offset-text-background {
+    position: relative;       /* establish a positioning context for the ::before */
+}
+
+.offset-text-background::before {
+    content: "";
+    position: absolute;
+    left: 0;                  /* start under the first character */
+    /* adjust bottom so the rectangle sits where you want vertically */
+    /* if the rectangle should overlap the baseline area use a small positive bottom (overlapping upward) */
+    bottom: 0;              /* tweak this to line up precisely */
+    width: 252px;
+    height: 24px;
+    background: var(--isd-primary-2);
+    z-index: -1;               /* behind the text (headline z-index is 1) */
+    pointer-events: none;
+}
+
 @plugin "daisyui/theme" {
     name: "isd-official";
     default: true;
