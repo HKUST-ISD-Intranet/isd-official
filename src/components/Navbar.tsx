@@ -15,7 +15,7 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="container bg-white px-2 py-8">
+        <nav className="bg-white px-section-gap sticky z-40 top-12 py-8">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-6 divide-x-1 divide-isd-primary">
                     <Link href="https://hkust.edu.hk/">
