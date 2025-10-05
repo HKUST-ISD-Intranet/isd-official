@@ -64,6 +64,32 @@
 
     /* Container max width */
     --max-width-container: var(--container-max-width);
+
+    /* Font sizes */
+    --text-h1: 48px;
+    --text-h2: 24px;
+    --text-nav: 16px;
+    --text-lg: 20px;
+    --text-md: 17px;
+    --text-sm: 15px;
+    --text-footer-header: 15px;
+    --text-footer: 15px;
+
+    /* Line heights */
+    --text-h1--line-height: 60px;
+    --text-h2--line-height: 28px;
+    --text-nav--line-height: 26px;
+    --text-lg--line-height: 26px;
+    --text-md--line-height: 26px;
+    --text-sm--line-height: 24px;
+    --text-footer-header--line-height: 18px;
+    --text-footer--line-height: 18px;
+
+    /* Font weights */
+    --text-h1--font-weight: bold;
+    --text-h2--font-weight: bold;
+    --text-nav--font-weight: bold;
+    --text-footer-header--font-weight: bold;
 }
 
 /* Simple container helper */
