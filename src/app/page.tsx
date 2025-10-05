@@ -1,9 +1,11 @@
-import Styles from './styles/page';
+import AboutISDBlock from '@/components/blocks/AboutISDBlock';
+import ResourceBlock from '@/components/blocks/ResourceBlock';
 
 export default function Home() {
     return (
-        <div className="min-h-screen p-8 pb-20 gap-16 sm:p-20 bg-base-100">
-            <Styles />
+        <div className="min-h-screen flex flex-col gap-10 py-10 items-center">
+            <AboutISDBlock />
+            <ResourceBlock />
         </div>
     );
 }
