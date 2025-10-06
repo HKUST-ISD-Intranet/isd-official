@@ -10,7 +10,7 @@ export default function ResourceBlock() {
             <h1 className="text-h1 offset-text-background uppercase">
                 Resource
             </h1>
-            <div className="flex md:flex-row flex-col gap-component-gap-sm">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-component-gap-sm">
                 <ImageCard
                     imageSrc={ScholarshipsImg}
                     title="Scholarships"
