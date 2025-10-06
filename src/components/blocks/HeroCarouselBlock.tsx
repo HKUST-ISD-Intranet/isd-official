@@ -23,11 +23,16 @@ export default function HeroCarouselBlock() {
     return (
         <div className="w-full relative overflow-hidden">
             <div className="absolute -z-1 w-full h-full">
-                <Image
-                    src={images[currentIndex]}
-                    alt="Carousel Image 1"
-                    className="object-cover w-full h-full"
-                />
+                {images.map((image, index) => (
+                    <Image
+                        key={index}
+                        src={image}
+                        alt={`Carousel Image ${index + 1}`}
+                        className={`object-cover w-full h-full absolute transition-opacity linear duration-1000 ${
+                            index === currentIndex ? 'opacity-100' : 'opacity-0'
+                        }`}
+                    />
+                ))}
             </div>
             <div className="absolute -z-1 w-full h-full bg-gradient-to-b via-transparent to-black"></div>
             <div className="absolute z-0 w-full h-full flex items-center justify-between px-12 pointer-events-none">
