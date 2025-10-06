@@ -15,7 +15,7 @@ export default function ImageCard({
     description: string;
 }) {
     return (
-        <div className="flex flex-col gap-4 w-96 h-112 rounded-lg border border-isd-primary-3">
+        <div className="flex flex-col gap-4 md:w-96 md:h-112 h-fit w-full rounded-lg border border-isd-primary-3">
             <Image
                 src={imageSrc}
                 alt={title}
@@ -29,10 +29,14 @@ export default function ImageCard({
                         href={link}
                         className="flex items-center justify-between text-isd-primary"
                     >
-                        <h2 className="text-h2 font-bold">{title}</h2>
+                        <h2 className="md:text-h2 text-md font-bold">
+                            {title}
+                        </h2>
                         <ArrowRight size={20} strokeWidth={3} />
                     </Link>
-                    <p className="text-sm text-isd-font-3">{description}</p>
+                    <p className="md:text-sm text-xs text-isd-font-3">
+                        {description}
+                    </p>
                 </div>
             </div>
         </div>
