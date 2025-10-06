@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function HeroCarouselBlock() {
     return (
-        <div className="w-full relative overflow-hidden rounded-lg">
+        <div className="w-full relative overflow-hidden">
             <div className="absolute -z-1 w-full h-full">
                 <Image
                     src={Carousel1}
