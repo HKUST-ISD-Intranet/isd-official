@@ -34,7 +34,7 @@ export default function NewsAndEventsBlock() {
                     <ArrowRight size={20} strokeWidth={3} />
                 </span>
 
-                <div className="flex flex-row gap-component-gap-sm">
+                <div className="flex md:flex-row flex-col gap-component-gap-sm">
                     {news.map((news, i) => (
                         <div
                             className={

@@ -76,7 +76,7 @@ export default function HeroCarouselBlock() {
                 ))}
             </div>
             <div className="container z-1 text-white flex flex-col justify-end py-[64px] h-[612px]">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center gap-20 text-pretty">
                     <div className="flex flex-col">
                         <h1 className="text-h1 text-[36px]">Welcome to</h1>
                         <h1 className="text-h1">

@@ -22,7 +22,7 @@ export default function AboutISDBlock() {
                     innovations to solve the world&apos;s great challenges.
                 </p>
 
-                <div className="flex flex-row gap-component-gap-sm text-white">
+                <div className="flex flex-col lg:flex-row gap-component-gap-sm text-white">
                     {links.map((link) => (
                         <Link
                             key={link.href}
