@@ -60,11 +60,11 @@ export default function Footer() {
         },
     ];
     return (
-        <footer className="bg-isd-primary text-white px-section-gap py-[61px]">
+        <footer className="bg-isd-primary text-white py-[61px]">
             <div className="container flex flex-col gap-[60px]">
                 <div>
                     <div className="flex flex-row justify-start divide-x-1 divide-white gap-component-gap-sm pb-[24px]">
-                        <div className="flex flex-row justify-start gap-component-gap-sm w-full">
+                        <div className="flex flex-row justify-start gap-component-gap-sm w-full text-nowrap pr-component-gap-sm">
                             {navTitles.map((nav) => (
                                 <div key={nav.title} className="flex flex-col">
                                     <h3 className="font-bold uppercase mb-[24px]">
@@ -81,7 +81,7 @@ export default function Footer() {
                                 </div>
                             ))}
                         </div>
-                        <div className="flex flex-row justify-start gap-component-gap-sm flex-1/3">
+                        <div className="flex flex-row justify-start gap-component-gap-sm">
                             {divisionInfo.map((nav) => (
                                 <div key={nav.title} className="flex flex-col">
                                     <h3 className="font-bold uppercase mb-[24px]">

@@ -1,11 +1,15 @@
+import HeroCarouselBlock from '@/components/blocks/HeroCarouselBlock';
 import AboutISDBlock from '@/components/blocks/AboutISDBlock';
-import ResourceBlock from '@/components/blocks/ResourceBlock';
+import UniquePedagogy from '@/components/blocks/UniquePedagogy';
+import NewsAndEventsBlock from '@/components/blocks/NewsAndEventsBlock';
 
 export default function Home() {
     return (
-        <div className="min-h-screen flex flex-col gap-10 py-10 items-center">
+        <div className="min-h-screen flex flex-col items-center">
+            <HeroCarouselBlock />
             <AboutISDBlock />
-            <ResourceBlock />
+            <UniquePedagogy />
+            <NewsAndEventsBlock />
         </div>
     );
 }

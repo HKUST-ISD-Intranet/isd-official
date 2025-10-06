@@ -104,7 +104,9 @@
 
 /* Simple container helper */
 .container {
-    max-width: var(--container-max-width);
+    max-width: calc(var(--container-max-width) + 2 * var(--component-gap-sm));
+    padding-left: var(--component-gap-sm);
+    padding-right: var(--component-gap-sm);
     margin-left: auto;
     margin-right: auto;
 }
