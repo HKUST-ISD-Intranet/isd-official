@@ -46,8 +46,10 @@ export default function NewsAndEventsBlock() {
                             key={i}
                         >
                             <h2 className="text-h2 font-bold">{news.title}</h2>
-                            <span className="text-sm">{news.date}</span>
-                            <p className="text-md">{news.description}</p>
+                            <span className="text-lg">{news.date}</span>
+                            <p className="text-md text-isd-font-3">
+                                {news.description}
+                            </p>
                         </div>
                     ))}
                 </div>
