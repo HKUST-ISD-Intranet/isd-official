@@ -6,11 +6,11 @@ import FacilitiesImg from '@/assets/facilities-img.png';
 
 export default function ResourceBlock() {
     return (
-        <div className="container flex flex-col py-section-gap gap-section-title-gap">
+        <div className="container flex flex-col pb-section-gap gap-section-title-gap">
             <h1 className="text-h1 offset-text-background uppercase">
                 Resource
             </h1>
-            <div className="flex flex-row gap-component-gap-sm">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-component-gap-sm">
                 <ImageCard
                     imageSrc={ScholarshipsImg}
                     title="Scholarships"

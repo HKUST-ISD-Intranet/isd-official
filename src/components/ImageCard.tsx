@@ -15,24 +15,28 @@ export default function ImageCard({
     description: string;
 }) {
     return (
-        <div className="flex flex-col gap-4 w-96 h-112 rounded-lg border border-isd-primary-3">
+        <div className="flex flex-col w-full h-full rounded-xl border border-isd-primary-3">
             <Image
                 src={imageSrc}
                 alt={title}
-                className="h-48 w-96 object-cover rounded-t-lg"
+                className="h-[15.75rem] w-full object-cover rounded-t-lg"
                 width={500}
                 height={300}
             />
-            <div>
-                <div className="p-element-gap flex flex-col gap-element-gap">
+            <div className="flex-1">
+                <div className="py-element-gap px-[14px] flex flex-col gap-element-gap h-full">
                     <Link
                         href={link}
                         className="flex items-center justify-between text-isd-primary"
                     >
-                        <h2 className="text-h2 font-bold">{title}</h2>
+                        <h2 className="md:text-h2 text-md font-bold">
+                            {title}
+                        </h2>
                         <ArrowRight size={20} strokeWidth={3} />
                     </Link>
-                    <p className="text-sm text-isd-font-3">{description}</p>
+                    <p className="md:text-sm text-xs text-isd-font-3">
+                        {description}
+                    </p>
                 </div>
             </div>
         </div>
