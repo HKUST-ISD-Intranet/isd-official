@@ -37,9 +37,9 @@ export default function ProgramBlock() {
         <div>
             <div className="container relative overflow-clip flex flex-col py-section-gap gap-section-title-gap">
                 <h1 className="text-h1 offset-text-background uppercase">
-                    Program
+                    Programs
                 </h1>
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-component-gap-sm">
+                <div className="grid grid-cols-1 lg:grid-cols-4 gap-section-title-gap">
                     {programsInfo.map((program, index) => (
                         <TextCard
                             key={index}
