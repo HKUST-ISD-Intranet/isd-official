@@ -15,16 +15,16 @@ export default function ImageCard({
     description: string;
 }) {
     return (
-        <div className="flex flex-col gap-4 w-full h-full rounded-lg border border-isd-primary-3">
+        <div className="flex flex-col w-full h-full rounded-xl border border-isd-primary-3">
             <Image
                 src={imageSrc}
                 alt={title}
-                className="h-48 w-full object-cover rounded-t-lg"
+                className="h-[15.75rem] w-full object-cover rounded-t-lg"
                 width={500}
                 height={300}
             />
             <div className="flex-1">
-                <div className="p-element-gap flex flex-col gap-element-gap h-full">
+                <div className="py-element-gap px-[14px] flex flex-col gap-element-gap h-full">
                     <Link
                         href={link}
                         className="flex items-center justify-between text-isd-primary"

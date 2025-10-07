@@ -6,9 +6,9 @@ export default function TextCard({
     content: string;
 }) {
     return (
-        <div className="relative overflow-clip p-6 lg:aspect-square text-2xl bg-primary text-white rounded-lg flex flex-col gap-4 divide-y-1 text-center">
-            <div className="uppercase font-bold pb-4">{heading}</div>
-            <div className="mt-4">{content}</div>
+        <div className="relative overflow-clip aspect-square px-element-gap pt-[60px] lg:aspect-square text-h2 bg-primary text-white rounded-lg flex flex-col gap-4 divide-y-2 text-center">
+            <div className="uppercase pb-[22px]">{heading}</div>
+            <div className="font-normal">{content}</div>
         </div>
     );
 }
