@@ -83,11 +83,9 @@ export default function HeroCarouselBlock() {
                             Division of Integrative Systems and Design
                         </h1>
                     </div>
-                    <Image
-                        src={DotPattern}
-                        alt="Dot Pattern"
-                        className="pointer-events-none select-none"
-                    />
+                    {/* DotPattern is an imported SVG React component (SVGR). Render it directly
+                        instead of passing it to next/image which expects a URL or StaticImageData. */}
+                    <DotPattern className="pointer-events-none select-none" />
                 </div>
             </div>
         </div>

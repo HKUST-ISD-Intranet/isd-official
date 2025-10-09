@@ -104,12 +104,11 @@ export default function Footer() {
 
                 <div className="flex flex-row justify-between">
                     <div className="flex flex-row gap-[24px]">
-                        <Image
-                            src={HKUSTLogoWhite}
+                        {/* HKUSTLogoWhite is an SVG React component (SVGR) - render directly */}
+                        <HKUSTLogoWhite
+                            className=""
+                            aria-hidden
                             alt="HKUST Logo"
-                            width={160}
-                            height={50}
-                            // className="object-cover"
                         />
                         <div className="flex flex-col justify-center">
                             <div className="flex flex-row gap-[36px] text-callout-link">
@@ -124,11 +123,11 @@ export default function Footer() {
                     </div>
 
                     <div className="flex flex-row gap-[24px] items-center">
-                        <Image
-                            src={FootLogo}
-                            alt="HKUST Logo"
-                            width={100}
-                            height={100}
+                        {/* FootLogo is an SVG React component (SVGR) - render directly */}
+                        <FootLogo
+                            className="w-[100px] h-[100px]"
+                            aria-hidden
+                            alt="Award Logo"
                         />
                         <span className="text-callout">Follow HKUST on</span>
                         <div className="flex flex-row gap-[12px] items-center h-full">
