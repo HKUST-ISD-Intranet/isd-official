@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import HKUSTFooterLogo from '@/assets/hkust-footer-logo.png';
+import HKUSTLogoWhite from '@/assets/hkust-logo-white.svg';
 import LinkedinIcon from '@/assets/linkedin-icon.png';
 import FacebookIcon from '@/assets/facebook-icon.png';
 import WechatIcon from '@/assets/wechat-icon.png';
 import YoutubeIcon from '@/assets/youtube-icon.png';
 import InstagramIcon from '@/assets/instagram-icon.png';
-import FooterImage from '@/assets/footer-image.png';
+import FootLogo from '@/assets/award-white.svg';
 
 export default function Footer() {
     const navTitles = [
@@ -105,7 +105,7 @@ export default function Footer() {
                 <div className="flex flex-row justify-between">
                     <div className="flex flex-row gap-[24px]">
                         <Image
-                            src={HKUSTFooterLogo}
+                            src={HKUSTLogoWhite}
                             alt="HKUST Logo"
                             width={160}
                             height={50}
@@ -125,7 +125,7 @@ export default function Footer() {
 
                     <div className="flex flex-row gap-[24px] items-center">
                         <Image
-                            src={FooterImage}
+                            src={FootLogo}
                             alt="HKUST Logo"
                             width={100}
                             height={100}

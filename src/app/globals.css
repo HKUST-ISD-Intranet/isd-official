@@ -105,8 +105,8 @@
 /* Simple container helper */
 .container {
     max-width: calc(var(--container-max-width) + 2 * var(--component-gap-sm));
-    padding-left: var(--component-gap-sm);
-    padding-right: var(--component-gap-sm);
+    /* padding-left: var(--component-gap-sm);
+    padding-right: var(--component-gap-sm); */
     margin-left: auto;
     margin-right: auto;
 }
@@ -124,38 +124,45 @@
 }
 
 .offset-text-background {
-    position: relative;       /* establish a positioning context for the ::before */
+    position: relative;
+    /* establish a positioning context for the ::before */
 }
 
 .offset-text-background::before {
     content: "";
     position: absolute;
-    left: 0;                  /* start under the first character */
+    left: 0;
+    /* start under the first character */
     /* adjust bottom so the rectangle sits where you want vertically */
     /* if the rectangle should overlap the baseline area use a small positive bottom (overlapping upward) */
-    bottom: 0;              /* tweak this to line up precisely */
+    bottom: 0;
+    /* tweak this to line up precisely */
     width: 252px;
     height: 24px;
     background: var(--isd-primary-2);
-    z-index: -1;               /* behind the text (headline z-index is 1) */
+    z-index: -1;
+    /* behind the text (headline z-index is 1) */
     pointer-events: none;
+}
+
+.dot-pattern {
+    position: relative;
 }
 
 /* Please include position when using these! */
 /* Example: before:top-[-95px] before:right-0 */
 /* Use the dot-color variable to set the dot color */
 /* Example: [--dot-color:var(--isd-secondary-1)] */
-.dot-pattern {
-    @apply relative
-        before:content-['']
-        before:absolute
-        before:pointer-events-none
-        before:w-[410px]
-        before:h-[190px]
-        before:bg-[radial-gradient(circle,_var(--dot-color)_34%,_transparent_35%)]
-        before:bg-[length:26px_24px]
-        before:bg-repeat
-        before:-z-[1]
+.dot-pattern::before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    width: 410px;
+    height: 190px;
+    background-image: radial-gradient(circle, var(--dot-color) 34%, transparent 35%);
+    background-size: 26px 24px;
+    background-repeat: repeat;
+    z-index: -1;
 }
 
 @plugin "daisyui/theme" {
