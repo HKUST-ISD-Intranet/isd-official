@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function SustainableTechBlock() {
     return (
         <div>
-            <div className="flex flex-col gap-component-gap-sm py-section-title-gap">
+            <div className="container flex flex-col gap-component-gap-sm py-section-gap max-w-full">
                 <div className="flex flex-row items-center gap-component-gap">
                     {/* Left: Image */}
                     <div className="flex basis-1/2 justify-center">
