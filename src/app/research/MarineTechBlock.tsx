@@ -1,4 +1,4 @@
-import marineTech from '@/assets/research/marine-tech.png';
+import marineTech from '@/assets/research/marine-tech.jpeg';
 import ResearchInfoCard from './ResearchInfoCard';
 import SubHeading from './SubHeading';
 import Image from 'next/image';
@@ -9,7 +9,7 @@ export default function MarineTechBlock() {
             <div className="container flex flex-col gap-component-gap-sm py-section-gap max-w-full">
                 <div className="flex flex-row items-center gap-component-gap">
                     {/* Left: Research Info */}
-                    <div className="flex basis-1/2 flex-col gap-component-gap-sm justify-center">
+                    <div className="flex basis-1/2 flex-col gap-[12px] justify-center">
                         <SubHeading text="Marine-Tech" />
                         {marineTechTopics.map((topic) => (
                             <ResearchInfoCard
@@ -29,7 +29,9 @@ export default function MarineTechBlock() {
                         <Image
                             src={marineTech}
                             alt="Marine Tech"
-                            className="w-full h-auto max-w-md"
+                            width={900}
+                            height={675}
+                            className="w-full h-auto rounded-2xl"
                         />
                     </div>
                 </div>

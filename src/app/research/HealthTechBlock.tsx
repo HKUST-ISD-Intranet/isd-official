@@ -13,7 +13,9 @@ export default function HealthTechBlock() {
                         <Image
                             src={HealthTech}
                             alt="health Tech"
-                            className="w-full h-auto max-w-md"
+                            width={900}
+                            height={675}
+                            className="w-full h-auto rounded-2xl"
                         />
                     </div>
 
@@ -21,7 +23,7 @@ export default function HealthTechBlock() {
                     <div className="hidden lg:block h-100 w-1 bg-primary rounded-full mx-auto"></div>
 
                     {/* Right: Research Info */}
-                    <div className="flex basis-1/2 flex-col gap-component-gap-sm justify-center">
+                    <div className="flex basis-1/2 flex-col gap-[12px] justify-center">
                         <SubHeading text="health-Tech" />
                         {HealthTechTopics.map((topic) => (
                             <ResearchInfoCard

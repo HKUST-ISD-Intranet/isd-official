@@ -13,7 +13,9 @@ export default function SustainableTechBlock() {
                         <Image
                             src={sustainableTech}
                             alt="Sustainable Tech"
-                            className="w-full h-auto max-w-md"
+                            width={900}
+                            height={675}
+                            className="w-full h-auto"
                         />
                     </div>
 
@@ -21,7 +23,7 @@ export default function SustainableTechBlock() {
                     <div className="hidden lg:block h-100 w-1 bg-primary rounded-full mx-auto"></div>
 
                     {/* Right: Research Info */}
-                    <div className="flex basis-1/2 flex-col gap-component-gap-sm justify-center">
+                    <div className="flex basis-1/2 flex-col gap-[12px] justify-center">
                         <SubHeading text="Sustainable-Tech" />
                         {sustainableTechTopics.map((topic) => (
                             <ResearchInfoCard

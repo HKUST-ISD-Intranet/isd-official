@@ -9,7 +9,7 @@ export default function DesignTechBlock() {
             <div className="container flex flex-col gap-component-gap-sm py-section-gap max-w-full">
                 <div className="flex flex-row items-center gap-component-gap">
                     {/* Left: Research Info */}
-                    <div className="flex basis-1/2 flex-col gap-component-gap-sm justify-center">
+                    <div className="flex basis-1/2 flex-col gap-[12px] justify-center">
                         <SubHeading text="Design-Tech" />
                         {DesignTechTopics.map((topic) => (
                             <ResearchInfoCard
@@ -29,7 +29,9 @@ export default function DesignTechBlock() {
                         <Image
                             src={DesignTech}
                             alt="Design Tech"
-                            className="w-full h-auto max-w-md"
+                            width={900}
+                            height={675}
+                            className="w-full h-auto rounded-2xl"
                         />
                     </div>
                 </div>

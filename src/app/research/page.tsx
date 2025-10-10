@@ -10,7 +10,7 @@ import EmergentThemesBlock from './EmergentThemesBlock';
 export default function ResearchPage() {
     return (
         <div className="min-h-screen flex flex-col">
-            <HeroImage imageSource={ResearchHero} />
+            <HeroImage image={ResearchHero} />
             <Heading />
             {/* TODO - fix image sizing */}
             <SustainableTechBlock />

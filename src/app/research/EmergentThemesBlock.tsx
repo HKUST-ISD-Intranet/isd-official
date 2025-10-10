@@ -1,29 +1,60 @@
-// import EmergentThemes from '@/assets/research/sustainable-tech.png';
+import EmergentImg1 from '@/assets/research/emergent-Img1.png';
+import EmergentImg2 from '@/assets/research/emergent-Img2.png';
+
 import ResearchInfoCard from './ResearchInfoCard';
 import SubHeading from './SubHeading';
-// import Image from 'next/image';
+import Image from 'next/image';
 
 export default function EmergentThemesBlock() {
     return (
         <div>
-            <div className="container flex flex-col gap-component-gap-sm py-section-gap max-w-full">
+            <div className="container flex flex-col gap-[12px] py-section-gap max-w-full">
                 <div className="flex flex-row items-center gap-component-gap">
                     {/* Left: Image */}
-                    <div className="flex basis-1/2 justify-center">
-                        {/* <Image
-                            src={EmergentThemes}
-                            alt="Sustainable Tech"
-                            className="w-full h-auto max-w-md"
-                        /> */}
+                    <div className="flex flex-col gap-4 basis-1/2 justify-center">
+                        <Image
+                            src={EmergentImg1}
+                            alt="Emergent Theme 1"
+                            width={900}
+                            height={675}
+                            className="w-full h-auto rounded-2xl"
+                        />
                     </div>
 
                     {/* Middle: Vertical Divider (Large Screens Only) */}
                     <div className="hidden lg:block h-100 w-1 bg-primary rounded-full mx-auto"></div>
 
                     {/* Right: Research Info */}
-                    <div className="flex basis-1/2 flex-col gap-component-gap-sm justify-center">
+                    <div className="flex basis-1/2 flex-col gap-[12px] justify-center">
                         <SubHeading text="Emergent Themes" />
-                        {EmergentThemesTopics.map((topic) => (
+                        {EmergentThemesTopics1.map((topic) => (
+                            <ResearchInfoCard
+                                key={topic.title}
+                                title={topic.title}
+                                description={topic.description}
+                                supervisor={topic.supervisor}
+                            />
+                        ))}
+                    </div>
+                </div>
+                <div className="flex flex-row items-center gap-component-gap">
+                    {/* Left: Image */}
+                    <div className="flex flex-col gap-4 basis-1/2 justify-center">
+                        <Image
+                            src={EmergentImg2}
+                            alt="Emergent Theme 2"
+                            width={900}
+                            height={675}
+                            className="w-full h-auto rounded-2xl"
+                        />
+                    </div>
+
+                    {/* Middle: Vertical Divider (Large Screens Only) */}
+                    <div className="hidden lg:block h-100 w-1 bg-primary rounded-full mx-auto"></div>
+
+                    {/* Right: Research Info */}
+                    <div className="flex basis-1/2 flex-col gap-[12px] justify-center">
+                        {EmergentThemesTopics1.map((topic) => (
                             <ResearchInfoCard
                                 key={topic.title}
                                 title={topic.title}
@@ -38,7 +69,7 @@ export default function EmergentThemesBlock() {
     );
 }
 
-const EmergentThemesTopics = [
+const EmergentThemesTopics1 = [
     {
         title: 'Low-alttitude economy infrastructure',
         description: 'Zero-energy vertiport, Unmanned Logistics',
@@ -67,6 +98,9 @@ const EmergentThemesTopics = [
             'AI-powered service robots designed to assist with daily tasks',
         supervisor: 'Ziqi WANG',
     },
+];
+
+const EmergentThemesTopics2 = [
     {
         title: 'Embedding AI seamlessly into everyday life',
         description:
