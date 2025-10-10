@@ -24,6 +24,7 @@ export default function ProgramBlock() {
         {
             heading: 'Postgraduate',
             content: 'Early Admissions Scheme',
+            link: '/early-admission/',
         },
     ];
 
@@ -34,13 +35,22 @@ export default function ProgramBlock() {
                     Programs
                 </h1>
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-section-title-gap">
-                    {programsInfo.map((program, index) => (
-                        <TextCard
-                            key={index}
-                            heading={program.heading}
-                            content={program.content}
-                        />
-                    ))}
+                    {programsInfo.map((program, index) =>
+                        program.link ? (
+                            <a key={index} href={program.link}>
+                                <TextCard
+                                    heading={program.heading}
+                                    content={program.content}
+                                />
+                            </a>
+                        ) : (
+                            <TextCard
+                                key={index}
+                                heading={program.heading}
+                                content={program.content}
+                            />
+                        )
+                    )}
                 </div>
             </div>
             <div
