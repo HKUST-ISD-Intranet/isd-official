@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
     const navItems = [
-        { name: 'About ISD', href: '/about' },
+        { name: 'About ISD', href: '/about-isd' },
         { name: 'People', href: '/people' },
         { name: 'Academics', href: '/academics' },
         { name: 'Research', href: '/research' },
