@@ -54,7 +54,7 @@ export default function EmergentThemesBlock() {
 
                     {/* Right: Research Info */}
                     <div className="flex basis-1/2 flex-col gap-[12px] justify-center">
-                        {EmergentThemesTopics1.map((topic) => (
+                        {EmergentThemesTopics2.map((topic) => (
                             <ResearchInfoCard
                                 key={topic.title}
                                 title={topic.title}
