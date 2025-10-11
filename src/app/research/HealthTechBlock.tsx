@@ -13,9 +13,7 @@ export default function HealthTechBlock() {
                         <Image
                             src={HealthTech}
                             alt="health Tech"
-                            width={900}
-                            height={675}
-                            className="w-full h-auto rounded-2xl"
+                            className="w-full h-auto rounded-lg aspect-[1.5] object-cover"
                         />
                     </div>
 

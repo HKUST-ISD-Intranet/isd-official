@@ -29,9 +29,7 @@ export default function DesignTechBlock() {
                         <Image
                             src={DesignTech}
                             alt="Design Tech"
-                            width={900}
-                            height={675}
-                            className="w-full h-auto rounded-2xl"
+                            className="w-full h-auto rounded-lg aspect-[1.5] object-cover"
                         />
                     </div>
                 </div>

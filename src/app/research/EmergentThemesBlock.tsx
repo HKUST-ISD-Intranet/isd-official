@@ -15,9 +15,7 @@ export default function EmergentThemesBlock() {
                         <Image
                             src={EmergentImg1}
                             alt="Emergent Theme 1"
-                            width={900}
-                            height={675}
-                            className="w-full h-auto rounded-2xl"
+                            className="w-full h-auto rounded-lg aspect-[1.5] object-fill"
                         />
                     </div>
 
@@ -43,9 +41,7 @@ export default function EmergentThemesBlock() {
                         <Image
                             src={EmergentImg2}
                             alt="Emergent Theme 2"
-                            width={900}
-                            height={675}
-                            className="w-full h-auto rounded-2xl"
+                            className="w-full h-auto rounded-lg aspect-[1.5] object-fill"
                         />
                     </div>
 

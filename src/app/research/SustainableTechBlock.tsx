@@ -13,9 +13,7 @@ export default function SustainableTechBlock() {
                         <Image
                             src={sustainableTech}
                             alt="Sustainable Tech"
-                            width={900}
-                            height={675}
-                            className="w-full h-auto"
+                            className="w-full h-auto rounded-lg aspect-[1.5] object-fill"
                         />
                     </div>
 
