@@ -30,33 +30,35 @@ export default function ProgramBlock() {
 
     return (
         <div>
-            <div className="container relative flex flex-col py-section-gap gap-section-title-gap dot-pattern dot-pattern before:top-[-95px] before:right-0 [--dot-color:var(--isd-secondary-1)]">
-                <h1 className="text-h1 offset-text-background uppercase">
-                    Programs
-                </h1>
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-section-title-gap">
-                    {programsInfo.map((program, index) =>
-                        program.link ? (
-                            <a key={index} href={program.link}>
+            <div className="w-full overflow-clip pt-section-gap gap-section-title-gap dot-pattern before:top-[-95px] before:right-[-10px] [--dot-color:var(--isd-secondary-1)]">
+                <div className="container relative flex flex-col pb-section-gap gap-section-title-gap">
+                    <h1 className="text-h1 offset-text-background uppercase container">
+                        Programs
+                    </h1>
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-section-title-gap">
+                        {programsInfo.map((program, index) =>
+                            program.link ? (
+                                <a key={index} href={program.link}>
+                                    <TextCard
+                                        heading={program.heading}
+                                        content={program.content}
+                                    />
+                                </a>
+                            ) : (
                                 <TextCard
+                                    key={index}
                                     heading={program.heading}
                                     content={program.content}
                                 />
-                            </a>
-                        ) : (
-                            <TextCard
-                                key={index}
-                                heading={program.heading}
-                                content={program.content}
-                            />
-                        )
-                    )}
+                            )
+                        )}
+                    </div>
                 </div>
-            </div>
-            <div
-                className="dot-pattern before:bottom-[25px] before:left-[-90px] [--dot-color:var(--isd-secondary-1)] "
-                aria-hidden
-            />
+                <div
+                    className="dot-pattern before:bottom-[25px] before:left-[-90px] [--dot-color:var(--isd-secondary-1)] "
+                    aria-hidden
+                />
+            </div>{' '}
         </div>
     );
 }
