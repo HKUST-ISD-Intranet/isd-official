@@ -22,7 +22,7 @@ export default function MarineTechBlock() {
                     </div>
 
                     {/* Middle: Vertical Divider (Large Screens Only) */}
-                    <div className="hidden lg:block h-100 w-1 bg-primary rounded-full mx-auto"></div>
+                    <div className="hidden lg:block h-[288px] w-[5px] bg-primary rounded-full mx-auto"></div>
 
                     {/* Right: Image */}
                     <div className="flex basis-1/2 justify-center">

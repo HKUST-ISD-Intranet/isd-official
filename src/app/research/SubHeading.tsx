@@ -4,7 +4,7 @@ export default function SubHeading({ text }: { text: string }) {
             <div className="self-stretch justify-start text-primary text-4xl font-bold uppercase">
                 {text}
             </div>
-            <div className="w-48 h-0 outline-1 outline-isd-secondary" />
+            <div className="w-[180px] h-0 outline-1 outline-isd-secondary" />
         </div>
     );
 }
