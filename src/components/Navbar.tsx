@@ -98,16 +98,16 @@ export default function Navbar() {
 
                 <div className="inline-flex justify-center items-center gap-6">
                     {navItems.map((item) => (
-                        <div className="relative group" key={item.name}>
+                        <div className="relative group pb-2" key={item.name}>
                             <Link
                                 href={item.href}
-                                className="text-isd-font-3 text-nav"
+                                className="relative z-50 text-isd-font-3 text-nav group-hover:underline group-hover:underline-offset-10 group-hover:decoration-isd-primary group-hover:decoration-4"
                             >
                                 {item.name}
                             </Link>
 
                             {item.submenu && (
-                                <div className="absolute left-0  hidden group-hover:block bg-white border border-gray-300  shadow-lg">
+                                <div className="absolute left-0 mt-2 hidden group-hover:block group-focus-within:block bg-white border-gray-300 shadow-lg z-40">
                                     {item.submenu.items.map((subItem) => (
                                         <Link
                                             key={subItem.name}
