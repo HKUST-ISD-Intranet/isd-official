@@ -1,6 +1,6 @@
 import HKUSTLogo from '@/assets/hkust-logo.svg';
 import ISDLogo from '@/assets/isd-logo.svg';
-// Image import removed: SVGs are rendered as components directly
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Navbar() {
@@ -79,19 +79,17 @@ export default function Navbar() {
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-6 divide-x-1 divide-isd-primary">
                     <Link href="https://hkust.edu.hk/">
-                        {/* HKUSTLogo is an SVG React component (SVGR) - render directly */}
-                        <HKUSTLogo
-                            className="h-14 w-auto pr-6"
-                            aria-hidden
+                        <Image
+                            src={HKUSTLogo}
                             alt="HKUST Logo"
+                            className="h-14 w-auto pr-6"
                         />
                     </Link>
                     <Link href="/">
-                        {/* ISDLogo is an SVG React component (SVGR) - render directly */}
-                        <ISDLogo
-                            className="h-14 w-auto"
-                            aria-hidden
+                        <Image
+                            src={ISDLogo}
                             alt="ISD Logo"
+                            className="h-14 w-auto"
                         />
                     </Link>
                 </div>
