@@ -36,7 +36,7 @@ export default function Navbar() {
             submenu: {
                 items: [
                     { name: 'Programs', href: '/academics#programs' },
-                    { name: 'Schlarships', href: '/academics' },
+                    { name: 'Scholarships', href: '/academics' },
                     { name: 'Internship & Exchange', href: '/academics' },
                     { name: 'Facilities', href: '/academics' },
                 ],
