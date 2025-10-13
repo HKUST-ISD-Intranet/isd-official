@@ -77,24 +77,27 @@ export default function Navbar() {
     return (
         <nav className="bg-white px-section-gap sticky z-40 top-12 py-8">
             <div className="flex items-center justify-between">
-                <div className="flex items-center gap-6 divide-x-1 divide-isd-primary">
+                <div className="flex items-center gap-[11px] divide-x-1 divide-isd-primary">
                     <Link href="https://hkust.edu.hk/">
                         <Image
                             src={HKUSTLogo}
                             alt="HKUST Logo"
-                            className="h-14 w-auto pr-6"
+                            width={180}
+                            height={44.4}
+                            className="pr-[11px]"
                         />
                     </Link>
                     <Link href="/">
                         <Image
                             src={ISDLogo}
                             alt="ISD Logo"
-                            className="h-14 w-auto"
+                            width={263}
+                            height={27}
                         />
                     </Link>
                 </div>
 
-                <div className="inline-flex justify-center items-center gap-6">
+                <div className="inline-flex justify-center items-center gap-element-gap pt-2">
                     {navItems.map((item, i) => (
                         <div className="relative group pb-2" key={item.name}>
                             <Link
