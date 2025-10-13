@@ -108,7 +108,7 @@ export default function Navbar() {
                             </Link>
 
                             {item.submenu && (
-                                <div className={"absolute mt-2 hidden group-hover:block group-focus-within:block bg-white border-gray-300 shadow-lg z-40" + (i === navItems.length - 1 ? ' right-0' : ' left-0')}>
+                                <div className={"absolute mt-2 hidden group-hover:block group-focus-within:block bg-white shadow-lg shadow-black/30 z-40" + (i === navItems.length - 1 ? ' right-0' : ' left-0')}>
                                     {item.submenu.items.map((subItem) => (
                                         <Link
                                             key={subItem.name}
