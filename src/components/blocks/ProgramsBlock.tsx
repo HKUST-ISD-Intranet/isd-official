@@ -29,7 +29,7 @@ export default function ProgramBlock() {
     ];
 
     return (
-        <div>
+        <div id="programs">
             <div className="w-full overflow-clip pt-section-gap gap-section-title-gap dot-pattern before:top-[-95px] before:right-[-10px] [--dot-color:var(--isd-secondary-1)]">
                 <div className="container relative flex flex-col pb-section-gap gap-section-title-gap">
                     <h1 className="text-h1 offset-text-background uppercase container">
