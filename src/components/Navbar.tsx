@@ -95,7 +95,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="inline-flex justify-center items-center gap-6">
-                    {navItems.map((item) => (
+                    {navItems.map((item, i) => (
                         <div className="relative group pb-2" key={item.name}>
                             <Link
                                 href={item.href}
@@ -105,7 +105,7 @@ export default function Navbar() {
                             </Link>
 
                             {item.submenu && (
-                                <div className="absolute left-0 mt-2 hidden group-hover:block group-focus-within:block bg-white border-gray-300 shadow-lg z-40">
+                                <div className={"absolute mt-2 hidden group-hover:block group-focus-within:block bg-white border-gray-300 shadow-lg z-40" + (i === navItems.length - 1 ? ' right-0' : ' left-0')}>
                                     {item.submenu.items.map((subItem) => (
                                         <Link
                                             key={subItem.name}
