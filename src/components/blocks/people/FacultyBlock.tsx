@@ -1,4 +1,6 @@
 import FacultyCard from '@/components/FacultyCard';
+import faculty from '@/data/faculty.json';
+import { resolvePersonPhoto } from '@/lib/peopleImages';
 
 export default function FacultyBlock({
     type = 'faculty',
@@ -12,11 +14,22 @@ export default function FacultyBlock({
             </h1>
 
             <div className="grid grid-cols-2 gap-x-section-gap gap-y-component-gap">
+                {faculty.map((person) => (
+                    <div key={person.name}>
+                        <FacultyCard
+                            name={person.name}
+                            role={person.role}
+                            keywords={person.keywords}
+                            email={person.email}
+                            photo={resolvePersonPhoto(person.photo)}
+                        />
+                    </div>
+                ))}
+
+                {/* <FacultyCard />
                 <FacultyCard />
                 <FacultyCard />
-                <FacultyCard />
-                <FacultyCard />
-                <FacultyCard />
+                <FacultyCard /> */}
             </div>
         </div>
     );
