@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Select from '../../Select';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 export default function FilterBlock() {
     const roles = [
@@ -16,21 +17,54 @@ export default function FilterBlock() {
         { value: 'sort_position', label: 'Sort by Position' },
     ];
 
-    const [role, setRole] = useState<string | number | null>('all');
-    const [position, setPosition] = useState<string | number | null>('any');
-    const [keyword, setKeyword] = useState('');
+    const router = useRouter();
+    const searchParams = useSearchParams();
+
+    // initialize from URL so the UI reflects the current page state
+    const initialRole = searchParams?.get('role') ?? 'all';
+    const initialSort = searchParams?.get('sort') ?? 'sort_position';
+    const initialKeyword = searchParams?.get('keyword') ?? '';
+
+    const [role, setRole] = useState<string>(initialRole);
+    const [sort, setSort] = useState<string>(initialSort);
+    const [keyword, setKeyword] = useState<string>(initialKeyword);
+
+    const paramString = searchParams?.toString() ?? '';
+
+    useEffect(() => {
+        // keep state synced if the user navigates with back/forward
+        setRole(searchParams?.get('role') ?? 'all');
+        setSort(searchParams?.get('sort') ?? 'sort_position');
+        setKeyword(searchParams?.get('keyword') ?? '');
+    }, [paramString, searchParams]);
+
+    function applyFilters(newParams?: {
+        role?: string;
+        sort?: string;
+        keyword?: string;
+    }) {
+        const params = new URLSearchParams(searchParams?.toString() ?? '');
+        if (newParams?.role !== undefined) params.set('role', newParams.role);
+        if (newParams?.sort !== undefined) params.set('sort', newParams.sort);
+        if (newParams?.keyword !== undefined) {
+            if (newParams.keyword === '') params.delete('keyword');
+            else params.set('keyword', newParams.keyword);
+        }
+
+        // push so page updates and server component will re-render
+        const qs = params.toString();
+        router.push(`/people${qs ? `?${qs}` : ''}`);
+    }
 
     function handleSearch() {
-        // This is a UI-only filter block. Raise events or call parent handlers as needed.
-        // For now we just log the filter state for debug.
-        // TODO: lift state up via props when integrating with parent.
-        console.log('Search filters:', { role, position, keyword });
+        applyFilters({ role, sort, keyword });
     }
 
     function handleClear() {
         setRole('all');
-        setPosition('any');
+        setSort('sort_position');
         setKeyword('');
+        applyFilters({ role: 'all', sort: 'sort_position', keyword: '' });
     }
 
     return (
@@ -40,7 +74,11 @@ export default function FilterBlock() {
                     id="role-select"
                     options={roles}
                     value={role}
-                    onChange={(v) => setRole(v)}
+                    onChange={(v) => {
+                        const val = String(v);
+                        setRole(val);
+                        applyFilters({ role: val, sort, keyword });
+                    }}
                     placeholder="Sort by Role"
                     className="w-[180px]"
                 />
@@ -48,8 +86,12 @@ export default function FilterBlock() {
                 <Select
                     id="position-select"
                     options={sortOptions}
-                    value={position}
-                    onChange={(v) => setPosition(v)}
+                    value={sort}
+                    onChange={(v) => {
+                        const val = String(v);
+                        setSort(val);
+                        applyFilters({ role, sort: val, keyword });
+                    }}
                     placeholder="Sort by Position"
                     className="w-[180px]"
                 />
@@ -60,6 +102,9 @@ export default function FilterBlock() {
                         placeholder="Keyword Search"
                         value={keyword}
                         onChange={(e) => setKeyword(e.target.value)}
+                        onKeyDown={(e) => {
+                            if (e.key === 'Enter') handleSearch();
+                        }}
                         className="bg-white px-[12px] flex-1 h-component-gap-sm text-isd-font-1 placeholder:text-isd-font-3 focus:outline-none"
                     />
                     <button
