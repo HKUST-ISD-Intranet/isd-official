@@ -1,0 +1,721 @@
+[
+    {
+        "details": "<p style=\"margin-bottom:21px\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"color:#494e52\">Dr. Zhang joined Hong Kong University of Science and Technology in Sep&nbsp;2005, where she is now&nbsp;<strong>Tencent Professor of Engineering and Chair Professor</strong>&nbsp;of the Department of Computer Science and Engineering. She is also serving as the co-director of Huawei-HKUST innovation lab, the&nbsp;</span><span lang=\"EN-US\"><span style=\"color:#494e52\">director of Microsoft Research Asia (MSRA) Information Technology Key Laboratory,&nbsp;</span></span><span style=\"color:#494e52\">and the director of digital life research center of HKUST. Before that, she was in Microsoft Research Asia, Beijing, from July 1999, where she was the research manager of the Wireless and Networking Group. Dr. Zhang has published more than 400 refereed papers in international leading journals and key conferences. She is the inventor of more than 50 granted and 20 pending International patents. Her current research interests include Internet of Things (IoT), smart health, mobile computing and sensing, wireless networking, as well as cyber security.</span></span></span></p>\r\n\r\n<p style=\"margin-bottom:21px\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"color:#494e52\">She is a&nbsp;<strong>Fellow of the IEEE</strong>&nbsp;and&nbsp;<strong>the Hong Kong Academy of Engineering Science (HKAES)</strong>. Dr. Zhang has received MIT TR100 (MIT Technology Review) world’s top young innovator award. She also received the Best Asia Pacific (AP) Young Researcher Award elected by IEEE Communication Society in year 2004. She received the Best Paper Award in Multimedia Technical Committee (MMTC) of IEEE Communication Society in 2005 and Best Paper Award for QShine 2006, IEEE Globecom 2007, IEEE ICDCS 2008, IEEE ICC 2010, IEEE Globecom 2012, and IEEE ICC 2019. She received the Oversea Young Investigator Award from the National Natural Science Foundation of China (NSFC) in 2006. She held the Cheung Kong Chair Professor&nbsp;in Huazhong University of Science and Technology (2012-2015). She has been elected as IEEE Communication Society Distinguished Lecture from Jan. 2010 to Dec. 2011.</span></span></span></p>\r\n\r\n<p style=\"margin-bottom:21px\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"color:#494e52\">Dr. Zhang served as&nbsp;<strong>Editor-in-Chief of IEEE Trans. on Mobile Computing (TMC)</strong>&nbsp;from Jan. 2020 to Dec. 2022. She is a member of Steering Committee of IEEE Infocom and IEEE Trans. on Games. She is the Editorial Board Member of IEEE Transactions in Cognitive Communications and Networking, IEEE Wireless Communications Magazine, Elsevier Computer Communications, and Elsevier Computer Networks. She also served as the Associate Editor for IEEE Transactions on Wireless Communications, IEEE Transactions on Vehicular Technologies, IEEE Transactions on Mobile Computing, and IEEE Communications Surveys and Tutorials. She served as Guest Editor for quite some special issues.<br />\r\n<br />\r\nDr. Zhang was a Members-at-Large (2016-2018) of IEEE Communications Society (ComSoc) and the Director of Technical Services (2016-2017) of IEEE ComSoc. She was the Chair of the Multimedia Communication Technical Committee of the IEEE Communications Society from 2008 to 2010.</span></span></span></p>\r\n\r\n<p style=\"margin-bottom:21px\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"color:#494e52\">Dr. Zhang received the B.S., M.S., and Ph.D. degrees from Wuhan University, China, in 1994, 1996, and 1999, respectively, all in computer science.</span></span></span></p>\r\n",
+        "email": "qianzh@cse.ust.hk",
+        "id": 1,
+        "keywords": [
+            "Internet of Things (IoT)",
+            "Smart Health",
+            "Mobile Computing and Sensing",
+            "Wireless Networking",
+            "Cyber Security"
+        ],
+        "link": "https://www.cse.ust.hk/~qianzh/",
+        "location": "Rm 3544",
+        "name": "Qian ZHANG",
+        "phone": "23588766",
+        "photo": "/src/assets/people/qianzh.jpg",
+        "role": "Head of ISD / Tencent Professor of Engineering and Chair Professor of CSE",
+        "surname": "ZHANG",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p>Dr. Liu is an assistant professor in the Division of Integrated Systems Design at the Hong Kong University of Science and Technology. He obtained his PhD degree at the University of Hong Kong and did his PostDoc at Nanyang Technological University. Prior to that, he obtained both his Master's and Bachelor's degrees from Wuhan University.</p>\r\n\r\n<p>His research mainly concentrates on 3D computer vision and computer graphics. He is currently working on topics on 3D AIGC including 3D neural representations, 3D generative models, and 3D-aware video generation. His works are mainly published on top journals or conferences of CV and CG such as SIGGRAPH (Asia), ToG, CVPR, ECCV, ICCV, &nbsp;T-PAMI, NeurIPS, &nbsp;and ICLR.&nbsp;</p>",
+        "email": "yuanly@ust.hk",
+        "id": 2,
+        "keywords": [
+            "Computer Graphics",
+            "3D Computer Vison",
+            "3D Design and Generation",
+            "3D AIGC"
+        ],
+        "link": "https://liuyuan-pal.github.io/",
+        "location": "IAS2006",
+        "name": "Yuan LIU",
+        "phone": "34693379",
+        "photo": "/src/assets/people/yuanly.jpg",
+        "role": "Assistant Professor",
+        "surname": "LIU",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "",
+        "email": "aronkwong@ust.hk",
+        "id": 3,
+        "keywords": [
+            "Computer Graphics",
+            "3D Computer Vison",
+            "3D Design and Generation",
+            "3D AIGC"
+        ],
+        "link": "https://liuyuan-pal.github.io/",
+        "location": "Rm 5589",
+        "name": "Aron KWONG",
+        "phone": "34692937",
+        "photo": "/src/assets/people/aronkwong.jpg",
+        "role": "Instructional Assistant",
+        "surname": "KWONG",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "",
+        "email": "charislai@ust.hk",
+        "id": 4,
+        "keywords": [],
+        "link": "",
+        "location": "5591",
+        "name": "Charis LAI",
+        "phone": "",
+        "photo": "/src/assets/people/charislai.jpg",
+        "role": "Assistant Manager",
+        "surname": "LAI",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p>Prof. Yunlong Zi, PhD, FInstP, SMIEEE, FIAAM, is an Associate Professor in Thrust of Sustainable Energy and Environment in Hong Kong University of Science and Technology – Guangzhou (HKUST-GZ). Prof. Zi received his Ph.D. in Physics from Purdue University in 2014; his Bachelor of Engineering in Materials Science and Engineering from Tsinghua University in 2009. Before joining HKUST, he worked as an Assistant Professor at the Chinese University of Hong Kong during 2017-2022, and a Postdoctoral Fellow at Georgia Institute of Technology during 2014-2017. Prof. Zi is an active scholar in the field of triboelectric nanogenerator for high-performance energy harvesting. He coined the field of tribo-photonics toward the self-powered wireless sensing solutions. He has published over 150 journal publications with total citation of over 16000. Prof. Zi was honored as Fellow of Institute of Physics (FInstP) 2023; Senior Member of IEEE (SMIEEE) 2023; MIT Technological Review 35 Innovators Under 35 Asia &amp; Pacific 2022; Nano Energy Award winner 2021. He was also as Fellow of International Association of Advanced Materials (FIAAM) 2021; Vebleo Fellow 2021; the winner of MRS Postdoctoral Award by Materials Research Society in 2017; the Emerging Investigators by Journal of Materials Chemistry C in 2018; MINE Young Investigator Finalist in 2018; and one of “5 students who are transformation makers” as highlighted in Purdue homepage in 2013.</p>\r\n",
+        "email": "ylzi@hkust-gz.edu.cn",
+        "id": 5,
+        "keywords": [
+            "High-performance mechanical energy harvesting through triboelectric nanogenerator",
+            "Tribo-photonics toward novel self-powered wireless solution"
+        ],
+        "link": "https://zilabhkust.wordpress.com/",
+        "location": "",
+        "name": "Yunlong ZI",
+        "phone": "(86) 20 8833 2960",
+        "photo": "/src/assets/people/ylzi.jpg",
+        "role": "Associate Professor (Joint Appointment)",
+        "surname": "ZI",
+        "type": "ISD Faculty",
+        "isJointApt": true
+    },
+    {
+        "details": "<p>Prof. Tracy Mok joined the Division of Integrative Systems and Design (ISD) at The Hong Kong University of Science and Technology (HKUST) at the end of March 2025. Prior to joining HKUST, she served at the School of Fashion and Textiles (formerly the Institute of Textiles and Clothing) at The Hong Kong Polytechnic University for 20 years. During her tenure, she held the position of Associate Head for the Institute of Textiles and Clothing, assisting its upgrade to an independent school. Prof. Mok’s research interests focus on artificial intelligence in design technology applications, including 2D and 3D computer-aided design, digital human modelling, cloth simulation, &nbsp;XR and interaction design, 2D and 3D pose estimation, ergonomics and smart healthcare applications. She also conducts data science, industrial and system optimization, and sustainability research. Since 2012, she has successfully secured research fudning over HK$46 million, published over 150 research articles in world-leading top-tier research journals, and holds &nbsp;a number of trademark, patents, software copyrights, and licenses. Her research findings have received widespread recognition from both academia and business, making a significant impact on the fashion industry. Notably, with her guidance, one of her PhD graduates commercialized their research technology through a startup, which secured venture investment of over 20 million RMB. Prof. Mok’s achievements include winning 14 prestigious international awards, such as the Gold Medal of the 35th International Exhibition of Inventions of Geneva and the Silver Medal of the 1st Asia Exhibition of Inventions Hong Kong. Additionally, Prof. Mok is dedicated to serving the education community and the society at large. She has served as the Associate Director of the Research Centre for Future Fashion and Textiles, Executive Committee Member of the Hong Kong Institution of Textile and Apparel (HKITA), a vetting committee member of the Create Smart Initiative for CreateHK of Hong Kong SAR government, as well as a steering committee member of the Artificial Intelligence Special Committee of the China Textile Engineering Society, among other roles.</p>\r\n",
+        "email": "tracymok@ust.hk",
+        "id": 8,
+        "keywords": [
+            "AI in DesignTech Applications",
+            "2D/3D Computer-aided Design",
+            "Digital Human Modelling",
+            "CV/CG Fashion Applications"
+        ],
+        "link": "https://www.cafilab.com/",
+        "location": "IAS2012",
+        "name": "Tracy MOK",
+        "phone": "34693368",
+        "photo": "/src/assets/people/tracymok.jpg",
+        "role": "Associate Professor",
+        "surname": "MOK",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p>Dr. Hongri (Richard) Gu is currently an Assistant Professor in the Division of Integrative Systems and Design (ISD) at The Hong Kong University of Science and Technology (HKUST). He received his Bachelor’s degree in Mechatronics Engineering from Zhejiang University in 2014, during which he also participated in the Young Scientist Exchange Program (YSEP) at Tokyo Institute of Technology from 2012 to 2014. In 2016, he completed his Master’s degree in Micro and Nanosystems at ETH Zurich. From 2017 to 2021, Dr. Gu conducted his doctoral research at the Multi-Scale Robotics Lab, ETH Zurich, under the supervision of Prof. Bradley Nelson. During his Ph.D., he served as an editorial assistant for Science Robotics and the Annual Review of Control, Robotics, and Autonomous Systems, managing submissions in microrobotics, medical robotics, and soft robotics. From 2022 to 2024, he pursued postdoctoral research in the Department of Physics at the University of Konstanz in Germany.</p>\r\n\r\n<p><br />\r\nDr. Gu’s research focuses on developing structured magnetic materials and robotic systems for future disruptive medical technologies, with an emphasis on understanding multi-scale physiological transport and inventing novel medical devices and surgical tools.</p>\r\n",
+        "email": "hongrigu@ust.hk",
+        "id": 10,
+        "keywords": [
+            "Microrobotics",
+            "Structured magnetic materials",
+            "Medical robotics"
+        ],
+        "link": "https://guhongri.com/",
+        "location": "IAS 2008",
+        "name": "Richard GU",
+        "phone": "34693378",
+        "photo": "/src/assets/people/hongrigu.jpg",
+        "role": "Assistant Professor",
+        "surname": "GU",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p>Dr. Wenchao Xu is current an Assistant Professor in the Division of Integrative Systems and Design (ISD) at The Hong Kong University of Science and Technology (HKUST). He received his B.E. and M.E. degrees from Zhejiang University, Hangzhou, China and his Ph.D. degree at the Department of Electrical and Computer Engineering, University of Waterloo, Canada. His research areas include multimodal learning, edge computing, integrated AI &amp; networking design and have published papers at top journals and conferences such as IEEE Transactions on Mobile Computing, NeurIPS, CVPR, ICLR, and others.</p>",
+        "email": "wenchaoxu@ust.hk",
+        "id": 11,
+        "keywords": [
+            "Multimodal learning",
+            "Edge computing",
+            "Integrated AI & networking"
+        ],
+        "link": "https://huasion23.github.io/",
+        "location": "IAS2009",
+        "name": "Wenchao XU",
+        "phone": "34693380",
+        "photo": "/src/assets/people/wenchaoxu.jpg",
+        "role": "Assistant Professor",
+        "surname": "XU",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"color:black\">I serve as a Research Assistant Professor at The Hong Kong University of Science and Technology, specializing in renewable energy technologies. Prior to this, I enriched my expertise as a Postdoctoral Fellow at the Hong Kong Polytechnic University's Department of Building Environment and Energy Engineering from May 2022 to November 2023. My academic journey began with a PhD from Shanghai Jiao Tong University (SJTU), completed in March 2022, where my research contributions earned me the title of an outstanding international student and a nomination for the prestigious \"Youth Footprint\" award. My commitment to advancing the field of renewable energy is evidenced by my portfolio, which includes a patent and over 20 papers published in high-impact SCI-indexed journals. In recognition of my contributions, I've been awarded an EB2 National Interest Waiver (NIW) for the United States and a Global Talent Visa for Australia in 2023, both acknowledging my potential to drive significant benefit to these countries' national interests. Beyond my research, I actively contribute to the scientific community by reviewing scholarly works for esteemed journals boasting impact factors above nine. I am thrilled to continue my pursuit of sustainable energy solutions here at HKUST and contribute to our shared vision of a greener future.</span></span></span></p>\r\n",
+        "email": "arash@ust.hk",
+        "id": 12,
+        "keywords": [
+            "Renewable Energy Systems",
+            "Solar Technologies",
+            "Optimization",
+            "Predictive Analytics",
+            "Energy Analysis",
+            "Nanotechnology Applications"
+        ],
+        "link": null,
+        "location": "IAS1004",
+        "name": "Arash KAZEMIAN",
+        "phone": null,
+        "photo": "/src/assets/people/arash.jpg",
+        "role": "Research Assistant Professor",
+        "surname": "KAZEMIAN",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p>Prof. Wenqi Hu holds a Bachelor's degree in Microelectronics and a Ph.D. in Electrical Engineering, focusing on optically-controlled microrobots. After completing his Ph.D., Prof. Hu joined the Max Planck Institute for Intelligent Systems (MPI-IS) as a Humboldt research fellow and progressed to a senior scientist role in 2019, later becoming the head of the bioinspired autonomous miniature robots group in 2022. His research has contributed to the fields of soft magnetic materials and the control of miniature soft robots, with his work published in respected journals such as Nature and Science Robotics. Dr. Hu's research has garnered over 5,000 citations and received accolades like the ICRA 2012 Best Conference Paper Award Finalist, RSS 2019 Best Paper Award, and the Günter Petzow Prize from the Max Planck Society. Beyond his research, he also serves as an Associate Editor for the Journal of Micro-Bio Robotics and participates in various committees for conferences such as Living Machine and MARSS.</p>\r\n",
+        "email": "wenqi@ust.hk",
+        "id": 13,
+        "keywords": [
+            "Miniature Robots",
+            "Soft Robots",
+            "Surgical Robots",
+            "Underwater Robots",
+            "Implantable Medical Devices",
+            "Multi-material Microfabrication"
+        ],
+        "link": null,
+        "location": "Room 2543",
+        "name": "Wenqi HU",
+        "phone": "3469 3207",
+        "photo": "/src/assets/people/wenqi.jpg",
+        "role": "Assistant Professor (Joint Appointment)",
+        "surname": "HU",
+        "type": "ISD Faculty",
+        "isJointApt": true
+    },
+    {
+        "details": "<p>Prof. Mo Li is a Professor at the Department of Computer Science and Engineering and Division of Integrative Systems and Design, the Hong Kong University of Science and Technology (HKUST). Before joining HKUST in 2023, he was a Professor at Nanyang Technological University. Prof. Li has been internationally recognized for his research in wireless and mobile computing. Over the past few years, Prof. Li has developed numerous methods, techniques, and systems that resulted in top journal and conference publications that received over 10,000 citations. He has been on the editorial board of IEEE/ACM Transactions on Networking, IEEE Transactions on Mobile Computing, ACM Transactions on Internet of Things, and IEEE Transactions on Wireless Communications, all leading journals in the field. He also served the technical program committee member for top conferences in computer systems and networking, including ACM MobiCom, MobiSys, SenSys, and others. Prof. Li is a Distinguished Member of the ACM since 2019, and a Fellow of the IEEE since 2020.</p>",
+        "email": "lim@ust.hk",
+        "id": 14,
+        "keywords": [
+            "Networked and distributed sensing",
+            "Wireless and mobile computing",
+            "Internet of Things (IoT)",
+            "Smart city and urban computing"
+        ],
+        "link": "http://cse.hkust.edu.hk/~lim/",
+        "location": "Rm 3534",
+        "name": "Mo LI",
+        "phone": "2358 7017",
+        "photo": "/src/assets/people/lim.jpg",
+        "role": "Professor (Joint Appointment)",
+        "surname": "LI",
+        "type": "ISD Faculty",
+        "isJointApt": true
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Prof. Li Li is a Professor in the Division of Integrative Systems and Design of The Hong Kong University of Science and Technology, Board of Director of The Hong Kong Research Institute of Textiles and Apparel Limited, Technical Expert in the discipline of “Textile &amp; Clothing” under the New Industrialisation and Technology Training Programme (NITTP), and the Fellow of Royal Society of Arts. Prior to joining HKUST, Prof. Li was the Cally Kwong Mei Wan Professor in Chinese Culture and Creative Design in the School of Fashion and Textiles at The Hong Kong Polytechnic University. During her time in PolyU, she was also the Founding Director of China Resources-PolyU Joint Research Institute for Carbon Neutral New Materials, Director of PolyU Technology and Consultancy Co. Limited, and Associate Director of PolyU Academy for Interdisciplinary Research. In her early age, she gained valuable industry experience working in the creative sector of Shenzhen and Hong Kong for over 7 years.<br />\r\n&nbsp;<br />\r\nProf. Li’s research has expanded the potential of fibers, a distinctively soft material, beyond their traditional applications into a versatile and powerful interdisciplinary tool benefitting designers and researchers across various disciplines. The design engineering of fibers enables tactile qualities that can evoke emotions and story-telling, allowing for immersive and interactive experiences which can revolutionize the creative industry, drive commercial success, and unlock new opportunities for different sectors. Her adoption of design thinking has also provided opportunities to experiment and innovate in areas such as smart technology, material science, and sustainable design that have found practical value for the domains of design, healthcare, agriculture, archaeology, electronics and life style etc. Furthermore, her research has had successful industrialization and commercialization outcomes on an international scale.</span></span></p>\r\n",
+        "email": "lillyli@ust.hk",
+        "id": 19,
+        "keywords": [
+            "Wearable Electronic Textiles",
+            "Industrial Innovations",
+            "Advanced Manufacturing",
+            "Fiber Technology",
+            "Creative Art"
+        ],
+        "link": "https://facultyprofiles.hkust.edu.hk/profiles.php?profile=li-li-lillyli",
+        "location": "RM 4364",
+        "name": "Li LI",
+        "phone": "3469 3236",
+        "photo": "/src/assets/people/lillyli.jpg",
+        "role": "Professor",
+        "surname": "LI",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p>Dr. Shao is an Assistant Professor in the ISD division at the Hong Kong University of Science and Technology (HKUST). Prior to that, he received his Ph.D. in Computer Science from Columbia University, his Master's degree from Dartmouth College, and his Bachelor's degree from UESTC.&nbsp;He has previously worked at Philips Research, Snap Research, and Samsung Research, where several of his proposed algorithms are being deployed in real-world products.</p>\r\n\r\n<p>His research focuses on mobile computing, ubiquitous computing, and human-computer interaction. His work has been published in top conferences and journals&nbsp;in his field (e.g., MobiSys, IMWUT/UbiComp, MobiCom, NSDI, CHI) and has been recognized by&nbsp;MobiSys Best Paper Award (2024), MobiSys Best Demo Award (2024), MobiCom Best Demo Award (2023), UbiComp Best Teaser Award (2023), Hotmobile Best Demo Award (2020), and NSF Awesome Discoveries (2019). He was also named among ACM MobiSys Rising Stars, NSF Rising Stars in Cyber-Physical Systems.&nbsp;</p>\r\n",
+        "email": "qijiashao@ust.hk",
+        "id": 20,
+        "keywords": [
+            "Mobile and Ubiquitous Computing",
+            "Human-centered Sensing",
+            "Human-Computer Interaction",
+            "Smart Health",
+            "Wearables"
+        ],
+        "link": "https://qijiashao.github.io",
+        "location": "IAS 1003",
+        "name": "Qijia SHAO",
+        "phone": "3469 3291",
+        "photo": "/src/assets/people/qijiashao.jpg",
+        "role": "Assistant Professor",
+        "surname": "SHAO",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p>Ziqi Wang is an Assistant Professor at the Division of Integrative Systems and Design (ISD) at the Hong Kong University of Science and Technology (HKUST). Before joining HKUST, he worked as a postdoctoral researcher at the Creative Computation Lab and Sycamore at École Polytechnique Fédérale de Lausanne (EPFL) in 2024, under the supervision of Prof. Stefana Parascho and Prof. Maryam Kamgarpour. Prior to that, he was a postdoctoral researcher at the Computational Robotics Lab at ETH Zurich, advised by Prof. Stelian Coros. He obtained his Ph.D. in 2021 from the Geometric Computing Laboratory at EPFL, where he was advised by Prof. Mark Pauly. He completed his bachelor's degree in Mathematics in 2017 at the University of Science and Technology of China (USTC).<o:p></o:p></p>\r\n\r\n<p>Ziqi is interested in interdisciplinary projects that connect architecture, robotics, and computer graphics. His current research focuses on the computational design, analysis, and fabrication of complex assemblies, with applications ranging from toys and furniture to buildings. The goal is to create a seamless end-to-end workflow that enables users to design and fabricate personalized items using artificial intelligence and robotics. He has years of experience collaborating with researchers from various disciplines, including robotics, architecture, and civil and mechanical engineering. He has applied his research to constructing several large-scale architectural demonstrators. He has published several works in the top computer graphics journal, ACM Transactions on Graphics (TOG), and received a Best Paper Honorable Mention Award at SIGGRAPH 2022.<o:p></o:p></p>\r\n",
+        "email": "ziqiw@ust.hk",
+        "id": 21,
+        "keywords": [
+            "Computational Design",
+            "Digital Fabrication",
+            "Robotic Manufacturing",
+            "Construction Robotics"
+        ],
+        "link": "https://kiki007.github.io",
+        "location": "IAS 1002",
+        "name": "Ziqi WANG",
+        "phone": "3469 3294",
+        "photo": "/src/assets/people/ziqiw.jpg",
+        "role": "Assistant Professor",
+        "surname": "WANG",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p>&nbsp;</p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Dr. Winnie Leung Suk-Wai is a systems designer, educator and entrepreneur. Faculty of the Division of Integrative Systems and Design (ISD), currently, she serves as the Industry-Partnered Capstone Program Manager for the intensive experiential-learning focused degree program. &nbsp;Dr. Leung received her PhD in Electronic and Computer Engineering from The Hong Kong University of Science and Technology (HKUST) in 2010. In Canada, she earned her BASc in Systems Design Engineering from University of Waterloo in 2002 and MASc in Aerospace Engineering from University of Toronto Institute for Aerospace Studies in 2004. She has worked as teaching faculty in the top universities in Hong Kong in both engineering and entrepreneurship disciplines. Prior to her PhD studies, Dr. Leung worked in the Canadian/ European aerospace industry as a control engineer between 2004 and 2006 designing the first version of the ExoMars Rover locomotive. She has published over 20 technical papers in international journals and conferences. Beyond her academic endeavours, Dr. Leung worked extensively in technology consulting (MDRobotics, IBM, Deloitte Consulting), &nbsp;and founded multiple companies (miniDSP, Aromeo and a STEAM school management company) equipping her with cross disciplinary business and entrepreneurial vantage points.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Dr. Leung’s research focuses on robotics dynamics and control, and systems dynamics identification, modelling and simulation. Some of her current projects include assistive robotics (exoskeleton and rehab robotics), construction robots, and modular mechatronics platform optimised for higher education.</span></span></p>\r\n",
+        "email": "eewswleung@ust.hk",
+        "id": 24,
+        "keywords": [],
+        "link": "https://seng.hkust.edu.hk/about/people/faculty/winnie-suk-wai-leung",
+        "location": "Rm 6531",
+        "name": "Winnie LEUNG",
+        "phone": "2358 7062",
+        "photo": "/src/assets/people/eewswleung.jpg",
+        "role": "Associate Professor of Engineering Education",
+        "surname": "LEUNG",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p style=\"line-height:1.3800000000000001\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"letter-spacing:0px;\"><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Professor Joneja obtained his BTech in Mechanical Engineering from the Indian Institute of Technology at Kanpur (India). He studied Industrial Engineering at Purdue University (West Lafayette, Indiana, USA), where he received his MSIE (1989) and PhD (1993). He subsequently joined the Department of Industrial Engineering and Decision Analytics at HKUST as a Professor.</span></span></span></span></span></span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"line-height:1.3800000000000001; background-color:#fbfbfb\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"letter-spacing:0px;\"><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Profesor Joneja's focus of research is the automation of process planning, with an emphasis on design representations and planning methods. He is interested in CAD/CAM issues related to manufacturing planning in areas such as machining, rapid prototyping, or mechanical assembly. His interests in problem-solving methods include a host of tools ranging from search strategies and heuristics to computational geometry and geometric reasoning. He is also involved in the automation of assembly, and design of devices for rapid turnaround assembly systems.</span></span></span></span></span></span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+        "email": "joneja@ust.hk",
+        "id": 25,
+        "keywords": [
+            "Architectural geometry",
+            "Computer-aided design and manufacturing (CAD / CAM)",
+            "Rapid prototyping"
+        ],
+        "link": "https://seng.hkust.edu.hk/about/people/faculty/ajay-joneja",
+        "location": "Rm 5598",
+        "name": "Ajay JONEJA",
+        "phone": "2358 7119",
+        "photo": "/src/assets/people/joneja.jpg",
+        "role": "Professor",
+        "surname": "JONEJA",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p>Dr. Jac Leung is a Lecturer in the Division of Integrative Systems and Design at The Hong Kong University of Science and Technology. He has attained B.Eng. in Mechanical Engineering from The Hong Kong Polytechnic University, M.Sc. in Environmental Engineering from The Hong Kong University of Science and Technology, and Doctor of Education from The University of Hong Kong.</p>\r\n\r\n<p>Dr. Leung is a seasoned trainer, facilitator and supervisor for student innovation projects. He is dedicated to promoting human-centred approaches and project-based learning practices. He is a co-author of the book AI Literacy in K-16 classrooms. He is the project leader and advisor of various projects related to Generative AI in teaching and learning (sum ~HKD4M).</p>\r\n\r\n<p>Since 2012, Dr. Leung has dedicated his career to promoting a ‘learning-by-doing’ approach in authentic, project-based, and experiential learning environments. His teaching and research interests include design-based learning, EdTech, design and systems thinking, AI literacy, and self-determination theory.</p>\r\n",
+        "email": "egjac@ust.hk",
+        "id": 30,
+        "keywords": [
+            "Design Thinking",
+            "Systems Thinking",
+            "Educational Technologies",
+            "AI literacy"
+        ],
+        "link": null,
+        "location": "Rm 6530",
+        "name": "Jac LEUNG",
+        "phone": "34692793",
+        "photo": "/src/assets/people/egjac.jpg",
+        "role": "Lecturer",
+        "surname": "LEUNG",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Prof Sai-Kit Yeung is currently a Professor at the Division of Integrative Systems and Design (ISD), the Department of Computer Science and Engineering (CSE) and the Department of Ocean Science (OCES) at the Hong Kong University of Science and Technology (HKUST). Before joining HKUST, he was an Assistant Professor at the Singapore University of Technology and Design (SUTD) and founded the Vision, Graphics and Computational Design (VGD) Group. During his time at SUTD, he was also a Visiting Assistant Professor at the Computer Science Department at Stanford University and the Computer Science and Artificial Intelligence Laboratory (CSAIL) at MIT. Prior to that, he had been a Postdoctoral Scholar in the Department of Mathematics, University of California, Los Angeles (UCLA). He was a visiting student at the Image Processing Research Group at UCLA in 2008 and the Image Sciences Institute, University Medical Center Utrecht, the Netherlands in 2007. He received his Ph.D. degree in Electronic and Computer Engineering, M.Phil. degree in Bioengineering, and B.Eng. degree (First Class Honors) from HKUST, respectively in 2009, 2005 and 2003.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Dr. Yeung's research expertise is in computer vision, computer graphics and marine technology. His current research interests include 3D contents (scene and shape) reconstruction, understanding, modeling, and redesign, as well as computational design (using AI techniques for design and content generation), computational fabrication, visual understanding, and human-AI interaction.</span></span></p>\r\n",
+        "email": "saikit@ust.hk",
+        "id": 31,
+        "keywords": [
+            "Computer Vision",
+            "Computer Graphics",
+            "Computational Design",
+            "Marine Technology"
+        ],
+        "link": "",
+        "location": "Rm 5600",
+        "name": "Sai Kit YEUNG",
+        "phone": "3469 2796",
+        "photo": "/src/assets/people/saikit.jpg",
+        "role": "Professor",
+        "surname": "YEUNG",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<article about=\"/about/people/faculty/zexiang-li\" data-history-node-id=\"3269\" role=\"article\">\r\n<p><span style=\"font-size:12pt\"><span style=\"line-height:116%\"><span style=\"font-family:Aptos,sans-serif\"><span lang=\"EN-US\" style=\"color:#212529\">Professor Li founded China’s first motion control Company – Googol Technology in 1999, and has successively cultivated a listed company, 6 unicorn companies with a valuation of over USD 1 billion, and more than 140 rising hard-tech enterprises, including ePropulsion and Xeno Dynamics. Professor Li established a unique pathway for technology entrepreneurship and established Shenzhen InnoX Academy and XbotPark ecosystem, which successfully expanded to Hong Kong, Ningbo, Changzhou and Chongqing to continuously nurture hard-tech entrepreneurs and enterprises. </span></span></span></span></p>\r\n</article>\r\n",
+        "email": "eezxli@ust.hk",
+        "id": 32,
+        "keywords": [
+            "Robot manipulation",
+            "Motion control and manufacturing"
+        ],
+        "link": "https://ece.hkust.edu.hk/eezxli",
+        "location": "CYT2009",
+        "name": "Zexiang LI",
+        "phone": "2358 7051",
+        "photo": "/src/assets/people/eezxli.jpg",
+        "role": "Professor",
+        "surname": "LI",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p style=\"line-height:1.3800000000000001\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"letter-spacing:0px;\"><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Professor Yee holds a PhD in Chemical Engineering from Carnegie Mellon (Pittsburgh, USA). At HKUST, prior to joining the ISD, he had taught in the Department of Chemical and Biological Engineering Department and the Division of Environment and Sustainability.</span></span></span></span></span></span></span></span></p>\r\n\r\n<p style=\"line-height:1.3800000000000001\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"letter-spacing:0px;\"><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Having spent over 20 years at multi-national corporations in the US and Asia in a variety of roles, including R&amp;D, technology transfer, technical sales, and strategic and tactical marketing, Professor Yee prioritizes getting students ready for the working world. To facilitate their successful transition, he stresses soft, or transferable skills such as effective teamwork, management, and communication, which are relevant to any career. He also strongly recommends that students expand outside their comfort zones through new experiences.</span></span></span></span></span></span></span></span></p>\r\n\r\n<p style=\"line-height:1.3800000000000001; background-color:#fbfbfb\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"letter-spacing:0px;\"><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Professor Yee’s research interests include technology and product development and management, as well as entrepreneurship to develop sustainable businesses. He is also interested to work on the topics of mentorship and diversity awareness and appreciation, leveraging his experience as a trainer and creator of these types of programs in his previous corporate and university experience.</span></span></span></span></span></span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+        "email": "ketfyee@ust.hk",
+        "id": 34,
+        "keywords": [
+            "Technology and Product Development",
+            "Entrepreneurship and Management",
+            "Development of Transferrable Skills"
+        ],
+        "link": "https://www.seng.ust.hk/web/eng/people_detail.php?id=44",
+        "location": "Rm 6530",
+        "name": "Terrence YEE",
+        "phone": "2358 8415",
+        "photo": "/src/assets/people/ketfyee.jpg",
+        "role": "Adjunct Professor",
+        "surname": "YEE",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p style=\"text-align:justify; margin-bottom:11px\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"line-height:107%\">Dongfang XU received the Ph.D. degree (with distinction) in electrical engineering from Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU), Erlangen, Germany in Dec. 2022. Previously, he received the M.Sc. degree (with distinction) in communications and multimedia engineering from FAU in Sept. 2017 and the B.Eng. degree in communication engineering from Shandong University, Jinan, China in Jul. 2014, respectively. His research interests fall into Wireless Communication Theory, Emerging Communication Techniques, Advanced Optimization Theory, and Machine Learning Theory. </span></span></span></p>\r\n\r\n<p style=\"text-align:justify; margin-bottom:11px\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"line-height:107%\">Dongfang received several awards for his work including the IEEE Communications Society Leonard G. Abraham Prize in 2023, the IEEE Communications Society Stephen O. Rice Prize in 2022, the FAU Digital Communications Lab Best Publication Award in 2021, and the IEEE Global Communications Conference (GLOBECOM) Best Paper Award in 2019. He was recognized as one of the World's Top 2% Scientists by Stanford University for citation impact for two consecutive years (2021-2022), an Exemplary Reviewer of the IEEE Transactions on Communications for three consecutive years (2020-2022), and an Exemplary Reviewer of the IEEE Communications Letters in 2023. Currently, he serves as an Editor of the IEEE Communications Letters.</span></span></span></p>\r\n",
+        "email": "eedxu@ust.hk",
+        "id": 35,
+        "keywords": [
+            "Optimization theory",
+            "Machine Learning theory",
+            "Emerging communication techniques",
+            "Internet of Things"
+        ],
+        "link": null,
+        "location": "IAS1004",
+        "name": "Dongfang XU",
+        "phone": null,
+        "photo": "/src/assets/people/eedxu.jpg",
+        "role": "Research Assistant Professor",
+        "surname": "XU",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Larry is an industrial designer with over 20 years of experience in design management, industrial design and professional lecturing. Born and raised in Hong Kong, Larry has always had a passion for creativity and fine art. He graduated from the Rhode Island School of Design with a BFA degree and began his career working for Radica Games in Dallas, Texas – a division of Mattel. Prior to establishing KOODESIGN, Larry worked for Gibson Innovations as part of Philips global brand licensing headquartered in Hong Kong. After a few years designing home cinema speakers and speakers products, in 2015 he became the design lead for their Home Communications and Smart Home projects, where he designed IOT home automation devices. Larry also holds a part-time teaching position at the Hong Kong Polytechnic University.</span></span></p>\r\n",
+        "email": "larry@koodesign.co",
+        "id": 36,
+        "keywords": [
+            "Product & Industrial Design",
+            "Design Consultation Managment",
+            "Product Commercialization & DfM",
+            "Design Strategy & Design Thinking"
+        ],
+        "link": null,
+        "location": null,
+        "name": "Larry KOO",
+        "phone": null,
+        "photo": "/src/assets/people/larry.jpg",
+        "role": "Part-time Lecturer",
+        "surname": "KOO",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Jack first obtained his BS and MS degrees in Electrical Engineering and Computer Sciences from the University of California, Berkeley. He subsequently worked at Hewlett Packard, Schlumberger, and a startup in the Silicon Valley.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">In 1994, Jack completed his doctorate study in Electronic Engineering at the Hong Kong University of Science and Technology and became the HKUST’s first PhD graduate. Jack then continued his post-doctoral research at Stanford University. In 1998, Jack returned to the Faculty of Electronic Engineering of HKUST and received his tenure.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Jack is a holder of multiple invention patents, including the first patent to be awarded to the School of Engineering at HKUST, and has published at leading IEEE journals and conferences.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">In 1999, Jack started Perception Digital, a company providing digital signal processor-based turn-key solutions to several Fortune 500 companies and technology leaders. Perception Digital eventually went public on the main board at the Hong Kong Stock Exchange. Jack also served as the Chairman and CEO of the company.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">He had also started and ran as the Managing Director of a banking software company, which was eventually absorbed by a local bank.&nbsp;Products include securities trading platform, workflow, and other essential local banking IT needs.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Jack completed his Kellogg-HKUST EMBA program in 2010.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">He is passionate in teaching and education.&nbsp;He was an invited Professor about Digital Transformations at Skolkovo School of Management in Moscow and has taught similar subject in executive education in Hong Kong and Shanghai.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Jack had also served on the Board as Independent Director on several Hong Kong listed company and&nbsp;SemiLEDs (Nasdaq stock code:&nbsp; LEDS).&nbsp;On LEDS, he was on the audit committee of the Board.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Jack is a recipient of the 10 Most Outstanding Young Persons in Hong Kong (2000), Young Industrialist Award (2005), and Ernst &amp; Young Entrepreneur of The Year 2009 China award. In 2010, he was bestowed an Honorary Fellowship at the Hong Kong University of Science and Technology.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Jack also serves as a member of several committees in Hong Kong, such as the HKSAR Solicitors Disciplinary Tribunal, Appeal Tribunal Panel of Planning and Lands Branch – HKSAR Development Bureau, HKSAR Innovation and Technology Fund (ITF) Advisory Committee and Enterprise Support Scheme (ESS) Assessment Panel, Innovation Technology Venture Fund (ITVF) Panel and the Green Tech Fund of the Environmental Protection Department.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Jack is now a Member of the Council of the Hong Kong University of Science and Technology.&nbsp;He is a former Chairman of the International Advancement and Outreach Committee of the Council, a member of the Audit Committee, a member of the HKUST Guangzhou Campus Working Group, Chairman of the Search Committee for the Vice President of Research and Development.&nbsp;He was also the Vice-Chairman of the Knowledge Transfer Committee of the Council.&nbsp;He was a member of the Search Committees for the President of the HKUST.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Jack is currently the Chairman of Swanland.AI, investing in and nurturing a wide range of startups, including intelligence design, smart home, green technology, insurance tech, and many more.&nbsp;As a hobby, he is active in publishing his technology thoughts on his&nbsp;<a href=\"https://www.jacklau.info/\" rel=\"noopener noreferrer\" target=\"_blank\">blog</a>, and various technology implementations on Medium.com.&nbsp;</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">A sample collection of videos related can be found&nbsp;<a href=\"https://youtube.com/playlist?list=PLDOnuPQOCwCV9JMVXGjEUdG36IZa5qUEh\" rel=\"noopener noreferrer\" target=\"_blank\">here</a>.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Jack is also passionate in teaching. &nbsp;He teaches at both the Business School and the Engineering School. His courses include Digital Transformation, Entrepreneurship, Design Thinking, and A.I. for FinTech.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Recreationally, he is a certified Yoga instructor, and an avid golfer.</span></span></p>\r\n",
+        "email": "eejlau@ust.hk",
+        "id": 37,
+        "keywords": [
+            "Consumer Electronics",
+            "Artificial Intelligence",
+            "Digital Business Transformation"
+        ],
+        "link": null,
+        "location": null,
+        "name": "Jack LAU",
+        "phone": null,
+        "photo": "/src/assets/people/eejlau.jpg",
+        "role": "Adjunct Professor",
+        "surname": "LAU",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"color:#111111\">Dr. Rob Scharff is an Assistant Professor in the Division of Integrative Systems and Design of The Hong Kong University of Science and Technology (HKUST). Prior to that, he was a postdoctoral researcher in the Bioinspired Soft Robotics group at the Italian Institute of Technology (IIT). Dr. Scharff obtained his Ph.D. degree at the department of Design Engineering from Delft University of Technology (TU Delft)&nbsp;in 2021 and received his M.Sc. degree in Integrated Product Design&nbsp;from the same institute. His research focuses on soft robotics, with an emphasis on the integrated design and manufacturing of bioinspired soft robots with proprioception and tactile sensing capabilities.</span></span></span></p>\r\n",
+        "email": "scharffrbn@ust.hk",
+        "id": 38,
+        "keywords": [
+            "Soft Robotics",
+            "Bioinspired Robotics",
+            "Additive Manufacturing"
+        ],
+        "link": null,
+        "location": "Rm 5591D",
+        "name": "Rob SCHARFF",
+        "phone": "34692848",
+        "photo": "/src/assets/people/scharffrbn.jpg",
+        "role": "Assistant Professor",
+        "surname": "SCHARFF",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Dr. Changying Xiang received his Bachelor of Architecture degree and Master of Architecture degree from the Harbin Institute of Technology (HIT), he received his second master degree (MSc in Technology in Architecture) in sustainable architecture direction from Aalborg University. From 2018 autumn to 2022 Spring, he worked in the Light &amp; Colour Centre in the Department of Architecture and Technology at the Norwegian University of Science and Technology (NTNU) for three and a half years and received the Ph.D. degree in Architecture. During the research period in Norway, Dr. Xiang worked closely with SINTEF (the Norwegian Foundation for Industrial and Technical Research), &nbsp;The Research Center for Sustainable Solar Cell Technology (SuSolTech), and IFE (Institute for Energy Technology) to develop advanced coloured photovoltaics prototypes and architectural design methodologies for BIPV applications. He was also a member of NTNU Energy Team Solar, and a member of New Bauhaus @ NTNU.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Dr. Xiang is now an Assistant Professor in the ISD division of HKUST, he has the ambition to promote the development of smart carbon-neutral buildings and cities with holistic design strategies and cutting-edge technologies.&nbsp; His research interests include designing smart integrated PV systems for building and urban context, prefabrication construction, sustainable architecture and urban design, light and colour in architecture and cities, resilient carbon-neutral cities and climate responsive design etc. He is a professional member of the International Solar Energy Society, a member of the International Colour Association (AIC Study Group on Environmental Colour Design), a member of the Daylight Award Community, a member of the China Fashion Color Association-Architectural and Environmental Color Committee, a member of Active House Academic Committee of Architectural Society of China (ASC AHAC).</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">He has worked as a schematic architect at the Architectural Design &amp; Research Institute of Tsinghua University, Co. Ltd, Beijing and he co-founded an architectural design and construction company conducting prefabricated low-energy housing in Denmark. As an architect with entrepreneurial spirit, Dr. Xiang is enthusiastic to promote the sustainable revolution of the AEC industry and actively in collaborating with the PV industries. In his vision, the future world will be powered by renewable energy systems and can provide more climate resilient, culturally diverse, ecologically friendly, and human-centered environments. Everyone can and should contribute to the sustainability of our beautiful and magic planet.</span></span></p>\r\n",
+        "email": "changyingx@ust.hk",
+        "id": 39,
+        "keywords": [
+            "Sustainable architecture",
+            "BIPV system design",
+            "Solar system planning",
+            "Smart building envelope",
+            "Resilient carbon-neutral cities"
+        ],
+        "link": "https://ssac-dev.hkust.edu.hk/",
+        "location": "Rm 5591B",
+        "name": "Changying XIANG",
+        "phone": "3469 2402",
+        "photo": "/src/assets/people/changyingx.jpg",
+        "role": "Assistant Professor",
+        "surname": "XIANG",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Primary Appointment:&nbsp;Dept of Civil &amp; Environmental Engineering</span></span></p>\r\n",
+        "email": "ybchan@ust.hk",
+        "id": 40,
+        "keywords": [
+            "Bridge dynamics",
+            "Creativity and design thinking",
+            "Mechanics analysis for construction materials"
+        ],
+        "link": "https://www.ce.ust.hk/people/ben-yui-bun-chan-chenruibin",
+        "location": "Room 6583",
+        "name": "Ben Yui Bun CHAN",
+        "phone": "2358 8226",
+        "photo": "/src/assets/people/ybchan.jpg",
+        "role": "Associate Professor of Engineering Education (Joint Appointment)",
+        "surname": "CHAN",
+        "type": "ISD Faculty",
+        "isJointApt": true
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Dr. Mingming Fan is an Assistant Professor in the Computational Media and Arts (CMA) thrust at Hong Kong University of Science and Technology (GZ). He was an Assistant Professor at Rochester Institute of Technology between 2019 and 2021. He received a Ph.D. in Computer Science from the University of Toronto in 2019 and an MS in Computer Science from Tsinghua University. His research interests lie in the intersection of Human-Computer Interaction (HCI), Aging and Accessibility, and Artificial Intelligence (AI). Specifically, his research focuses on AI-Assisted User Experience (UX) Design, Accessibility and Assistive Technology, AR/VR, and Mobile and Wearable Interaction. His research has been published at top-tier conferences and journals, such as CHI, ACM Transactions on Computer-Human Interaction (TOCHI), UbiComp/IMWUT, ASSETS, ACM Transactions on Accessible Computing (TACCESS), and IEEE Transactions on Visualization and Computer Graphics (TVCG). His research has won a Best Paper Award at CHI 2019, a Best Paper Honorable Mention Award at UbiComp 2015, and a Best Artifact Award (2nd Place) at ASSETS 2020.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Primary Appointment:&nbsp;Computational Media and Arts Thrust Area</span></span></p>\r\n",
+        "email": "mingmingfan@ust.hk",
+        "id": 41,
+        "keywords": [
+            "Human-Computer Interaction",
+            "Ubiquitous Computing",
+            "Accessibility",
+            "VR/AR",
+            "Human-AI Collaboration"
+        ],
+        "link": "https://www.mingmingfan.com/",
+        "location": "",
+        "name": "Mingming FAN",
+        "phone": null,
+        "photo": "/src/assets/people/mingmingfan.jpg",
+        "role": "Assistant Professor (Joint Appointment)",
+        "surname": "FAN",
+        "type": "ISD Faculty",
+        "isJointApt": true
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Naubahar Sharif is Professor of Public Policy at The Hong Kong University of Science and Technology (HKUST). His research interests include science, technology and innovation (STI) policy in Hong Kong and within the ‘Greater Bay Area’ of Southern China; automation in China; and the ‘Belt and Road’ initiative. In 2011 he completed the Executive Education program in Innovation for Economic Development at Harvard University. At HKUST, Naubahar has been nominated for the Michael G. Gale Medal for Distinguished Teaching, also having won the Interdisciplinary Programs Office’s Teaching Excellence Award (in 2020), the School of Humanities and Social Science (SHSS) Best Teacher Award (twice, in 2009 and 2016), and one of his courses was nominated for the Common Core Excellence award. Naubahar has been awarded both ‘Public Policy Research’ (PPR) and ‘General Research Fund’ (GRF) grants by Hong Kong’s Research Grants Council (RGC). Currently, Naubahar is a co-investigator for two ‘Strategic Public Policy Research’ (SPPR) grants awarded by Hong Kong’s Policy Innovation and Co-ordination Office (PICO) as well as a cross-institutional ‘Collaborative Research Fund’ (CRF) grant also awarded by the RGC. Naubahar’s research has had a demonstrable impact on business and his research was one of HKUST’s few ‘impact case study’ submissions (sole-authored) for its 2020 Research Assessment Exercise (RAE).</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Primary Appointment: Division of Public Policy</span></span></p>\r\n",
+        "email": "sosn@ust.hk",
+        "id": 42,
+        "keywords": [
+            "Innovation and technology policy in Hong Kong and China",
+            "Belt and Road Initiative"
+        ],
+        "link": "http://naubaharsharif.com",
+        "location": "Room 4616B",
+        "name": "Naubahar SHARIF",
+        "phone": "2358 7826",
+        "photo": "/src/assets/people/sosn.jpg",
+        "role": "Professor (Joint Appointment)",
+        "surname": "SHARIF",
+        "type": "ISD Faculty",
+        "isJointApt": true
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Schooled in Singapore, Canada and Hong Kong, Brian has worked in the design profession for more than 20 years starting with freelance and agency work in Canada to starting his own award winning studio in Hong Kong. To date he has worked on projects for local and international organisations and his studio has won more than 100 international design awards with work published in numerous design magazines and journals.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">At an early age, he trained under renowned Singaporean artists such as Liu Kang and Kam Kee Yong, as well as at the Nanyang Academy of Fine Arts in Singapore. Brian later earned a Bachelors of Arts from the University of Toronto with a double major in Fine Arts and Economics, a Masters of Arts in Design from the Hong Kong Polytechnic University and another Masters from the University of Toronto in Knowledge Media Design and Culture and Technology.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">And while working in design, Brian has continued pursuing his first passion in the Fine Arts, showing in group and solo art exhibitions and finding gallery representation.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Brian is a Fellow of the Royal Society of the Arts, a Certified Graphic Designer with the Society of Graphic Designers of Canada, a professional member of the International Association of Designers, a member of the &nbsp;Composers and Authors Society of Hong Kong. He was also a professional member of the Hong Kong Designers Association.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Aside from the Visual Arts, Brian also has a deep interest in Music. He is a self-taught musician and has written music for and played with several bands. He has recorded several CDs and had been offered a contract by a major music label. He has recently been involved in multi-media exhibitions and performances and his interest in music has also led to involvement in interactive and experiential&nbsp;projects.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Because of his diverse background, Brian has developed a cross-cultural-inter-disciplinary approach and sensibility in his art and design and it is this philosophy that Brian brings to both his professional practice and to his students.</span></span></p>\r\n",
+        "email": "brianlau@ust.hk",
+        "id": 43,
+        "keywords": [
+            "Graphic Design",
+            "Eco-design",
+            "Eco-art"
+        ],
+        "link": null,
+        "location": "Rm 5591C",
+        "name": "Brian LAU",
+        "phone": null,
+        "photo": "/src/assets/people/brianlau.jpg",
+        "role": "Lecturer",
+        "surname": "LAU",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Dr. Braud is an Assistant Professor in the Division of Integrated Systems Design at the Hong Kong University of Science and Technology. Prior to that, he got his PhD from Universite Grenoble-Alpes (Grenoble, France), and received a Master of Engineering Degree from both Grenoble INP (Grenoble, France) and Politecnico di Torino (Turnin, Italy).</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Dr. Braud's research focus is in augmented user experiences, at the intersection between interaction design, pervasive computing, and mixed reality. His current research interests include enabling city-scale augmented reality, both from a user- and a system-centric perspective, designing novel interaction methods for mixed reality environments, and improving the transmission of information in AR and VR.</span></span></p>\r\n",
+        "email": "braudt@ust.hk",
+        "id": 44,
+        "keywords": [
+            "Augmented Reality",
+            "Pervasive and Cloud Computing",
+            "User-centered System Design"
+        ],
+        "link": "https://braudt.people.ust.hk/",
+        "location": "Rm 5590",
+        "name": "Tristan Camille BRAUD",
+        "phone": "34693004",
+        "photo": "/src/assets/people/braudt.jpg",
+        "role": "Assistant Professor",
+        "surname": "BRAUD",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Guijun Li, Mitch, received his B.Sc. degree in Physics from Nanjing University, and Ph.D. degree in Electrical and Electronic Engineering from University of Hong Kong. Currently, he is an Assistant Professor in the Division of Integrative Systems and Design in The Hong Kong University of Science and Technology. Mitch is focusing on developing advanced manufacturing technologies and applications. He received Young Scientist Award of 2019 Optoelectronic Global Conference from IEEE Photonic Society, and Emerging investigator 2020 from Journal of Materials Chemistry C in Royal Society of Chemistry. He is the chair of&nbsp;IEEE Hong Kong Magnetics Chapter and vice-chair of IEEE Hong Kong EDDSC joint chapter.&nbsp;&nbsp;</span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+        "email": "mitchli@ust.hk",
+        "id": 45,
+        "keywords": [
+            "Advanced manufacturing",
+            "Photonics"
+        ],
+        "link": "https://laser.hkust.edu.hk/",
+        "location": "Rm 5591A",
+        "name": "Mitch LI",
+        "phone": "3469 2958",
+        "photo": "/src/assets/people/mitchli.jpg",
+        "role": "Assistant Professor",
+        "surname": "LI",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p style=\"line-height:1.3800000000000001; background-color:#fbfbfb\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"font-size:14px;\"><span style=\"letter-spacing:0px;\"><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#000000\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Dr. Song S.H. is an Assistant Professor jointly appointed to the Division of Integrative Systems and Design (ISD) and the Department of Electronic and Computer Engineering (ECE) at HKUST. His research is primarily in the areas of wireless communications and networking (WCN) and data science &amp; AI (DSAI). He is currently focusing on Edge AI, Beyond 5G, and IoT. He is also interested in research on engineering education and is presently an Associate Editor for the IEEE Transactions on Education. In 2011, Dr. Song was named an Exemplary Reviewer for the IEEE Communications Letter. He has also won several teaching awards at HKUST, including the Michael G. Gale Medal for Distinguished Teaching (2018), one of the Best Ten Lecturers (2017), the School of Engineering Distinguished Teaching Award (2012), and the Teachers I Like Award.</span></span></span></span></span></span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+        "email": "eeshsong@ust.hk",
+        "id": 46,
+        "keywords": [
+            "Edge AI",
+            "Beyond 5G",
+            "IoT"
+        ],
+        "link": "http://eeshsong.home.ece.ust.hk/",
+        "location": "6532",
+        "name": "Shenghui  SONG",
+        "phone": "2358 5033",
+        "photo": "/src/assets/people/eeshsong.jpg",
+        "role": "Assistant Professor",
+        "surname": "SONG",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Chi-ying Tsui received his B.S. degree in Electrical Engineering from the University of Hong Kong and Ph.D. degree in Computer Engineering from the University of Southern California in 1994. &nbsp;He then joined the Department of Electrical and Electronic Engineering, Hong Kong University of Science and Technology and is currently a full Professor in the department. He was the Associate Dean of Engineering at HKUST from 2014 to 2018 and was the founding Head&nbsp;of the Division of Integrative Systems and Design.&nbsp;</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Dr. Tsui’s research interests include designing integrated circuits and VLSI architectures for energy-efficient embedded machine learning, low power multimedia and wireless applications, developing power management circuits and techniques for embedded portable devices and ultra-low power systems for implantable devices. He has published more than 250 referred publications and holds 12 US patents on power management, VLSI and multimedia systems. He co-founded Perception Digital, which was a technology company focusing on designing embedded multimedia devices and was listed in the Hong Kong Stock Exchange in 2009. He also involved in a few start-up companies founded by UST alumni in the area of high-speed IC design, embedded health-care devices and implantable medical devices. &nbsp;He received the best paper awards from the IEEE Transactions on VLSI Systems in 1995, IEEE ISCAS in 1999, IEEE/ACM ISLPED in 2007, and IEEE DELTA in 2008, CODES in 2012. He also received the Design Awards in the IEEE ASP-DAC University Design Contest in 2004 and 2006. He is a senior member of IEEE.</span></span><br />\r\n&nbsp;</p>\r\n",
+        "email": "eetsui@ust.hk",
+        "id": 47,
+        "keywords": [
+            "AI hardware accelerator",
+            "Baseband application-specific integrated circuit (ASIC)",
+            "Computer architecture",
+            "Embedded systems",
+            "Energy harvesting",
+            "Integrated circuits and systems"
+        ],
+        "link": "http://eetsui.home.ece.ust.hk/",
+        "location": "Rm 5599",
+        "name": "Chi Ying TSUI",
+        "phone": "2358 7071",
+        "photo": "/src/assets/people/eetsui.jpg",
+        "role": "Professor",
+        "surname": "TSUI",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p style=\"margin-bottom:11px\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span lang=\"EN-HK\"><span style=\"background:white\"><span style=\"color:#333333\">Prof. Carrie Ling is currently the Director of Entrepreneurship Center and the Adjunct Assistant Professor of Integrative Systems &amp; Design (ISD) leading the entrepreneurship development at The Hong Kong Univerisity of Science and Technology (HKUST). Before joining HKUST, Prof. Ling was an Associate Director of Business Development (InnoHK) at Hong Kong Science and Technology Parks Corporation (HKSTP). Her role was to drive the commercialization of research projects from InnoHK, a $10B flagship innovation and technology initiative of the HKSAR government, at HK Science Park. She also led the development of the translational research innovation ecosystem by equipping the researchers with entrepreneurial mindset and knowledge. As an Associate Director of Office of Innovation and Enterprise of Chinese University of Hong Kong (CUHK) in 2019-2020, she assisted the Associate Vice President (Innovation and Enterprise) to establish the CUHK InnoHK centers with renowned overseas institutions. In 2018, Prof. Ling was a Senior Manager in Medical Device of Biomedical Technology Cluster and a Technical Leader of Healthy Ageing Platform of HKSTP. Her role was to drive the development of health technology innovation ecosystem and to support the start-ups to commercialize their innovation in collaboration with the stakeholders from universities, NGOs, industry and government. </span></span></span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"margin-bottom:11px\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span lang=\"EN-HK\"><span style=\"background:white\"><span style=\"color:#333333\">Prof. Ling is passionate about empowering one’s creativity in science and technology through solving real-life problems and nurturing the next generation entrepreneurs in HK, believing that everyone can be an innovator. She currently drives the development of entrepreneurship education at HKUST. When she was a senior lecturer of ISD in 2017-2019, she taught entrepreneurship introductory and healthcare innovation courses for undergraduate students. In 2016, she co-founded the “DreamCatchers Medtech Hackathon” with Stanford University and HKU. </span></span>Her tie with HKUST started from <span style=\"background:white\"><span style=\"color:#333333\">a Lecturer position of Bioengineering Graduate Program at HKUST from 2012 to 2015. She launched a new biodesign experiential learning course to teach undergraduate students.</span></span></span></span></span></p>\r\n\r\n<p style=\"margin-bottom:11px\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span lang=\"EN-HK\"><span style=\"background:white\"><span style=\"color:#333333\">Prof. Ling obtained her bachelor and PhD degrees in the Department of Mechanical Engineering at The University of Hong Kong and The Hong Kong Polytechnic University in 2002 and 2006 respectively. She pursued her orthopedic research training at University of Florida, Department of Orthopedics and Rehabilitation, after her doctoral degree for two years. From 2009 to 2011, she was a Postdoctoral Fellow at Stanford University, Department of Mechanical Engineering. She has authored/co-authored more than 60 papers in international journals and conference proceedings and one US patent in mechanical and biomedical fields.</span></span></span></span></span></p>\r\n",
+        "email": "carrieling@ust.hk",
+        "id": 48,
+        "keywords": [
+            "Engineering education",
+            "Bioimaging",
+            "Strategic design"
+        ],
+        "link": null,
+        "location": null,
+        "name": "Carrie LING",
+        "phone": "23587903",
+        "photo": "/src/assets/people/carrieling.jpg",
+        "role": "Adjunct Assistant Professor",
+        "surname": "LING",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Professor Erwin Huang is a serial entrepreneur, an angel investor, a leader in a social innovation and the eLearning fields.&nbsp;&nbsp;He teaches entrepreneurship attitude, skills and knowledge thru experiential learning courses at HKUST.</span></span></p>\r\n\r\n<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">He co-founded DreamStarter, an innovative Edutech venture that makes dream projects initiated by school students come true, through raising awareness, mentoring, crowdfunding and crowdsourcing support; and Chairman of VR Educate Limited which fosters the interest in schools using VR/AR technologies. He is also a co-founder of Agent of Change, a social enterprise aiming to provide low-price high-quality daily necessities to grassroots; and Chairman of Social Career, the largest bigdata platform in HK for volunteers and involvement in social causes and services.&nbsp;&nbsp;Before these social education ventures, he ran one of the largest Luxury jewellery public company TSL Jewellry 0417.hk, started various technology startups in Silicon Valley and Europe</span></span></p>\r\n",
+        "email": "erwinhuang@ust.hk",
+        "id": 49,
+        "keywords": [
+            "Entrepreneurship education",
+            "Experiential learning",
+            "VR/AR/XR"
+        ],
+        "link": "https://www.seng.ust.hk/web/eng/people_detail.php?id=381",
+        "location": "Rm 5544",
+        "name": "Erwin HUANG",
+        "phone": "2358 5763",
+        "photo": "/src/assets/people/erwinhuang.jpg",
+        "role": "Adjunct Professor",
+        "surname": "HUANG",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p style=\"line-height:1.3800000000000001; background-color:#fbfbfb\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"letter-spacing:0px;\"><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Dr. Ravi Goonetilleke is a Professor in both the Division of Integrative Systems and Design and the Department of Industrial Engineering and Decision Analytics at HKUST. Dr. Goonetilleke joined the university in September 1994. He graduated in 1980 with a BSc(First Class Honors) in Mechanical Engineering from the University of Moratuwa (Sri Lanka). He earned his MSc in Aerospace Engineering (1985) from the Georgia Institute of Technology in Atlanta (USA), an MS in Industrial Engineering (1984) and a PhD in Human Factors Engineering (1990) from the State University of New York at Buffalo (USA). He was a Fulbright Scholar while pursuing his postgraduate studies and has been the recipient of many scholarships, research and industrial grants, as well as many US and Chinese patents. After graduation, he worked as a Senior Ergonomist at the Biomechanics Corporation of America (Long Island, New York, USA). His last appointment in the US was as a Human Factors Manager and Researcher at the Nike Sports Research Laboratory (1991-1994).</span></span></span></span></span></span></span></span></p>\r\n\r\n<p style=\"line-height:1.3800000000000001; background-color:#fbfbfb\">&nbsp;</p>\r\n\r\n<p style=\"line-height:1.3800000000000001; background-color:#fbfbfb\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"letter-spacing:0px;\"><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Dr. Goonetilleke has consulted with many companies in the US and in Hong Kong. He has been in the field of Human-Centered Design for nearly 40 years, with over 150 refereed publications in journals and conference proceedings. He has eight US patents and is the editor of the anthology </span></span><span style=\"font-style:italic\"><span style=\"text-decoration:none\">The Science of Footwear</span></span></span></span></span><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> (CRC Press, 2017). He is also the editor of the </span></span></span></span></span><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:italic\"><span style=\"text-decoration:none\">International Journal of Industrial Ergonomics</span></span></span></span></span><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">, and an associate editor of </span></span></span></span></span><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:italic\"><span style=\"text-decoration:none\">Ergonomics in Design and Human Factors </span></span></span></span></span><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">and</span></span></span></span></span><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:italic\"><span style=\"text-decoration:none\"> Ergonomics in Manufacturing &amp; Service Industries</span></span><span style=\"font-style:normal\"><span style=\"text-decoration:none\">. He is a Fellow of the International Ergonomics Association (IEA), Human Factors and Ergonomics Society USA (HFES) and the Hong Kong Ergonomics Society (HKES). He is also an award-winning teacher.&nbsp;</span></span></span></span></span></span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+        "email": "ravindra@ust.hk",
+        "id": 50,
+        "keywords": [
+            "Innovative design",
+            "Product development",
+            "Human-centered design"
+        ],
+        "link": "https://www.ieda.ust.hk/dfaculty/ravi/",
+        "location": null,
+        "name": "Ravindra S. GOONETILLEKE",
+        "phone": null,
+        "photo": "/src/assets/people/ravindra.jpg",
+        "role": "Professor Emeritus",
+        "surname": "GOONETILLEKE",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    },
+    {
+        "details": "<p style=\"line-height:1.3800000000000001\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"letter-spacing:0px;\"><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Professor Chi Ming Chan is currently an adjunct Professor of Integrative Systems and Design and the Interdisciplinary Programs Office at HKUST. He received his BSc degree with high distinction in Chemical Engineering from the University of Minnesota (Minneapolis, USA), and his MSc and PhD degrees in Chemical Engineering from the California Institute of Technology (Pasadena, USA). After graduation, he worked at the Raychem Corporation (Menlo Park, USA) for 13 years. He joined the Department of Chemical Engineering at HKUST in 1993. Professor Chan co-founded the Dual Degree Program in 2003 when he was the Associate Dean of Engineering and was the Founding Director of the Interdisciplinary Programs Office from 2008 to 2014. He was a Chair Professor of the Department of Chemical Engineering from 2005 to 2016 and a Chair Professor of the Division of Environment and Sustainability from 2009 to 2016.&nbsp;</span></span></span></span></span></span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"line-height:1.3800000000000001; background-color:#fbfbfb\"><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\"><span style=\"letter-spacing:0px;\"><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">His research interests include surface and interface science, polymer blends and alloys, and nanocomposites and polymer crystallization. He has written two books: </span></span><span style=\"font-style:italic\"><span style=\"text-decoration:none\">Low Energy Electron Diffraction: Theory and Experiment</span></span></span></span></span><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">, with M.A. Van Hove and W.H. Weinberg (Springer Verland, 1986), and </span></span></span></span></span><span style=\"font-variant: normal; white-space: pre-wrap;\"><span style=\"color:#181818\"><span style=\"font-weight:400\"><span style=\"font-style:italic\"><span style=\"text-decoration:none\">Polymer Surface Modification and Characterization</span></span><span style=\"font-style:normal\"><span style=\"text-decoration:none\"> (Hanzer, 1994). He has published more than 175 refereed journal papers and holds 22 US and European patents. He is a Fellow of the International Union of Pure and Applied Chemistry (IUPAC).</span></span></span></span></span></span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+        "email": "kecmchan@ust.hk",
+        "id": 51,
+        "keywords": [
+            "Surface and interface science",
+            "Polymer blends and alloys",
+            "Nanocomposites and polymer crystallization"
+        ],
+        "link": "http://kecmchan.people.ust.hk/",
+        "location": "Rm 4359",
+        "name": "Chi Ming CHAN",
+        "phone": "2358 7125",
+        "photo": "/src/assets/people/kecmchan.jpg",
+        "role": "Part-time Lecturer",
+        "surname": "CHAN",
+        "type": "ISD Faculty",
+        "isJointApt": false
+    }
+]
