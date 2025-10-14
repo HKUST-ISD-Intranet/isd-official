@@ -1,0 +1,1 @@
+node ./scripts/split_people.js && wc -c src/data/faculty.json src/data/affiliates.json src/data/staff.json
