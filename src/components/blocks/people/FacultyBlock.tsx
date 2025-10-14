@@ -1,6 +1,6 @@
 import FacultyCard from '@/components/FacultyCard';
 import faculty from '@/data/faculty.json';
-import affiliate from '@/data/affiliates.json';
+import affiliate from '@/data/affiliate.json';
 import { resolvePersonPhoto } from '@/lib/peopleImages';
 
 export default function FacultyBlock({

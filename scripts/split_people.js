@@ -9,7 +9,7 @@ const imagePath = '/src/assets/people'; // adjust as needed
 const root = path.resolve(__dirname, '..');
 const dataPath = path.join(root, 'src', 'data', 'people_raw.json');
 const outFaculty = path.join(root, 'src', 'data', 'faculty.json');
-const outAff = path.join(root, 'src', 'data', 'affiliates.json');
+const outAff = path.join(root, 'src', 'data', 'affiliate.json');
 const outStaff = path.join(root, 'src', 'data', 'staff.json');
 
 function load() {

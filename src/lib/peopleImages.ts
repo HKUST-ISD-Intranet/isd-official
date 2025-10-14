@@ -40,40 +40,40 @@ import ziqiw from '@/assets/people/ziqiw.jpg';
 type Img = StaticImageData | string;
 
 export const peopleImages: Record<string, Img> = {
-  'arash.jpg': arash,
-  'bokchow.png': bokchow,
-  'braudt.jpg': braudt,
-  'brianlau.jpg': brianlau,
-  'carrieling.png': carrieling,
-  'changyingx.jpg': changyingx,
-  'eedxu.jpg': eedxu,
-  'eejlau.jpg': eejlau,
-  'eeshsong.jpg': eeshsong,
-  'eetsui.png': eetsui,
-  'eewswleung.png': eewswleung,
-  'eezxli.png': eezxli,
-  'egjac.jpg': egjac,
-  'erwinhuang.jpg': erwinhuang,
-  'hongrigu.jpg': hongrigu,
-  'joneja.png': joneja,
-  'ketfyee.jpg': ketfyee,
-  'larry.jpg': larry,
-  'lillyli.jpg': lillyli,
-  'lim.jpg': lim,
-  'mingmingfan.jpg': mingmingfan,
-  'mitchli.jpg': mitchli,
-  'qianzh.jpg': qianzh,
-  'qijiashao.jpg': qijiashao,
-  'ravindra.jpg': ravindra,
-  'saikit.png': saikit,
-  'scharffrbn.jpeg': scharffrbn,
-  'tracymok.png': tracymok,
-  'wenchaoxu.jpg': wenchaoxu,
-  'wenqi.jpg': wenqi,
-  'ybchan.png': ybchan,
-  'ylzi.jpg': ylzi,
-  'yuanly.jpeg': yuanly,
-  'ziqiw.jpg': ziqiw,
+    'arash.jpg': arash,
+    'bokchow.png': bokchow,
+    'braudt.jpg': braudt,
+    'brianlau.jpg': brianlau,
+    'carrieling.png': carrieling,
+    'changyingx.jpg': changyingx,
+    'eedxu.jpg': eedxu,
+    'eejlau.jpg': eejlau,
+    'eeshsong.jpg': eeshsong,
+    'eetsui.png': eetsui,
+    'eewswleung.png': eewswleung,
+    'eezxli.png': eezxli,
+    'egjac.jpg': egjac,
+    'erwinhuang.jpg': erwinhuang,
+    'hongrigu.jpg': hongrigu,
+    'joneja.png': joneja,
+    'ketfyee.jpg': ketfyee,
+    'larry.jpg': larry,
+    'lillyli.jpg': lillyli,
+    'lim.jpg': lim,
+    'mingmingfan.jpg': mingmingfan,
+    'mitchli.jpg': mitchli,
+    'qianzh.jpg': qianzh,
+    'qijiashao.jpg': qijiashao,
+    'ravindra.jpg': ravindra,
+    'saikit.png': saikit,
+    'scharffrbn.jpeg': scharffrbn,
+    'tracymok.png': tracymok,
+    'wenchaoxu.jpg': wenchaoxu,
+    'wenqi.jpg': wenqi,
+    'ybchan.png': ybchan,
+    'ylzi.jpg': ylzi,
+    'yuanly.jpeg': yuanly,
+    'ziqiw.jpg': ziqiw,
 };
 
 /**
@@ -84,13 +84,16 @@ export const peopleImages: Record<string, Img> = {
  *  - "qianzh.jpg"
  */
 export function resolvePersonPhoto(photo?: string): Img {
-  if (!photo) return noneImg;
-  // normalize: remove leading slashes and optional "src/" or "assets/" prefixes
-  const cleaned = photo.replace(/^\/+/, '').replace(/^src\//, '').replace(/^assets\//, '');
-  const name = cleaned.split('/').pop();
-  console.log('Resolving photo:', photo, '->', cleaned, '->', name);
-  if (!name) return noneImg;
-  return peopleImages[name] ?? noneImg;
+    if (!photo) return noneImg;
+    // normalize: remove leading slashes and optional "src/" or "assets/" prefixes
+    const cleaned = photo
+        .replace(/^\/+/, '')
+        .replace(/^src\//, '')
+        .replace(/^assets\//, '');
+    const name = cleaned.split('/').pop();
+    console.log('Resolving photo:', photo, '->', cleaned, '->', name);
+    if (!name) return noneImg;
+    return peopleImages[name] ?? noneImg;
 }
 
 export default peopleImages;

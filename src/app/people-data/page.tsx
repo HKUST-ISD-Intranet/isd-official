@@ -1,6 +1,6 @@
 import React from 'react';
 import faculty from '@/data/faculty.json';
-import affiliates from '@/data/affiliates.json';
+import affiliates from '@/data/affiliate.json';
 import staff from '@/data/staff.json';
 import Image from 'next/image';
 import { resolvePersonPhoto } from '@/lib/peopleImages';
