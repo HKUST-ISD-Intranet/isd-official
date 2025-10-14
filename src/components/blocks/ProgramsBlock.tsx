@@ -3,7 +3,7 @@ export default function ProgramBlock() {
     const programsInfo = [
         {
             heading: 'Undergraduate',
-            content: 'BSc in Integrative Systems and Design',
+            content: 'BSc in Innovation, Design and Technology (IDT)',
         },
         {
             heading: 'Undergraduate',
