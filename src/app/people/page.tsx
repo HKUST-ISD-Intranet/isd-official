@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import HeroImageFile from '@/assets/early-admission.jpg';
+import HeroImageFile from '@/assets/people.png';
 import HeroImage from '@/components/HeroImage';
 import PeopleBlock from '@/components/blocks/PeopleBlock';
+import PeopleBlockStaff from '@/components/blocks/PeopleBlockStaff';
 
 interface Person {
     id: number;
@@ -79,7 +80,7 @@ export default function AcademicsPage() {
                         </h1>
                     </div>
 
-                    <PeopleBlock
+                    <PeopleBlockStaff
                         people={people.filter((p) => p.type === 'ISD Staff')}
                     />
                 </>
