@@ -9,7 +9,14 @@ export default function FacultyBlock({
     type?: 'faculty' | 'affiliate';
 }) {
     return (
-        <div className={"container w-full flex flex-col pt-section-gap gap-section-title-gap" + (type !== 'affiliate' ? ' dot-pattern before:top-[-95px] before:right-[-60px] [--dot-color:var(--isd-secondary-1)]' : '')}>
+        <div
+            className={
+                'container w-full flex flex-col pt-section-gap gap-section-title-gap' +
+                (type !== 'affiliate'
+                    ? ' dot-pattern before:top-[-95px] before:right-[-60px] [--dot-color:var(--isd-secondary-1)]'
+                    : '')
+            }
+        >
             <h1 className="text-h1 offset-text-background uppercase">
                 {type === 'affiliate' ? ' Affiliates' : 'ISD Faculty'}
             </h1>
@@ -22,8 +29,11 @@ export default function FacultyBlock({
                                   name={person.name}
                                   role={person.role}
                                   keywords={person.keywords}
-                                  email={person.email}
                                   photo={resolvePersonPhoto(person.photo)}
+                                  email={person.email}
+                                  phone={person.phone || undefined}
+                                  location={person.location}
+                                  link={person.link || undefined}
                               />
                           </div>
                       ))
@@ -33,8 +43,11 @@ export default function FacultyBlock({
                                   name={person.name}
                                   role={person.role}
                                   keywords={person.keywords}
-                                  email={person.email}
                                   photo={resolvePersonPhoto(person.photo)}
+                                  email={person.email}
+                                  link={person.link || undefined}
+                                  phone={person.phone || undefined}
+                                  location={person.location || undefined}
                               />
                           </div>
                       ))}

@@ -1,28 +1,41 @@
 import { ArrowRight, Link2, Mail, MapPin, Phone } from 'lucide-react';
 import { StaticImageData } from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface FacultyCardProps {
     name: string;
     role: string;
     keywords?: string[];
+    photo: StaticImageData | string;
     email?: string;
-    photo?: StaticImageData | string;
+    phone?: string;
     location?: string;
+    link?: string;
 }
 
 export default function FacultyCard({
     name,
     role,
     keywords = [],
-    email,
     photo,
+    email,
+    phone,
     location,
+    link,
 }: FacultyCardProps) {
     return (
         <div className="flex gap-component-gap-sm">
-            {/* TODO add profile image here */}
-            <div className="bg-red-500 border-l-3 border-isd-primary w-[211px] h-[288px]" />
+            <div className="relative w-[221px] h-[288px] flex-shrink-0 overflow-hidden border-l-3 border-isd-primary">
+                {/* NOTE - photo always available either a valid image or a placeholder */}
+                <Image
+                    src={photo}
+                    alt={`${name}'s photo`}
+                    fill
+                    className="object-cover"
+                    sizes="221px"
+                />
+            </div>
             <div className="flex flex-col justify-between flex-1 text-justify">
                 <div className="flex flex-col gap-footer-gap">
                     <div className="text-h2 text-isd-font-1">{name}</div>
@@ -31,7 +44,7 @@ export default function FacultyCard({
                         {keywords.map((kw, index) => (
                             <span key={kw}>
                                 {kw}
-                                {index < keywords.length - 1 && ' · '}
+                                {index < keywords.length - 1 && ', '}
                             </span>
                         ))}
                     </div>
@@ -42,7 +55,7 @@ export default function FacultyCard({
                 </div>
 
                 <div className="flex flex-col gap-[24px] before:content-[''] before:bg-isd-primary before:w-[111px] before:h-[3px]">
-                    {/* TODO add hover effect with data */}
+                    {/* TODO add hover effect with data for email, phone, location */}
                     <div className="flex gap-element-gap">
                         <div className="p-[9px] rounded-full bg-isd-primary-2">
                             <Mail size={24} className="text-isd-primary" />
@@ -54,12 +67,14 @@ export default function FacultyCard({
                             <MapPin size={24} className="text-isd-primary" />
                         </div>
                         {/* TODO */}
-                        <Link
-                            href="#"
-                            className="p-[9px] rounded-full bg-isd-primary-2"
-                        >
-                            <Link2 size={24} className="text-isd-primary" />
-                        </Link>
+                        {link && (
+                            <Link
+                                href={link}
+                                className="p-[9px] rounded-full bg-isd-primary-2"
+                            >
+                                <Link2 size={24} className="text-isd-primary" />
+                            </Link>
+                        )}
                     </div>
                 </div>
             </div>
