@@ -21,7 +21,10 @@ export default function FacultyBlock({
                 {type === 'affiliate' ? ' Affiliates' : 'ISD Faculty'}
             </h1>
 
-            <div className="grid grid-cols-2 gap-x-section-gap gap-y-component-gap">
+            <div
+                className="grid grid-cols-2 gap-x-section-gap gap-y-component-gap scroll-mt-[295px]"
+                id={type === 'affiliate' ? 'affiliate' : 'faculty'}
+            >
                 {type === 'affiliate'
                     ? affiliate.map((person) => (
                           <div key={person.name}>

@@ -24,9 +24,9 @@ export default function Navbar() {
             href: '/people',
             submenu: {
                 items: [
-                    { name: 'ISD Faculty', href: '/people' },
-                    { name: 'Affiliates', href: '/people' },
-                    { name: 'ISD Staff', href: '/people' },
+                    { name: 'ISD Faculty', href: '/people#faculty' },
+                    { name: 'Affiliates', href: '/people#affiliate' },
+                    { name: 'ISD Staff', href: '/people#staff' },
                 ],
             },
         },

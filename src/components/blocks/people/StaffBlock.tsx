@@ -4,7 +4,7 @@ import staff from '@/data/staff.json';
 export default function StaffBlock() {
     return (
         <div
-            className="container w-full flex flex-col py-section-gap gap-section-title-gap"
+            className="container w-full flex flex-col py-section-gap gap-section-title-gap scroll-mt-[75px]"
             id="staff"
         >
             <h1 className="text-h1 offset-text-background uppercase">
