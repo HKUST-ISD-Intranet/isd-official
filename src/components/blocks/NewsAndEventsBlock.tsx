@@ -1,9 +1,61 @@
+'use client';
+
 import { ArrowRight } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+
+interface NewsEvent {
+    id: number;
+    date: string;
+    title: string;
+    details: string;
+    type: string;
+    picture: string;
+    evt_date: string;
+    evt_time: string;
+    evt_location: string;
+}
 
 export default function NewsAndEventsBlock() {
+    const [fullNewsEvents, setFullNewsEvents] = useState<NewsEvent[]>([]);
+
+    async function fetchNewsEvents(): Promise<NewsEvent[]> {
+        const response = await fetch('/api/news'); // Utilisez le chemin relatif
+
+        console.log('respose', response);
+
+        if (!response.ok) {
+            throw new Error('Failed to fetch people');
+        }
+        return response.json(); // Retourne la promesse
+    }
+
+    useEffect(() => {
+        const loadNewsEvents = async () => {
+            try {
+                let fetchedNewsEvents: NewsEvent[] = await fetchNewsEvents();
+
+                // order data by  date desc
+                fetchedNewsEvents.sort((a: NewsEvent, b: NewsEvent) => {
+                    const dateA = new Date(a.date);
+                    const dateB = new Date(b.date);
+                    return dateB.getTime() - dateA.getTime();
+                });
+
+                // only the first 3 records
+                fetchedNewsEvents = fetchedNewsEvents.slice(0, 3);
+
+                setFullNewsEvents(fetchedNewsEvents);
+            } catch (error) {
+                console.error('Error fetching people:', error);
+            }
+        };
+
+        loadNewsEvents(); // Load people from DB
+    }, []);
+
     const news = [
         {
-            title: 'HKUST InnoBay Bootcamp',
+            title: 'Event',
             date: '2025-07-02',
             description:
                 'One of the unique strengths of the Integrative Systems and Design program is the integration of design and technology to solve real-world problems.',
@@ -30,12 +82,14 @@ export default function NewsAndEventsBlock() {
 
             <div className="flex flex-col gap-[12px]">
                 <span className="text-sm text-isd-primary font-bold self-end flex gap-[6px]">
-                    View all
-                    <ArrowRight size={20} strokeWidth={3} />
+                    <a href="/news">
+                        View all
+                        <ArrowRight size={20} strokeWidth={3} />
+                    </a>
                 </span>
 
                 <div className="flex md:flex-row flex-col gap-component-gap-sm">
-                    {news.map((news, i) => (
+                    {fullNewsEvents.map((news, i) => (
                         <div
                             className={
                                 'flex flex-col text-black rounded-sm p-element-gap pt-component-gap-sm gap-[12px] ' +
@@ -45,10 +99,10 @@ export default function NewsAndEventsBlock() {
                             }
                             key={i}
                         >
-                            <h2 className="text-h2 font-bold">{news.title}</h2>
+                            <h2 className="text-h2 font-bold">{news.type}</h2>
                             <span className="text-lg">{news.date}</span>
                             <p className="text-md text-isd-font-3">
-                                {news.description}
+                                {news.title}
                             </p>
                         </div>
                     ))}
