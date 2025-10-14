@@ -24,6 +24,14 @@ interface Person {
 export default function AcademicsPage() {
     const [people, setPeople] = useState<Person[]>([]);
 
+    const [fullPeople, setFullPeople] = useState<Person[]>([]);
+
+    const [selectedType, setSelectedType] = useState<string>('');
+    const [selectedPosition, setSelectedPosition] = useState<string>('');
+    const [selectedKeyword, setSelectedKeyword] = useState<string>('');
+
+    const [roles, setRoles] = useState<string[]>([]);
+
     async function fetchPeople(): Promise<Person[]> {
         const response = await fetch('/api/people'); // Utilisez le chemin relatif
         if (!response.ok) {
@@ -32,6 +40,43 @@ export default function AcademicsPage() {
         return response.json(); // Retourne la promesse
     }
 
+    const handleFilterPosition = (position: string) => {
+        setSelectedPosition(position);
+        handleFilter(position, selectedType, selectedKeyword);
+    };
+
+    const handleFilterType = (type: string) => {
+        setSelectedType(type);
+        handleFilter(selectedPosition, type, selectedKeyword);
+    };
+
+    const handleFilterKeyword = (keyword: string) => {
+        setSelectedKeyword(keyword);
+        handleFilter(selectedPosition, selectedType, keyword);
+    };
+
+    const handleFilter = (position: string, type: string, keyword: string) => {
+        let filteredPeople = fullPeople;
+
+        // Filter by position
+        if (position) {
+            filteredPeople = filteredPeople.filter((p) => p.role === position);
+        }
+
+        // Filter by type
+        if (type) {
+            filteredPeople = filteredPeople.filter((p) => p.type === type);
+        }
+
+        if (keyword) {
+            filteredPeople = filteredPeople.filter(
+                (p) => p.keywords && p.keywords.includes(keyword)
+            );
+        }
+
+        setPeople(filteredPeople);
+    };
+
     useEffect(() => {
         const loadPeople = async () => {
             try {
@@ -39,18 +84,75 @@ export default function AcademicsPage() {
 
                 console.log('fetchedPeople', fetchedPeople);
 
+                setFullPeople(fetchedPeople);
                 setPeople(fetchedPeople);
+
+                // Get list of roles
+                // Take unique roles in data
+                let rolesTemp = fetchedPeople
+                    .map((p: Person) => p.role)
+                    .filter(
+                        (value: string, index: number, self: string[]) =>
+                            self.indexOf(value) === index
+                    );
+
+                // order roles alphabetically
+                rolesTemp = rolesTemp.sort((a: string, b: string) => {
+                    if (a < b) {
+                        return -1;
+                    }
+                    if (a > b) {
+                        return 1;
+                    }
+                    return 0;
+                });
+
+                setRoles(rolesTemp);
+
+                return fetchedPeople;
             } catch (error) {
                 console.error('Error fetching people:', error);
             }
         };
 
         loadPeople(); // Load people from DB
+
     }, []);
 
     return (
         <div className="min-h-screen flex flex-col items-center">
             <HeroImage image={HeroImageFile} />
+
+            <div className="menu-cat-container">
+                <select
+                    className="select-people"
+                    value={selectedType}
+                    onChange={(e) => handleFilterType(e.target.value)}
+                >
+                    <option value="">Sort by role</option>
+                    <option value="ISD Faculty">ISD Faculty</option>
+                    <option value="Affiliates">Affiliates</option>
+                    <option value="ISD Staff">ISD Staff</option>
+                </select>
+
+                <select
+                    className="select-people"
+                    value={selectedPosition}
+                    onChange={(e) => handleFilterPosition(e.target.value)}
+                >
+                    <option value="">Sort by position</option>
+                    {roles.map((role) => (
+                        <option key={role} value={role}>
+                            {role}
+                        </option>
+                    ))}
+                </select>
+
+                <input
+                    placeholder="Enter keyword"
+                    onChange={(e) => handleFilterKeyword(e.target.value)}
+                ></input>
+            </div>
 
             {people.length > 0 ? (
                 <>
