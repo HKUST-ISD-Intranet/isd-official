@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const imagePath = '/src/assets/people'; // adjust as needed
 
 const root = path.resolve(__dirname, '..');
 const dataPath = path.join(root, 'src', 'data', 'people_raw.json');
@@ -38,6 +39,12 @@ function transformTraits(item) {
     // replace traits with isJointApt boolean
     copy.isJointApt = isJointTrait(copy.traits);
     delete copy.traits;
+
+    // normalize photo path using email prefix when possible
+    if (copy.email && typeof copy.email === 'string') {
+        const prefix = copy.email.split('@')[0];
+        copy.photo = `${imagePath}/${prefix}.jpg`;
+    }
 
     return copy;
 }
