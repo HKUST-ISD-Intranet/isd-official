@@ -1,6 +1,6 @@
 import HKUSTLogo from '@/assets/hkust-logo.svg';
 import ISDLogo from '@/assets/isd-logo.svg';
-// Image import removed: SVGs are rendered as components directly
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Navbar() {
@@ -77,27 +77,28 @@ export default function Navbar() {
     return (
         <nav className="bg-white px-section-gap sticky z-40 top-12 py-8">
             <div className="flex items-center justify-between">
-                <div className="flex items-center gap-6 divide-x-1 divide-isd-primary">
+                <div className="flex items-center gap-[11px] divide-x-1 divide-isd-primary">
                     <Link href="https://hkust.edu.hk/">
-                        {/* HKUSTLogo is an SVG React component (SVGR) - render directly */}
-                        <HKUSTLogo
-                            className="h-14 w-auto pr-6"
-                            aria-hidden
+                        <Image
+                            src={HKUSTLogo}
                             alt="HKUST Logo"
+                            width={180}
+                            height={44.4}
+                            className="pr-[11px]"
                         />
                     </Link>
                     <Link href="/">
-                        {/* ISDLogo is an SVG React component (SVGR) - render directly */}
-                        <ISDLogo
-                            className="h-14 w-auto"
-                            aria-hidden
+                        <Image
+                            src={ISDLogo}
                             alt="ISD Logo"
+                            width={263}
+                            height={27}
                         />
                     </Link>
                 </div>
 
-                <div className="inline-flex justify-center items-center gap-6">
-                    {navItems.map((item) => (
+                <div className="inline-flex justify-center items-center gap-element-gap pt-2">
+                    {navItems.map((item, i) => (
                         <div className="relative group pb-2" key={item.name}>
                             <Link
                                 href={item.href}
@@ -107,7 +108,7 @@ export default function Navbar() {
                             </Link>
 
                             {item.submenu && (
-                                <div className="absolute left-0 mt-2 hidden group-hover:block group-focus-within:block bg-white border-gray-300 shadow-lg z-40">
+                                <div className={"absolute mt-2 hidden group-hover:block group-focus-within:block bg-white shadow-lg shadow-black/30 z-40" + (i === navItems.length - 1 ? ' right-0' : ' left-0')}>
                                     {item.submenu.items.map((subItem) => (
                                         <Link
                                             key={subItem.name}
