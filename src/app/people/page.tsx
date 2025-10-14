@@ -1,8 +1,9 @@
-"use client";
+'use client';
 
 import React, { useEffect, useState } from 'react';
 import HeroImageFile from '@/assets/early-admission.jpg';
 import HeroImage from '@/components/HeroImage';
+import PeopleBlock from '@/components/blocks/PeopleBlock';
 
 interface Person {
     id: number;
@@ -33,14 +34,17 @@ export default function AcademicsPage() {
     useEffect(() => {
         const loadPeople = async () => {
             try {
-                const fetchedPeople = await fetchPeople();
+                const fetchedPeople: Person[] = await fetchPeople();
+
+                console.log('fetchedPeople', fetchedPeople);
+
                 setPeople(fetchedPeople);
             } catch (error) {
                 console.error('Error fetching people:', error);
             }
         };
 
-        loadPeople(); // Appelle la fonction pour charger les données
+        loadPeople(); // Load people from DB
     }, []);
 
     return (
@@ -48,11 +52,37 @@ export default function AcademicsPage() {
             <HeroImage image={HeroImageFile} />
 
             {people.length > 0 ? (
-                people.map((p) => (
-                    <div key={p.id} className="p-2">
-                        {p.name}
+                <>
+                    <div id="isd-factuly" className="title">
+                        <h1 className="text-h1 offset-text-background uppercase">
+                            ISD Faculty
+                        </h1>
                     </div>
-                ))
+
+                    <PeopleBlock
+                        people={people.filter((p) => p.type === 'ISD Faculty')}
+                    />
+
+                    <div id="affiliates" className="title">
+                        <h1 className="text-h1 offset-text-background uppercase">
+                            Affiliates
+                        </h1>
+                    </div>
+
+                    <PeopleBlock
+                        people={people.filter((p) => p.type === 'Affiliates')}
+                    />
+
+                    <div id="isd-staff" className="title">
+                        <h1 className="text-h1 offset-text-background uppercase">
+                            ISD Staff
+                        </h1>
+                    </div>
+
+                    <PeopleBlock
+                        people={people.filter((p) => p.type === 'ISD Staff')}
+                    />
+                </>
             ) : (
                 <p>No people found.</p>
             )}
