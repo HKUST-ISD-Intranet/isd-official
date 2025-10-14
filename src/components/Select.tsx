@@ -219,7 +219,7 @@ export default function Select({
                                     }
                                     onMouseLeave={() => setHighlightedIndex(-1)}
                                     onClick={() => handleSelect(opt)}
-                                    className={`cursor-pointer select-none px-[12px] py-2 flex items-center justify-between gap-2 text-sm ${
+                                    className={`select-none px-[12px] py-2 flex items-center justify-between gap-2 text-sm ${
                                         isHighlighted ? 'bg-isd-primary-2' : ''
                                     }`}
                                 >
