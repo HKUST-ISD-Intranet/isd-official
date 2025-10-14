@@ -11,19 +11,9 @@ const nextConfig: NextConfig = {
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/,
-            use: ['@svgr/webpack'],
+            use: ['@svgr/webpack', 'url-loader'],
         });
         return config;
-    },
-    experimental: {
-        turbo: {
-            rules: {
-                '*.svg': {
-                    loaders: ['@svgr/webpack'],
-                    as: '*.ts', // Or "*.js"
-                },
-            },
-        },
     },
 };
 
