@@ -26,14 +26,14 @@ export default function StaffCard({
 
             <div className="flex gap-element-gap">
                 {email && (
-                    <>
+                    <a href={`mailto:${email}`} data-tooltip={email}>
                         <Mail size={24} />
-                    </>
+                    </a>
                 )}
                 {phone && (
-                    <>
+                    <a href={`tel:${phone}`} data-tooltip={phone}>
                         <Phone size={24} />
-                    </>
+                    </a>
                 )}
                 {location && (
                     <>
