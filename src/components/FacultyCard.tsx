@@ -55,7 +55,6 @@ export default function FacultyCard({
                 </div>
 
                 <div className="flex flex-col gap-[24px] before:content-[''] before:bg-isd-primary before:w-[111px] before:h-[3px]">
-                    {/* TODO add hover effect with data for email, phone, location */}
                     <div className="flex gap-element-gap">
                         <a
                             href={`mailto:${email}`}
@@ -77,7 +76,6 @@ export default function FacultyCard({
                         >
                             <MapPin size={24} className="text-isd-primary" />
                         </div>
-                        {/* TODO */}
                         {link && (
                             <Link
                                 href={link}
