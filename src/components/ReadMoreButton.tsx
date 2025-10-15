@@ -47,13 +47,15 @@ export default function ReadMoreButton({
                 >
                     <div className="flex flex-col bg-white m-[198px] p-component-gap gap-section-title-gap items-center">
                         <div className="flex items-center gap-component-gap-sm">
-                            <Image
-                                src={photo}
-                                alt={`${name}'s photo`}
-                                width={221}
-                                height={288}
-                                className="object-cover"
-                            />
+                            <div className="relative w-[221px] h-[288px] flex-shrink-0 overflow-hidden">
+                                <Image
+                                    src={photo}
+                                    alt={`${name}'s photo`}
+                                    fill
+                                    sizes="221px"
+                                    className="object-cover"
+                                />
+                            </div>
 
                             <div className="flex flex-col gap-[24px]">
                                 <div className="text-h2 text-isd-font-1">
