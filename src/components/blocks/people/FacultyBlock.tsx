@@ -58,6 +58,7 @@ export default function FacultyBlock({
                                     link={person.link ?? undefined}
                                     phone={person.phone ?? undefined}
                                     location={person.location ?? undefined}
+                                    details={person.details ?? undefined}
                                 />
                             </div>
                         ))}

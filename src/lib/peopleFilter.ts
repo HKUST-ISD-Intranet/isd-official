@@ -1,5 +1,6 @@
 export type Person = {
     name: string;
+    details?: string | null;
     role?: string | null;
     position?: string | null;
     keywords?: string[] | null;

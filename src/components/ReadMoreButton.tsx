@@ -1,0 +1,158 @@
+'use client';
+
+import { ArrowRight, Mail, Phone, MapPin, Link2 } from 'lucide-react';
+import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+
+interface FacultyCardProps {
+    name: string;
+    role: string;
+    keywords?: string[];
+    photo: StaticImageData | string;
+    email?: string;
+    phone?: string;
+    location?: string;
+    link?: string;
+    details?: string;
+}
+
+export default function ReadMoreButton({
+    name,
+    role,
+    keywords,
+    photo,
+    email,
+    phone,
+    location,
+    link,
+    details,
+}: FacultyCardProps) {
+    const [detailsOpen, setDetailsOpen] = useState(false);
+
+    return (
+        <>
+            <button
+                className="flex cursor-pointer relative items-end gap-[6px] text-footer leading-[15px] text-isd-secondary"
+                onClick={() => setDetailsOpen(true)}
+            >
+                <span>Read more</span>
+                <ArrowRight size={12} />
+            </button>
+
+            {detailsOpen && (
+                <div
+                    className="fixed top-0 left-0 right-0 w-screen h-screen bg-[#1e1e1e]/50 flex flex-col items-center z-50 overflow-auto"
+                    onClick={() => setDetailsOpen(false)}
+                >
+                    <div className="flex flex-col bg-white m-[198px] p-component-gap gap-section-title-gap">
+                        <div className="flex items-center gap-component-gap-sm">
+                            <Image
+                                src={photo}
+                                alt={`${name}'s photo`}
+                                width={221}
+                                height={288}
+                                className="object-cover"
+                            />
+
+                            <div className="flex flex-col gap-[24px]">
+                                <div className="text-h2 text-isd-font-1">
+                                    {name}
+                                </div>
+
+                                <div className="flex flex-col gap-footer-gap">
+                                    <div className="text-md text-isd-secondary">
+                                        {role}
+                                    </div>
+                                    <div className="text-md text-isd-font-3 text">
+                                        {keywords?.join(', ')}
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-wrap gap-x-section-title-gap gap-y-[12px]">
+                                    {email && (
+                                        <a
+                                            href={`mailto:${email}`}
+                                            className="flex gap-[12px] items-center"
+                                        >
+                                            <div className="p-[9px] rounded-full bg-isd-primary-2">
+                                                <Mail
+                                                    size={24}
+                                                    className="text-isd-primary"
+                                                />
+                                            </div>
+                                            <span className="text-isd-primary text-md">
+                                                {email}
+                                            </span>
+                                        </a>
+                                    )}
+                                    {phone && (
+                                        <a
+                                            href={`tel:${phone}`}
+                                            className="flex gap-[12px] items-center"
+                                        >
+                                            <div className="p-[9px] rounded-full bg-isd-primary-2">
+                                                <Phone
+                                                    size={24}
+                                                    className="text-isd-primary"
+                                                />
+                                            </div>
+                                            <span className="text-isd-primary text-md">
+                                                {phone}
+                                            </span>
+                                        </a>
+                                    )}
+                                    {location && (
+                                        <div className="flex gap-[12px] items-center">
+                                            <div className="p-[9px] rounded-full bg-isd-primary-2">
+                                                <MapPin
+                                                    size={24}
+                                                    className="text-isd-primary"
+                                                />
+                                            </div>
+                                            <span className="text-isd-primary text-md">
+                                                {location}
+                                            </span>
+                                        </div>
+                                    )}
+                                    {link && (
+                                        <Link
+                                            href={link}
+                                            className="flex gap-[12px] items-center"
+                                        >
+                                            <div className="p-[9px] rounded-full bg-isd-primary-2 flex gap-[12px]">
+                                                <Link2
+                                                    size={24}
+                                                    className="text-isd-primary"
+                                                />
+                                            </div>
+                                            <span className="text-isd-primary text-md">
+                                                {link}
+                                            </span>
+                                        </Link>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+
+                        {details && (
+                            <div className="flex flex-col gap-[24px]">
+                                <div className="flex items-center h-section-title-gap border-b border-b-isd-font-2">
+                                    <h2 className="text-h2 text-isd-primary">
+                                        Details
+                                    </h2>
+                                </div>
+
+                                <div className="text-md text-isd-font-3 text-start">
+                                    <div className="whitespace-pre-wrap">
+                                        {details}
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            )}
+        </>
+    );
+}

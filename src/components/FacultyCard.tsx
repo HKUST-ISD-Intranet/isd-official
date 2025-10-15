@@ -1,7 +1,8 @@
-import { ArrowRight, Link2, Mail, MapPin, Phone } from 'lucide-react';
+import { Link2, Mail, MapPin, Phone } from 'lucide-react';
 import { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import Image from 'next/image';
+import ReadMoreButton from './ReadMoreButton';
 
 interface FacultyCardProps {
     name: string;
@@ -12,6 +13,7 @@ interface FacultyCardProps {
     phone?: string;
     location?: string;
     link?: string;
+    details?: string;
 }
 
 export default function FacultyCard({
@@ -23,6 +25,7 @@ export default function FacultyCard({
     phone,
     location,
     link,
+    details,
 }: FacultyCardProps) {
     return (
         <div className="flex gap-component-gap-sm">
@@ -48,10 +51,17 @@ export default function FacultyCard({
                             </span>
                         ))}
                     </div>
-                    <div className="flex items-end gap-[6px] text-footer leading-[15px] text-isd-secondary">
-                        <span>Read more</span>
-                        <ArrowRight size={12} />
-                    </div>
+                    <ReadMoreButton
+                        name={name}
+                        role={role}
+                        keywords={keywords}
+                        photo={photo}
+                        email={email}
+                        phone={phone}
+                        location={location}
+                        link={link}
+                        details={details}
+                    />
                 </div>
 
                 <div className="flex flex-col gap-[24px] before:content-[''] before:bg-isd-primary before:w-[111px] before:h-[3px]">
