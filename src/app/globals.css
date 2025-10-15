@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin "daisyui";
 
 /* TODO add global font styles */
@@ -8,23 +8,23 @@
     /* Primary colors */
     --isd-primary: #003974;
     /* Primary */
-    --isd-primary-2: #F1F7FF;
+    --isd-primary-2: #f1f7ff;
     /* Primary_2 */
-    --isd-primary-3: #BCC7D9;
+    --isd-primary-3: #bcc7d9;
     /* Primary_3 */
 
     /* Secondary colors */
-    --isd-secondary: #EC7B60;
+    --isd-secondary: #ec7b60;
     /* Secondary */
-    --isd-secondary-1: #FFF4F2;
+    --isd-secondary-1: #fff4f2;
     /* Secondary_1 */
 
     /* Font colors */
-    --isd-font-1: #1E1E1E;
+    --isd-font-1: #1e1e1e;
     /* Font_1 */
-    --isd-font-2: #979FA8;
+    --isd-font-2: #979fa8;
     /* Font_2 */
-    --isd-font-3: #64686D;
+    --isd-font-3: #64686d;
     /* Font_3 */
 
     /* Spacing tokens */
@@ -129,7 +129,7 @@
 }
 
 .offset-text-background::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     /* start under the first character */
@@ -159,22 +159,33 @@
     pointer-events: none;
     width: 410px;
     height: 190px;
-    background-image: radial-gradient(circle, var(--dot-color) 34%, transparent 35%);
+    background-image: radial-gradient(
+        circle,
+        var(--dot-color) 34%,
+        transparent 35%
+    );
     background-size: 26px 24px;
     background-repeat: repeat;
     z-index: -1;
 }
 
+.hover-bg {
+    transition: background-color 0.3s ease;
+}
+.hover-bg:hover {
+    background-color: #ec7b60;
+}
+
 @plugin "daisyui/theme" {
-    name: "isd-official";
+    name: 'isd-official';
     default: true;
     prefersdark: false;
-    color-scheme: "light";
-    --color-base-100: #FFFFFF;
+    color-scheme: 'light';
+    --color-base-100: #ffffff;
     --color-primary: var(--isd-primary);
-    --color-primary-content: #FFFFFF;
+    --color-primary-content: #ffffff;
     --color-secondary: var(--isd-secondary);
-    --color-secondary-content: #FFFFFF;
+    --color-secondary-content: #ffffff;
     --color-accent: var(--isd-primary-2);
     --color-accent-content: var(--isd-primary);
     --radius-selector: 0.25rem;
