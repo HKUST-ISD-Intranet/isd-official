@@ -54,7 +54,10 @@ function nameKey(name?: string) {
     return (last + ' ' + first).toLowerCase();
 }
 
-function positionRank(position?: string | null, context: Options['context'] = 'faculty') {
+function positionRank(
+    position?: string | null,
+    context: Options['context'] = 'faculty'
+) {
     const pos = normalize(position);
     if (context === 'staff') {
         const idx = staffPositionOrder.findIndex((p) => pos.includes(p));
@@ -66,7 +69,11 @@ function positionRank(position?: string | null, context: Options['context'] = 'f
 }
 
 export function filterAndSortPeople(items: Person[], options: Options = {}) {
-    const { keyword = '', sortBy = 'sort_position', context = 'faculty' } = options;
+    const {
+        keyword = '',
+        sortBy = 'sort_position',
+        context = 'faculty',
+    } = options;
     const tokens = keyword
         .split(/\s+/)
         .map((t) => normalize(t))
