@@ -186,3 +186,49 @@
     --depth: 1;
     --noise: 0;
 }
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -8px;
+    /* tune vertical position */
+    left: 50%;
+    transform: translate(-50%, -100%);
+    white-space: nowrap;
+    padding: 6px 12px;
+    background: var(--isd-primary-2);
+    color: var(--isd-primary);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 150ms ease, transform 150ms ease;
+    z-index: 50;
+
+    @apply text-sm shadow-lg shadow-black/30 z-40;
+    /* hide by default above */
+}
+
+/* little triangle with ::before */
+
+
+/* show on hover or keyboard focus */
+:hover[data-tooltip]::after,
+:focus[data-tooltip]::after,
+:focus-visible[data-tooltip]::after {
+    opacity: 1;
+}
+
+/* Prevent tooltip from escaping to the left/right too far on small screens */
+@media (max-width: 420px) {
+    [data-tooltip]::after {
+        left: 50%;
+        transform: translate(-50%, -100%);
+        white-space: normal;
+        /* allow wrap on tiny screens */
+        max-width: 200px;
+        text-align: center;
+    }
+}
