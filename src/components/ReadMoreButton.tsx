@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, Mail, Phone, MapPin, Link2 } from 'lucide-react';
+import { ArrowRight, Mail, Phone, MapPin, Link2, X } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -45,7 +45,7 @@ export default function ReadMoreButton({
                     className="fixed top-0 left-0 right-0 w-screen h-screen bg-[#1e1e1e]/50 flex flex-col items-center z-50 overflow-auto"
                     onClick={() => setDetailsOpen(false)}
                 >
-                    <div className="flex flex-col bg-white m-[198px] p-component-gap gap-section-title-gap">
+                    <div className="flex flex-col bg-white m-[198px] p-component-gap gap-section-title-gap items-center">
                         <div className="flex items-center gap-component-gap-sm">
                             <Image
                                 src={photo}
@@ -150,6 +150,14 @@ export default function ReadMoreButton({
                                 </div>
                             </div>
                         )}
+
+                        <div className="text-isd-primary cursor-pointer flex gap-footer-gap bg-isd-primary-2 w-section-gap h-component-gap-sm items-center justify-center">
+                            <X
+                                size={24}
+                                onClick={() => setDetailsOpen(false)}
+                            />
+                            <span className="text-sm">Close</span>
+                        </div>
                     </div>
                 </div>
             )}
