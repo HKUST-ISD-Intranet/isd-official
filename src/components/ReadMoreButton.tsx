@@ -3,7 +3,7 @@
 import { ArrowRight, Mail, Phone, MapPin, Link2, X } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 
 interface FacultyCardProps {
     name: string;
@@ -29,6 +29,29 @@ export default function ReadMoreButton({
     details,
 }: FacultyCardProps) {
     const [detailsOpen, setDetailsOpen] = useState(false);
+
+    function format(input: string) {
+        const ESC = '\u0000_ESC_BOLD_\u0000';
+        // protect escaped \** so they don't become bold markers
+        const protectedText = input.replace(/\\\*\*/g, ESC);
+
+        // split on whole **...** tokens (one capturing group only)
+        const parts = protectedText.split(/(\*\*(?:[\s\S]+?)\*\*)/g);
+
+        return parts.map((part, idx) => {
+            const m = part.match(/^\*\*([\s\S]+?)\*\*$/);
+            if (m) {
+                return (
+                    <strong className="text-isd-secondary" key={idx}>
+                        {m[1]}
+                    </strong>
+                );
+            }
+            // restore escaped ** placeholders
+            const restored = part.replace(new RegExp(ESC, 'g'), '**');
+            return <Fragment key={idx}>{restored}</Fragment>;
+        });
+    }
 
     return (
         <>
@@ -147,7 +170,7 @@ export default function ReadMoreButton({
 
                                 <div className="text-md text-isd-font-3 text-start">
                                     <div className="whitespace-pre-wrap">
-                                        {details}
+                                        <span>{format(details)}</span>
                                     </div>
                                 </div>
                             </div>
