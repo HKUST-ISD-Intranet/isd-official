@@ -179,13 +179,13 @@ export default function ReadMoreButton({
                             </div>
                         )}
 
-                        <div className="text-isd-primary cursor-pointer flex gap-footer-gap bg-isd-primary-2 w-section-gap h-component-gap-sm items-center justify-center">
-                            <X
-                                size={24}
-                                onClick={() => setDetailsOpen(false)}
-                            />
+                        <button
+                            className="text-isd-primary cursor-pointer flex gap-footer-gap bg-isd-primary-2 w-section-gap h-component-gap-sm items-center justify-center"
+                            onClick={() => setDetailsOpen(false)}
+                        >
+                            <X size={24} />
                             <span className="text-sm">Close</span>
-                        </div>
+                        </button>
                     </div>
                 </div>
             )}
