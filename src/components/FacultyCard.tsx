@@ -56,26 +56,35 @@ export default function FacultyCard({
 
                 <div className="flex flex-col gap-[24px] before:content-[''] before:bg-isd-primary before:w-[111px] before:h-[3px]">
                     <div className="flex gap-element-gap">
-                        <a
-                            href={`mailto:${email}`}
-                            className="p-[9px] rounded-full bg-isd-primary-2"
-                            data-tooltip={email}
-                        >
-                            <Mail size={24} className="text-isd-primary" />
-                        </a>
-                        <a
-                            href={`tel:${phone}`}
-                            className="p-[9px] rounded-full bg-isd-primary-2"
-                            data-tooltip={phone}
-                        >
-                            <Phone size={24} className="text-isd-primary" />
-                        </a>
-                        <div
-                            className="p-[9px] rounded-full bg-isd-primary-2"
-                            data-tooltip={location}
-                        >
-                            <MapPin size={24} className="text-isd-primary" />
-                        </div>
+                        {email && (
+                            <a
+                                href={`mailto:${email}`}
+                                className="p-[9px] rounded-full bg-isd-primary-2"
+                                data-tooltip={email}
+                            >
+                                <Mail size={24} className="text-isd-primary" />
+                            </a>
+                        )}
+                        {phone && (
+                            <a
+                                href={`tel:${phone}`}
+                                className="p-[9px] rounded-full bg-isd-primary-2"
+                                data-tooltip={phone}
+                            >
+                                <Phone size={24} className="text-isd-primary" />
+                            </a>
+                        )}
+                        {location && (
+                            <div
+                                className="p-[9px] rounded-full bg-isd-primary-2"
+                                data-tooltip={location}
+                            >
+                                <MapPin
+                                    size={24}
+                                    className="text-isd-primary"
+                                />
+                            </div>
+                        )}
                         {link && (
                             <Link
                                 href={link}
