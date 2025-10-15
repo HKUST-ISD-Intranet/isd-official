@@ -68,7 +68,10 @@ export default function ReadMoreButton({
                     className="fixed top-0 left-0 right-0 w-screen h-screen bg-[#1e1e1e]/50 flex flex-col items-center z-50 overflow-auto"
                     onClick={() => setDetailsOpen(false)}
                 >
-                    <div className="flex flex-col bg-white m-[198px] p-component-gap gap-section-title-gap items-center">
+                    <div
+                        className="flex flex-col bg-white m-[198px] p-component-gap gap-section-title-gap items-center"
+                        onClick={(e) => e.stopPropagation()}
+                    >
                         <div className="flex items-center gap-component-gap-sm">
                             <div className="relative w-[221px] h-[288px] flex-shrink-0 overflow-hidden">
                                 <Image
