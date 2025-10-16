@@ -2,21 +2,36 @@
 import React, { useEffect } from 'react';
 export default function MSTLEBlock() {
     const menu = [
-        { title: 'Educational Objectives', id: 'edu-obj' },
-        { title: 'Curriculum', id: 'curriculum' },
-        { title: 'Admission & Application', id: 'adm-app' },
+        {
+            title: 'Educational Objectives',
+            id: 'edu-obj',
+            idMenu: 'edu-obj-menu',
+        },
+        { title: 'Curriculum', id: 'curriculum', idMenu: 'curriculum-menu' },
+        {
+            title: 'Admission & Application',
+            id: 'adm-app',
+            idMenu: 'adm-app-menu',
+        },
     ];
 
     useEffect(() => {
         const activeContent = window.document.getElementById('edu-obj');
         if (activeContent) {
-            activeContent.classList.remove('hidden'); // Afficher le contenu sélectionné
+            activeContent.classList.remove('hidden');
+        }
+
+        const activeContentMenu =
+            window.document.getElementById('edu-obj-menu');
+        if (activeContentMenu) {
+            activeContentMenu.classList.remove('text-isd-font-2');
+            activeContentMenu.classList.add('text-isd-secondary');
         }
     }, []);
 
-    const handleMenuClick = (id: string) => {
+    const handleMenuClick = (id: string, idMenu: string) => {
         // Hide everything
-        const sections = ['edu-obj', 'curriculum', 'adm-app'];
+        let sections = ['edu-obj', 'curriculum', 'adm-app'];
         sections.forEach((sectionId) => {
             const section = document.getElementById(sectionId);
             if (section) {
@@ -24,10 +39,25 @@ export default function MSTLEBlock() {
             }
         });
 
-        // Afficher le contenu cliqué
+        // grey menus
+        sections = ['edu-obj-menu', 'curriculum-menu', 'adm-app-menu'];
+        sections.forEach((sectionId) => {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.classList.add('text-isd-font-2');
+            }
+        });
+
+        // Display content
         const activeContent = document.getElementById(id);
         if (activeContent) {
             activeContent.classList.remove('hidden');
+        }
+
+        const activeContentMenu = window.document.getElementById(idMenu);
+        if (activeContentMenu) {
+            activeContentMenu.classList.remove('text-isd-font-2');
+            activeContentMenu.classList.add('text-isd-secondary');
         }
     };
 
@@ -45,8 +75,14 @@ export default function MSTLEBlock() {
                                 {menu.map((link, index) => (
                                     <div
                                         key={link.id}
-                                        onClick={() => handleMenuClick(link.id)}
-                                        className="text-h2 first:text-isd-secondary pr-component-gap-sm last:pr-0 cursor-pointer"
+                                        id={link.idMenu}
+                                        onClick={() =>
+                                            handleMenuClick(
+                                                link.id,
+                                                link.idMenu
+                                            )
+                                        }
+                                        className="text-h2  pr-component-gap-sm last:pr-0 cursor-pointer"
                                     >
                                         {link.title}
                                     </div>
@@ -238,12 +274,108 @@ export default function MSTLEBlock() {
                 </div>
             ),
         },
+        {
+            id: 'adm-app',
+            subheading: 'Admission & Application',
+            content: (
+                <div className="flex flex-col gap-component-gap-sm">
+                    <p className="text-isd-font-1">
+                        Applicants should have obtained a bachelor's degree from
+                        a recognized institution, or an approved equivalent
+                        qualification. For English Proficiency Requirements,
+                        please refer to {' '}
+                        <span className="text-isd-secondary font-[700] underline">
+                            HKUST Fok Ying Tung Graduate School
+                        </span>
+                        . All applicants are considered on a competitive and
+                        rolling basis. Early online application is strongly
+                        recommended.
+                    </p>
+
+                    <div>Apply Now</div>
+
+                    <h3 className="text-[36px] leading-[36px] font-bold font-isd-font-1">
+                        Faculty Members{' '}
+                    </h3>
+
+                    <p className="text-isd-font-1">
+                        This program is a gateway for students to learn from our
+                        professors with diverse knowledge and research
+                        experience in the field gained from some of the top
+                        engineering institutions from around the world.
+                    </p>
+
+                    <div>ISD Faculty List</div>
+
+                    <h3 className="text-[36px] leading-[36px] font-bold font-isd-font-1">
+                        Contact Us{' '}
+                    </h3>
+
+                    <div className="flex-1 flex flex-col gap-[12px]">
+                        <table>
+                            <tbody className="leading-[16px] text-[12px]">
+                                <tr className="bg-isd-primary-2 text-isd-primary text-md text-left">
+                                    <td className="p-[12px] border-2 border-white">
+                                        Email
+                                    </td>
+                                    <td className="p-[12px] border-2 border-white">
+                                        enquirytle@ust.hk
+                                    </td>
+                                </tr>
+                                <tr className="bg-isd-secondary-1 text-isd-secondary text-md">
+                                    <td className="p-[12px] border-2 border-white">
+                                        Tel
+                                    </td>
+                                    <td className="p-[12px] border-2 border-white">
+                                        +852 3469 2957
+                                    </td>
+                                </tr>
+                                <tr className="bg-isd-primary-2 text-isd-primary text-md">
+                                    <td className="p-[12px] border-2 border-white">
+                                        Address
+                                    </td>
+                                    <td className="p-[12px] border-2 border-white">
+                                        Room 5591, Lift 29-30, The Hong Kong
+                                        University of Science and Technology,
+                                        Clear Water Bay, Hong Kong
+                                    </td>
+                                </tr>
+                                <tr className="bg-isd-secondary-1 text-isd-secondary text-md">
+                                    <td className="p-[12px] border-2 border-white">
+                                        Linkedin
+                                    </td>
+                                    <td className="p-[12px] border-2 border-white">
+                                        <a href="https://www.linkedin.com/school/hkust/">
+                                            {' '}
+                                            Click to view more
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr className="bg-isd-primary-2 text-isd-primary text-md">
+                                    <td className="p-[12px] border-2 border-white">
+                                        YouTube
+                                    </td>
+                                    <td className="p-[12px] border-2 border-white">
+                                        <a href="https://www.youtube.com/user/hkust">
+                                            Click to view more
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            ),
+        },
     ];
 
     return (
         <div className="container overflow-y-clip flex flex-col py-section-gap gap-component-gap dot-pattern before:top-[-95px] before:-mr-component-gap-sm before:right-0 [--dot-color:var(--isd-primary-2)]">
             {contentMenu.map((section, index) => (
-                <div key={index} className="flex flex-col gap-component-gap-sm">
+                <div
+                    key={index}
+                    className="menu flex flex-col gap-component-gap-sm"
+                >
                     <div className="text-lg leading-[28px] text-isd-primary">
                         {section.content}
                     </div>{' '}
