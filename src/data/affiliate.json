@@ -1,21 +1,3 @@
 [
-  {
-    "details": "<p><span style=\"font-size:14px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Research Areas: Molecular and genetic analysis of body pattern formation; cell fate determination; differentiation, assembly and morphogenesis of sensory organ; evolution of sexual characteristics and mating system.</span></span></p>",
-    "email": "bokchow@ust.hk",
-    "id": 7,
-    "keywords": [
-      "Genetics",
-      "Evolutionary biology",
-      "Synthetic biology"
-    ],
-    "link": null,
-    "location": "Rm 5442",
-    "name": "K L CHOW",
-    "phone": "2358 7342",
-    "photo": "/src/assets/people/bokchow.png",
-    "role": "Professor",
-    "surname": "CHOW",
-    "type": "Affiliates",
-    "isJointApt": false
-  }
+   
 ]

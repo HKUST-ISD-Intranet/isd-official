@@ -39,6 +39,9 @@ import ziqiw from '@/assets/people/ziqiw.jpg';
 import songguo from '@/assets/people/songguo.jpg';
 import lqyang from '@/assets/people/lqyang.jpeg';
 import pengzhou from '@/assets/people/pengzhou.jpg';
+
+import aexzhang from '@/assets/people/aexzhang.jpg';
+
 type Img = StaticImageData | string;
 
 export const peopleImages: Record<string, Img> = {
@@ -78,7 +81,8 @@ export const peopleImages: Record<string, Img> = {
     'ziqiw.jpg': ziqiw,
     'songguo.jpg': songguo,
     'lqyang.jpeg': lqyang,
-     'pengzhou.jpg': pengzhou,
+    'pengzhou.jpg': pengzhou,
+    'aexzhang.jpg': aexzhang,
 };
 
 /**
