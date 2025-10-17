@@ -51,7 +51,7 @@ export default function MSTLEBlock() {
                                                 link.idMenu
                                             )
                                         }
-                                        className={`text-h2 text-center pr-component-gap-sm cursor-pointer ${
+                                        className={`text-h2 text-center cursor-pointer pb-3 ${
                                             activeMenuId === link.idMenu
                                                 ? 'text-isd-secondary border-b-3 border-isd-secondary'
                                                 : 'text-isd-font-2'
