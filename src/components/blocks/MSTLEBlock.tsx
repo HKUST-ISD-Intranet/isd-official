@@ -186,11 +186,15 @@ export default function MSTLEBlock() {
                         Division of Public Policy, as well as a 9-credit project
                         course. For details, please refer to the {' '}
                         <span className="text-isd-secondary font-[700] underline">
-                            Postgraduate Program
+                            <a href="https://prog-crs.hkust.edu.hk/pgprog/2024-25/msc-tle">
+                                Postgraduate Program
+                            </a>
                         </span>
                         , 
                         <span className="text-isd-secondary font-[700] underline">
-                            Course Catalog
+                            <a href="https://prog-crs.hkust.edu.hk/pgcourse/2022-23/MTLE">
+                                Course Catalog
+                            </a>
                         </span>
                          and 
                         <span className="text-isd-secondary font-[700] underline">
@@ -263,7 +267,10 @@ export default function MSTLEBlock() {
                         qualification. For English Proficiency Requirements,
                         please refer to {' '}
                         <span className="text-isd-secondary font-[700] underline">
-                            HKUST Fok Ying Tung Graduate School
+                            <a href="https://fytgs.hkust.edu.hk/admissions/Admission-to-Hong-Kong-Campus/submitting-an-application/admission-requirements">
+                                {' '}
+                                HKUST Fok Ying Tung Graduate School
+                            </a>
                         </span>
                         . All applicants are considered on a competitive and
                         rolling basis. Early online application is strongly
