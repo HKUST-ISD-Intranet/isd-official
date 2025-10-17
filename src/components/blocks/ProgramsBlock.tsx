@@ -4,7 +4,7 @@ export default function ProgramBlock() {
         {
             heading: 'Undergraduate',
             content: 'BSc in Innovation, Design and Technology (IDT)',
-            link: '/academics/bsc-in-integrative-systems-and-design-isd',
+            link: '/academics/bsc-in-innovation-design-and-technology-idt',
         },
         {
             heading: 'Undergraduate',
