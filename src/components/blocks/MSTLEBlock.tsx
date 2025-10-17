@@ -1,6 +1,10 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+
 export default function MSTLEBlock() {
+    const [activeContentId, setActiveContentId] = useState('edu-obj');
+    const [activeMenuId, setActiveMenuId] = useState('edu-obj-menu');
+
     const menu = [
         {
             title: 'Educational Objectives',
@@ -16,57 +20,14 @@ export default function MSTLEBlock() {
     ];
 
     useEffect(() => {
-        const activeContent = window.document.getElementById('edu-obj');
-        if (activeContent) {
-            activeContent.classList.remove('hidden');
-        }
-
-        // on start, activate educational objectives
-        const activeContentMenu =
-            window.document.getElementById('edu-obj-menu');
-        if (activeContentMenu) {
-            activeContentMenu.classList.remove('text-isd-font-2');
-            activeContentMenu.classList.add('text-isd-secondary');
-
-            activeContentMenu.classList.add('border-b-3');
-            activeContentMenu.classList.add('border-isd-secondary');
-        }
+        // Set initial active state
+        setActiveContentId('edu-obj');
+        setActiveMenuId('edu-obj-menu');
     }, []);
 
     const handleMenuClick = (id: string, idMenu: string) => {
-        // Hide everything
-        let sections = ['edu-obj', 'curriculum', 'adm-app'];
-        sections.forEach((sectionId) => {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.classList.add('hidden');
-            }
-        });
-
-        // grey menus
-        sections = ['edu-obj-menu', 'curriculum-menu', 'adm-app-menu'];
-        sections.forEach((sectionId) => {
-            const sectionMenu = document.getElementById(sectionId);
-            if (sectionMenu) {
-                sectionMenu.classList.add('text-isd-font-2');
-                sectionMenu.classList.remove('border-b-3');
-                sectionMenu.classList.remove('border-isd-secondary');
-            }
-        });
-
-        // Display content
-        const activeContent = document.getElementById(id);
-        if (activeContent) {
-            activeContent.classList.remove('hidden');
-        }
-
-        const activeContentMenu = window.document.getElementById(idMenu);
-        if (activeContentMenu) {
-            activeContentMenu.classList.remove('text-isd-font-2');
-            activeContentMenu.classList.add('text-isd-secondary');
-            activeContentMenu.classList.add('border-b-3');
-            activeContentMenu.classList.add('border-isd-secondary');
-        }
+        setActiveContentId(id);
+        setActiveMenuId(idMenu);
     };
 
     const contentMenu = [
@@ -80,7 +41,7 @@ export default function MSTLEBlock() {
                         </h1>
                         <div className="w-auto overflow-clip pt-section-gap gap-section-title-gap">
                             <div className="w-full flex items-center justify-start gap-component-gap-sm divide-isd-font-2/30 text-isd-font-2">
-                                {menu.map((link, index) => (
+                                {menu.map((link) => (
                                     <div
                                         key={link.id}
                                         id={link.idMenu}
@@ -90,7 +51,11 @@ export default function MSTLEBlock() {
                                                 link.idMenu
                                             )
                                         }
-                                        className="text-h2 text-center  cursor-pointer  pb-3"
+                                        className={`text-h2 text-center pr-component-gap-sm cursor-pointer ${
+                                            activeMenuId === link.idMenu
+                                                ? 'text-isd-secondary border-b-3 border-isd-secondary'
+                                                : 'text-isd-font-2'
+                                        }`}
                                     >
                                         {link.title}
                                     </div>
@@ -111,8 +76,8 @@ export default function MSTLEBlock() {
                 <div className="flex flex-col gap-component-gap-sm">
                     <p className="text-isd-font-1">
                         <span className="text-isd-secondary font-[700]">
-                            'Will I be the next technology leader and change the
-                            world?'
+                            &lsquo;Will I be the next technology leader and
+                            change the world?&rsquo;
                         </span>{' '}
                         This may be the question in your mind when you browse
                         this website. We will soon arrange an Info Session to
@@ -293,8 +258,8 @@ export default function MSTLEBlock() {
             content: (
                 <div className="flex flex-col gap-component-gap-sm">
                     <p className="text-isd-font-1">
-                        Applicants should have obtained a bachelor's degree from
-                        a recognized institution, or an approved equivalent
+                        Applicants should have obtained a bachelor&apos;s degree
+                        from a recognized institution, or an approved equivalent
                         qualification. For English Proficiency Requirements,
                         please refer to {' '}
                         <span className="text-isd-secondary font-[700] underline">
@@ -400,7 +365,9 @@ export default function MSTLEBlock() {
                 <div
                     key={index}
                     id={section.id}
-                    className="flex flex-col gap-component-gap-sm hidden"
+                    className={`flex flex-col gap-component-gap-sm ${
+                        activeContentId === section.id ? '' : 'hidden'
+                    }`}
                 >
                     <h3 className="text-[36px] leading-[36px] font-bold text-isd-primary">
                         {section.subheading}
