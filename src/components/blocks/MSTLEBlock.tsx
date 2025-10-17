@@ -363,7 +363,7 @@ export default function MSTLEBlock() {
     ];
 
     return (
-        <div className="container overflow-y-clip flex flex-col py-section-gap gap-component-gap dot-pattern before:top-[-95px] before:-mr-component-gap-sm before:right-0 [--dot-color:var(--isd-primary-2)]">
+        <div className="container overflow-y-clip flex flex-col py-section-gap gap-component-gap">
             {contentMenu.map((section, index) => (
                 <div key={index}>{section.content}</div>
             ))}
