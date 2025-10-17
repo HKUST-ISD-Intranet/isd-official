@@ -9,12 +9,15 @@ export type Person = {
     phone?: string | null;
     location?: string | null;
     link?: string | null;
+    areas?: string[] | null;
+    tags?: string[] | null;
 };
 
 type Options = {
     keyword?: string;
     sortBy?: 'sort_name' | 'sort_position';
     context?: 'faculty' | 'affiliate' | 'staff';
+    tag?: string;
 };
 
 const facultyPositionOrder = [
@@ -74,13 +77,14 @@ export function filterAndSortPeople(items: Person[], options: Options = {}) {
         keyword = '',
         sortBy = 'sort_position',
         context = 'faculty',
+        tag = '',
     } = options;
     const tokens = keyword
         .split(/\s+/)
         .map((t) => normalize(t))
         .filter(Boolean);
 
-    const filtered = items.filter((it) => {
+    let filtered = items.filter((it) => {
         if (tokens.length === 0) return true;
         let hay = [it.name, it.role, it.position, it.location, it.email]
             .filter(Boolean)
@@ -93,6 +97,14 @@ export function filterAndSortPeople(items: Person[], options: Options = {}) {
         }
         return tokens.every((t) => hay.includes(t));
     });
+
+    // filter by tag
+    if (tag) {
+        filtered = filtered.filter((it) => {
+            if (!Array.isArray(it.tags)) return false;
+            return it.tags.includes(tag);
+        });
+    }
 
     const sorted = filtered.slice();
     if (sortBy === 'sort_name') {

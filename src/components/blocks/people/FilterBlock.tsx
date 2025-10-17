@@ -17,6 +17,16 @@ export default function FilterBlock() {
         { value: 'sort_position', label: 'Sort by Position' },
     ];
 
+    const tags = [
+        { value: 'regular', label: 'Regular' },
+        { value: 'joint_appointment', label: 'Joint Appointment' },
+        { value: 'teaching_track', label: 'Teaching Track' },
+        { value: 'research_track', label: 'Research Track' },
+        { value: 'adjunct', label: 'Adjunct' },
+        { value: 'emeritus', label: 'Emeritus' },
+        { value: 'affiliate', label: 'Affiliate' },
+    ];
+
     const router = useRouter();
     const searchParams = useSearchParams();
 
@@ -24,10 +34,12 @@ export default function FilterBlock() {
     const initialRole = searchParams?.get('role') ?? 'all';
     const initialSort = searchParams?.get('sort') ?? 'sort_position';
     const initialKeyword = searchParams?.get('keyword') ?? '';
+    const initialTag = searchParams?.get('tag') ?? '';
 
     const [role, setRole] = useState<string>(initialRole);
     const [sort, setSort] = useState<string>(initialSort);
     const [keyword, setKeyword] = useState<string>(initialKeyword);
+    const [tag, setTag] = useState<string>(initialTag);
 
     const paramString = searchParams?.toString() ?? '';
 
@@ -36,12 +48,14 @@ export default function FilterBlock() {
         setRole(searchParams?.get('role') ?? 'all');
         setSort(searchParams?.get('sort') ?? 'sort_position');
         setKeyword(searchParams?.get('keyword') ?? '');
+        setTag(searchParams?.get('tag') ?? '');
     }, [paramString, searchParams]);
 
     function applyFilters(newParams?: {
         role?: string;
         sort?: string;
         keyword?: string;
+        tag?: string;
     }) {
         const params = new URLSearchParams(searchParams?.toString() ?? '');
         if (newParams?.role !== undefined) params.set('role', newParams.role);
@@ -51,20 +65,28 @@ export default function FilterBlock() {
             else params.set('keyword', newParams.keyword);
         }
 
+        if (newParams?.tag !== undefined) params.set('tag', newParams.tag);
+
         // push so page updates and server component will re-render
         const qs = params.toString();
         router.push(`/people${qs ? `?${qs}` : ''}`);
     }
 
     function handleSearch() {
-        applyFilters({ role, sort, keyword });
+        applyFilters({ role, sort, keyword, tag });
     }
 
     function handleClear() {
         setRole('all');
         setSort('sort_position');
         setKeyword('');
-        applyFilters({ role: 'all', sort: 'sort_position', keyword: '' });
+        setTag('');
+        applyFilters({
+            role: 'all',
+            sort: 'sort_position',
+            keyword: '',
+            tag: '',
+        });
     }
 
     return (
@@ -77,7 +99,7 @@ export default function FilterBlock() {
                     onChange={(v) => {
                         const val = String(v);
                         setRole(val);
-                        applyFilters({ role: val, sort, keyword });
+                        applyFilters({ role: val, sort, keyword, tag });
                     }}
                     placeholder="Sort by Role"
                     className="w-[180px]"
@@ -90,7 +112,7 @@ export default function FilterBlock() {
                     onChange={(v) => {
                         const val = String(v);
                         setSort(val);
-                        applyFilters({ role, sort: val, keyword });
+                        applyFilters({ role, sort: val, keyword, tag });
                     }}
                     placeholder="Sort by Position"
                     className="w-[180px]"
@@ -120,6 +142,40 @@ export default function FilterBlock() {
                         Clear
                     </button>
                 </div>
+            </div>
+
+            <div className="flex justify-center">
+                {tags.map((leTag) => (
+                    <button
+                        key={leTag.value}
+                        onClick={() => {
+                            if (tag !== leTag.value) {
+                                setTag(leTag.value);
+                                applyFilters({
+                                    role,
+                                    sort,
+                                    keyword,
+                                    tag: leTag.value,
+                                });
+                            } else {
+                                setTag('');
+                                applyFilters({
+                                    role,
+                                    sort,
+                                    keyword,
+                                    tag: '',
+                                });
+                            }
+                        }}
+                        className={` text-sm p-footer-gap  border w-40 m-3 rounded-xl  ${
+                            tag === leTag.value
+                                ? 'bg-isd-primary h-component-gap text-white'
+                                : 'bg-white h-component-gap text-isd-primary'
+                        }`}
+                    >
+                        {leTag.label}
+                    </button>
+                ))}
             </div>
         </div>
     );

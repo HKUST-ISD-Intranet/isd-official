@@ -25,6 +25,10 @@ export default function PeoplePage({
         ? searchParams?.keyword[0]
         : (searchParams?.keyword ?? '');
 
+    const tag = Array.isArray(searchParams?.tag)
+        ? searchParams?.tag[0]
+        : (searchParams?.tag ?? '');
+
     // Default to sorting by position
     const sortBy = sort === 'sort_name' ? 'sort_name' : 'sort_position';
 
@@ -36,6 +40,7 @@ export default function PeoplePage({
                   keyword,
                   sortBy,
                   context: 'faculty',
+                  tag,
               });
 
     const affiliateList =
@@ -45,6 +50,7 @@ export default function PeoplePage({
                   keyword,
                   sortBy,
                   context: 'affiliate',
+                  tag,
               });
 
     const staffList =
@@ -54,6 +60,7 @@ export default function PeoplePage({
                   keyword,
                   sortBy,
                   context: 'staff',
+                  tag,
               });
 
     return (
@@ -65,9 +72,9 @@ export default function PeoplePage({
                 <FacultyBlock people={facultyList} />
             )}
 
-            {(role === 'all' || role === 'affiliate') && (
+            {/*(role === 'all' || role === 'affiliate') && (
                 <FacultyBlock type="affiliate" people={affiliateList} />
-            )}
+            )*/}
 
             {(role === 'all' || role === 'staff') && (
                 <StaffBlock people={staffList} />
