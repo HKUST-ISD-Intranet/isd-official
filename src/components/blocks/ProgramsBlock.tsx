@@ -8,6 +8,7 @@ export default function ProgramBlock() {
         {
             heading: 'Undergraduate',
             content: 'Design Minor',
+            link: '/academics/design-minor',
         },
         {
             heading: 'Postgraduate',
