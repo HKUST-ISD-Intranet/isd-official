@@ -36,7 +36,9 @@ import ybchan from '@/assets/people/ybchan.png';
 import ylzi from '@/assets/people/ylzi.jpg';
 import yuanly from '@/assets/people/yuanly.jpeg';
 import ziqiw from '@/assets/people/ziqiw.jpg';
-
+import songguo from '@/assets/people/songguo.jpg';
+import lqyang from '@/assets/people/lqyang.jpeg';
+import pengzhou from '@/assets/people/pengzhou.jpg';
 type Img = StaticImageData | string;
 
 export const peopleImages: Record<string, Img> = {
@@ -74,6 +76,9 @@ export const peopleImages: Record<string, Img> = {
     'ylzi.jpg': ylzi,
     'yuanly.jpeg': yuanly,
     'ziqiw.jpg': ziqiw,
+    'songguo.jpg': songguo,
+    'lqyang.jpeg': lqyang,
+     'pengzhou.jpg': pengzhou,
 };
 
 /**
