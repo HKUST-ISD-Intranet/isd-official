@@ -21,11 +21,15 @@ export default function MSTLEBlock() {
             activeContent.classList.remove('hidden');
         }
 
+        // on start, activate educational objectives
         const activeContentMenu =
             window.document.getElementById('edu-obj-menu');
         if (activeContentMenu) {
             activeContentMenu.classList.remove('text-isd-font-2');
             activeContentMenu.classList.add('text-isd-secondary');
+
+            activeContentMenu.classList.add('border-b-3');
+            activeContentMenu.classList.add('border-isd-secondary');
         }
     }, []);
 
@@ -42,9 +46,11 @@ export default function MSTLEBlock() {
         // grey menus
         sections = ['edu-obj-menu', 'curriculum-menu', 'adm-app-menu'];
         sections.forEach((sectionId) => {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.classList.add('text-isd-font-2');
+            const sectionMenu = document.getElementById(sectionId);
+            if (sectionMenu) {
+                sectionMenu.classList.add('text-isd-font-2');
+                sectionMenu.classList.remove('border-b-3');
+                sectionMenu.classList.remove('border-isd-secondary');
             }
         });
 
@@ -58,6 +64,8 @@ export default function MSTLEBlock() {
         if (activeContentMenu) {
             activeContentMenu.classList.remove('text-isd-font-2');
             activeContentMenu.classList.add('text-isd-secondary');
+            activeContentMenu.classList.add('border-b-3');
+            activeContentMenu.classList.add('border-isd-secondary');
         }
     };
 
@@ -66,11 +74,11 @@ export default function MSTLEBlock() {
             content: (
                 <div className="flex flex-col gap-component-gap-sm">
                     <div className="flex flex-col">
-                        <h1 className="text-h1 offset-text-background text-isd-font-1 uppercase">
+                        <h1 className="text-h1 offset-text-background text-isd-font-1 ">
                             Master of Science in Technology Leadership and
                             Entrepreneurship
                         </h1>
-                        <div className="w-full overflow-clip pt-section-gap gap-section-title-gap">
+                        <div className="w-auto overflow-clip pt-section-gap gap-section-title-gap">
                             <div className="w-full flex items-center justify-start gap-component-gap-sm divide-isd-font-2/30 text-isd-font-2">
                                 {menu.map((link, index) => (
                                     <div
@@ -82,7 +90,7 @@ export default function MSTLEBlock() {
                                                 link.idMenu
                                             )
                                         }
-                                        className="text-h2  pr-component-gap-sm last:pr-0 cursor-pointer"
+                                        className="text-h2 text-center pr-component-gap-sm cursor-pointer  pb-3"
                                     >
                                         {link.title}
                                     </div>
@@ -118,15 +126,17 @@ export default function MSTLEBlock() {
                         as entrepreneurial components paving the way for a
                         start-up. It is perfect for students who are:
                     </p>
-                    <p className="text-isd-secondary font-[700]">
-                        interested in building a strategic technical advantage
-                        into their product.
-                    </p>
-                    <p className="text-isd-secondary font-[700]">
-                        eager to access advanced facilities, know-hows, and a
-                        talent pool for prototyping and launching their product
-                        into the market.
-                    </p>
+                    <div>
+                        <div className="text-isd-secondary font-[700]">
+                            interested in building a strategic technical
+                            advantage into their product.
+                        </div>
+                        <div className="text-isd-secondary font-[700]">
+                            eager to access advanced facilities, know-hows, and
+                            a talent pool for prototyping and launching their
+                            product into the market.
+                        </div>
+                    </div>
 
                     <div className="flex flex-col gap-[18px] border-l-5 bg-isd-primary-2 border-l-isd-primary text-isd-font-1 p-component-gap-sm rounded-md">
                         <p className="text-h2 leading-[32px] text-isd-primary">
@@ -151,7 +161,7 @@ export default function MSTLEBlock() {
                         </ul>
                     </div>
 
-                    <h3 className="text-[36px] leading-[36px] font-bold font-isd-font-1">
+                    <h3 className="text-[36px] leading-[36px] font-bold font-isd-font-1 text-isd-primary">
                         Major Components
                     </h3>
                     <div className="flex-1 flex flex-col gap-[12px]">
@@ -229,41 +239,44 @@ export default function MSTLEBlock() {
                         </p>
                         <div className="w-full border-b-2 border-isd-primary mt-2"></div>
                     </div>
-                    <div className="flex items-center justify-between w-full text-h2 font-bold">
-                        <div className="flex flex-col gap-[18px] bg-isd-primary-2 border-l-isd-primary text-isd-primary p-component-gap-sm rounded-md flex-1">
-                            <p>Core Courses (9 credits)</p>
-                        </div>
-                        <span className="mx-2">+</span>
-                        <div className="flex flex-col gap-[18px] bg-isd-secondary-1 border-l-isd-secondary text-isd-secondary p-component-gap-sm rounded-md flex-1">
-                            <p>Elective Courses (12 credits)</p>
-                        </div>
-                        <span className="mx-2">+</span>
-                        <div className="flex flex-col gap-[18px] bg-isd-primary-2 border-l-isd-primary text-isd-primary p-component-gap-sm rounded-md flex-1">
-                            <p>TLE Project (9 credits)</p>
-                        </div>
-                    </div>
 
-                    <div className="flex items-start justify-between w-full text-sm">
-                        <div className="flex flex-col gap-[18px] bg-isd-primary-2 border-l-isd-primary text-isd-font-3 p-component-gap-sm rounded-md flex-1">
-                            <p>Technology Leadership and Entrepreneurship</p>
-                            <p>Product Development and Prototyping</p>
-                            <p>Start-up Workshop</p>
-                        </div>
-                        <span className="mx-2"></span>
-                        <div className="flex flex-col gap-[18px] bg-isd-secondary-1 border-l-isd-secondary text-isd-font-3 p-component-gap-sm rounded-md flex-1 ml-4">
-                            <p>
-                                Elective courses are a selection of
-                                entrepreneurship and leadership as well as
-                                technology and science related courses chosen
-                                from the portfolio of the School of Business and
-                                Management, the School of Engineering, the
-                                School of Science, and the Academy of
-                                Interdisciplinary Studies.
-                            </p>
-                        </div>
-                        <span className="mx-2"></span>
-                        <div className="ml-4"></div>
-                    </div>
+                    <table className="flex items-center justify-between w-full">
+                        <tbody>
+                            <tr className="text-h2 font-bold">
+                                <td className=" flex flex-col  bg-isd-primary-2 text-isd-primary p-component-gap-sm rounded-md  min-w-80 h-2.0">
+                                    Core Courses (9 credits)
+                                </td>
+                                <td className="p-component-gap-sm">+</td>
+                                <td className="flex flex-col  bg-isd-secondary-1  text-isd-secondary p-component-gap-sm rounded-md ">
+                                    Elective Courses (12 credits)
+                                </td>
+                                <td className="p-component-gap-sm">+</td>
+                                <td className="flex flex-col  bg-isd-primary-2 text-isd-primary p-component-gap-sm rounded-md ">
+                                    TLE Project (9 credits)
+                                </td>
+                            </tr>
+                            <tr className="text-sm">
+                                <td className="flex flex-col  bg-isd-primary-2  text-isd-font-3 p-component-gap-sm rounded-md ">
+                                    <p>
+                                        Technology Leadership and
+                                        Entrepreneurship
+                                    </p>
+                                    <p>Product Development and Prototyping</p>
+                                    <p>Start-up Workshop</p>
+                                </td>
+                                <td className="p-component-gap-sm"> </td>
+                                <td className="flex flex-col  bg-isd-secondary-1  text-isd-font-3 p-component-gap-sm rounded-md max-w-200">
+                                    Elective courses are a selection of
+                                    entrepreneurship and leadership as well as
+                                    technology and science related courses
+                                    chosen from the portfolio of the School of
+                                    Business and Management, the School of
+                                    Engineering, the School of Science, and the
+                                    Academy of Interdisciplinary Studies.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                     <div className="text-isd-font-3 text-sm">
                         *Classes are normally held on weekday evenings from
@@ -292,10 +305,12 @@ export default function MSTLEBlock() {
                         recommended.
                     </p>
 
-                    <div>Apply Now</div>
+                    <div className="bg-isd-primary-2 text-md font-bold text-isd-primary p-5 text-center w-1/6">
+                        Apply Now
+                    </div>
 
-                    <h3 className="text-[36px] leading-[36px] font-bold font-isd-font-1">
-                        Faculty Members{' '}
+                    <h3 className="text-[36px] leading-[36px] font-bold font-isd-font-1 text-isd-primary">
+                        Faculty Members
                     </h3>
 
                     <p className="text-isd-font-1">
@@ -305,9 +320,13 @@ export default function MSTLEBlock() {
                         engineering institutions from around the world.
                     </p>
 
-                    <div>ISD Faculty List</div>
+                    <a className="cursor-pointer" href="/people">
+                        <div className="bg-isd-primary-2 text-md font-bold text-isd-primary p-5 text-center w-1/6">
+                            ISD Faculty List
+                        </div>
+                    </a>
 
-                    <h3 className="text-[36px] leading-[36px] font-bold font-isd-font-1">
+                    <h3 className="text-[36px] leading-[36px] font-bold font-isd-font-1 text-isd-primary">
                         Contact Us{' '}
                     </h3>
 
@@ -319,7 +338,9 @@ export default function MSTLEBlock() {
                                         Email
                                     </td>
                                     <td className="p-[12px] border-2 border-white">
-                                        enquirytle@ust.hk
+                                        <a href="mailto:enquirytle@ust.hk">
+                                            enquirytle@ust.hk
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr className="bg-isd-secondary-1 text-isd-secondary text-md">
@@ -372,14 +393,7 @@ export default function MSTLEBlock() {
     return (
         <div className="container overflow-y-clip flex flex-col py-section-gap gap-component-gap dot-pattern before:top-[-95px] before:-mr-component-gap-sm before:right-0 [--dot-color:var(--isd-primary-2)]">
             {contentMenu.map((section, index) => (
-                <div
-                    key={index}
-                    className="menu flex flex-col gap-component-gap-sm"
-                >
-                    <div className="text-lg leading-[28px] text-isd-primary">
-                        {section.content}
-                    </div>{' '}
-                </div>
+                <div key={index}>{section.content}</div>
             ))}
 
             {content.map((section, index) => (
@@ -388,7 +402,7 @@ export default function MSTLEBlock() {
                     id={section.id}
                     className="flex flex-col gap-component-gap-sm hidden"
                 >
-                    <h3 className="text-[36px] leading-[36px] font-bold font-isd-font-1">
+                    <h3 className="text-[36px] leading-[36px] font-bold text-isd-primary">
                         {section.subheading}
                     </h3>
                     <div className="text-lg leading-[28px] text-isd-font-3">
