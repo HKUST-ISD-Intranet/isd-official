@@ -11,8 +11,11 @@ export default function AcademicsPage() {
                 className="dot-pattern before:top-[-115px] before:right-0 [--dot-color:var(--isd-primary-2)]"
                 // aria-hidden
             />
-
             <MSTLEBlock />
+            <div
+                className="dot-pattern before:top-[-465px] before:left-[-115px] [--dot-color:var(--isd-secondary-1)]"
+                // aria-hidden
+            />
         </div>
     );
 }
