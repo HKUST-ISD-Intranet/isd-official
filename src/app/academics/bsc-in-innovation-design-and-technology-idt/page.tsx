@@ -2,6 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import HeroImageFile from '@/assets/scholarships-img.png';
 import HeroImage from '@/components/HeroImage';
+import IDTEduObjBlock from './IDTEduObjBlock';
+import IDTCurriculumBlock from './IDTCurriculumBlock';
+import IDTAdmissionBlock from './IDTAdmissionBlock';
 
 export default function IDTPage() {
     const [activeMenuId, setActiveMenuId] = useState('edu-obj-menu');
@@ -53,9 +56,20 @@ export default function IDTPage() {
                         ))}
                     </div>
                 </div>
+                <div>
+                    {activeMenuId === 'edu-obj' && <IDTEduObjBlock />}{' '}
+                    {activeMenuId === 'curriculum' && <IDTCurriculumBlock />}
+                    {activeMenuId === 'adm-req' && <IDTAdmissionBlock />}
+                </div>
             </div>
             {activeMenuId === 'edu-obj' && (
                 <div className="dot-pattern before:top-[-65px] before:left-[-10px] [--dot-color:var(--isd-secondary-1)]" />
+            )}
+            {activeMenuId === 'curriculum' && (
+                <div className="dot-pattern before:top-[-110px] before:left-[-10px] [--dot-color:var(--isd-secondary-1)]" />
+            )}
+            {activeMenuId === 'adm-req' && (
+                <div className="dot-pattern before:top-[-2050px] before:left-[-10px] [--dot-color:var(--isd-secondary-1)]" />
             )}
         </>
     );
