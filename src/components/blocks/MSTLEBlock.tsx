@@ -103,7 +103,7 @@ export default function MSTLEBlock() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-[18px] border-l-5 bg-isd-primary-2 border-l-isd-primary text-isd-font-1 p-component-gap-sm rounded-md">
+                    <div className="flex flex-col gap-[18px] border-l-5 bg-isd-primary-2 border-l-isd-primary text-isd-font-1 p-component-gap-sm">
                         <p className="text-h2 leading-[32px] text-isd-primary">
                             Learning Outcomes
                         </p>
