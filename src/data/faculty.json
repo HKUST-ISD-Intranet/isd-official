@@ -20,7 +20,7 @@
         "type": "ISD Faculty",
         "isJointApt": false,
 
-        "areas": ["Health Tech"],
+        "areas": ["health_tech"],
         "tags": ["regular"]
     },
     {
@@ -42,7 +42,7 @@
         "surname": "LIU",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Sustainable-Tech", "Design-Tech"],
+        "areas": ["sustainable_tech", "design_tech"],
         "tags": ["regular"]
     },
 
@@ -85,7 +85,7 @@
         "surname": "MOK",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Design-Tech"],
+        "areas": ["design_tech"],
         "tags": ["regular"]
     },
     {
@@ -106,7 +106,7 @@
         "surname": "GU",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Health Tech", "Design-Tech"],
+        "areas": ["health_tech", "design_tech"],
         "tags": ["regular"]
     },
     {
@@ -127,7 +127,7 @@
         "surname": "XU",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Sustainable-Tech"],
+        "areas": ["sustainable_tech"],
         "tags": ["regular"]
     },
     {
@@ -219,7 +219,7 @@
         "surname": "LI",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Design-Tech"],
+        "areas": ["design_tech"],
         "tags": ["regular"]
     },
     {
@@ -242,7 +242,7 @@
         "surname": "SHAO",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Health Tech"],
+        "areas": ["health_tech"],
         "tags": ["regular"]
     },
     {
@@ -264,14 +264,18 @@
         "surname": "WANG",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Sustainable-Tech", "Design-Tech"],
+        "areas": ["sustainable_tech", "design_tech"],
         "tags": ["regular"]
     },
     {
         "details": "Dr. Winnie Leung Suk-Wai is a systems designer, educator and entrepreneur. Faculty of the Division of Integrative Systems and Design (ISD), currently, she serves as the Industry-Partnered Capstone Program Manager for the intensive experiential-learning focused degree program. Dr. Leung received her PhD in Electronic and Computer Engineering from The Hong Kong University of Science and Technology (HKUST) in 2010. In Canada, she earned her BASc in Systems Design Engineering from University of Waterloo in 2002 and MASc in Aerospace Engineering from University of Toronto Institute for Aerospace Studies in 2004. She has worked as teaching faculty in the top universities in Hong Kong in both engineering and entrepreneurship disciplines. Prior to her PhD studies, Dr. Leung worked in the Canadian/ European aerospace industry as a control engineer between 2004 and 2006 designing the first version of the ExoMars Rover locomotive. She has published over 20 technical papers in international journals and conferences. Beyond her academic endeavours, Dr. Leung worked extensively in technology consulting (MDRobotics, IBM, Deloitte Consulting), and founded multiple companies (miniDSP, Aromeo and a STEAM school management company) equipping her with cross disciplinary business and entrepreneurial vantage points.\n\nDr. Leung’s research focuses on robotics dynamics and control, and systems dynamics identification, modelling and simulation. Some of her current projects include assistive robotics (exoskeleton and rehab robotics), construction robots, and modular mechatronics platform optimised for higher education.",
         "email": "eewswleung@ust.hk",
         "id": 24,
-        "keywords": [],
+        "keywords": [
+            "Robotics dynamics and control",
+            "Systems simulation and modeling",
+            "Integrative systems design"
+        ],
         "link": "https://seng.hkust.edu.hk/about/people/faculty/winnie-suk-wai-leung",
         "location": "Rm 6531",
         "name": "Winnie LEUNG",
@@ -301,7 +305,7 @@
         "surname": "JONEJA",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Sustainable-Tech", "Design-Tech"],
+        "areas": ["sustainable_tech", "design_tech"],
         "tags": ["regular"]
     },
     {
@@ -344,7 +348,7 @@
         "surname": "YEUNG",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Marine-Tech"],
+        "areas": ["marine_tech"],
         "tags": ["regular"]
     },
     {
@@ -463,7 +467,7 @@
         "surname": "SCHARFF",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Marine-Tech"],
+        "areas": ["marine_tech"],
         "tags": ["regular"]
     },
     {
@@ -476,7 +480,8 @@
             "Solar system planning",
             "Smart building envelope",
             "Resilient carbon-neutral cities",
-            "Light & colour in architecture & cities ‧Prefabricated construction"
+            "Light & colour in architecture & cities",
+            "Prefabricated construction"
         ],
         "link": "https://ssac-dev.hkust.edu.hk/",
         "location": "Rm 5591B",
@@ -487,7 +492,7 @@
         "surname": "XIANG",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Sustainable-Tech", "Health Tech"],
+        "areas": ["sustainable_tech", "health_tech"],
         "tags": ["regular"]
     },
     {
@@ -568,7 +573,7 @@
         "surname": "BRAUD",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Design-Tech"],
+        "areas": ["design_tech"],
         "tags": ["regular"]
     },
     {
@@ -585,7 +590,7 @@
         "surname": "LI",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Sustainable-Tech", "Health Tech"],
+        "areas": ["sustainable_tech", "health_tech"],
         "tags": ["regular"]
     },
     {
@@ -602,7 +607,7 @@
         "surname": "SONG",
         "type": "ISD Faculty",
         "isJointApt": false,
-        "areas": ["Marine-Tech"],
+        "areas": ["marine_tech"],
         "tags": ["regular"]
     },
     {

@@ -15,6 +15,7 @@ interface FacultyCardProps {
     location?: string;
     link?: string;
     details?: string;
+    primaryApt?: string;
 }
 
 export default function ReadMoreButton({
@@ -27,6 +28,7 @@ export default function ReadMoreButton({
     location,
     link,
     details,
+    primaryApt,
 }: FacultyCardProps) {
     const [detailsOpen, setDetailsOpen] = useState(false);
 
@@ -48,7 +50,7 @@ export default function ReadMoreButton({
                 );
             }
 
-            // check in part if http is found 
+            // check in part if http is found
             if (part.includes('http')) {
                 // split on http and https
                 const parts = part.split(/(http[s]?:\/\/[^\s]+)/g);
@@ -113,6 +115,12 @@ export default function ReadMoreButton({
                                     <div className="text-md text-isd-secondary">
                                         {role}
                                     </div>
+                                    <div className="text-md text-isd-font-3 text">
+                                        {primaryApt
+                                            ? `Primary appointment: ${primaryApt}`
+                                            : null}
+                                    </div>
+
                                     <div className="text-md text-isd-font-3 text">
                                         {keywords?.join(', ')}
                                     </div>

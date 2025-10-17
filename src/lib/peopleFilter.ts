@@ -11,11 +11,12 @@ export type Person = {
     link?: string | null;
     areas?: string[] | null;
     tags?: string[] | null;
+    primaryApt?: string | null;
 };
 
 type Options = {
     keyword?: string;
-    sortBy?: 'sort_name' | 'sort_position';
+    area?: string;
     context?: 'faculty' | 'affiliate' | 'staff';
     tag?: string;
 };
@@ -75,7 +76,7 @@ function positionRank(
 export function filterAndSortPeople(items: Person[], options: Options = {}) {
     const {
         keyword = '',
-        sortBy = 'sort_position',
+        area = 'all',
         context = 'faculty',
         tag = '',
     } = options;
@@ -106,22 +107,22 @@ export function filterAndSortPeople(items: Person[], options: Options = {}) {
         });
     }
 
-    const sorted = filtered.slice();
-    if (sortBy === 'sort_name') {
-        sorted.sort((a, b) => {
-            const ka = nameKey(a.name);
-            const kb = nameKey(b.name);
-            return ka.localeCompare(kb);
-        });
-    } else {
-        // sort by position using rank then name as tiebreaker
-        sorted.sort((a, b) => {
-            const ra = positionRank(a.position ?? a.role ?? '', context);
-            const rb = positionRank(b.position ?? b.role ?? '', context);
-            if (ra !== rb) return ra - rb;
-            return nameKey(a.name).localeCompare(nameKey(b.name));
+    if (area !== 'all') {
+        filtered = filtered.filter((it) => {
+            if (!Array.isArray(it.areas)) return false;
+            return it.areas.includes(area);
         });
     }
+
+    const sorted = filtered.slice();
+
+    // sort by position using rank then name as tiebreaker
+    sorted.sort((a, b) => {
+        const ra = positionRank(a.position ?? a.role ?? '', context);
+        const rb = positionRank(b.position ?? b.role ?? '', context);
+        if (ra !== rb) return ra - rb;
+        return nameKey(a.name).localeCompare(nameKey(b.name));
+    });
 
     return sorted;
 }

@@ -3,18 +3,21 @@
 import React, { useEffect, useState } from 'react';
 import Select from '../../Select';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { AreaChart } from 'lucide-react';
 
 export default function FilterBlock() {
     const roles = [
         { value: 'all', label: 'All Roles' },
         { value: 'faculty', label: 'ISD Faculty' },
-        { value: 'affiliate', label: 'Affiliates' },
         { value: 'staff', label: 'ISD Staff' },
     ];
 
-    const sortOptions = [
-        { value: 'sort_name', label: 'Sort by Name' },
-        { value: 'sort_position', label: 'Sort by Position' },
+    const areas = [
+        { value: 'all', label: 'All Areas' },
+        { value: 'health_tech', label: 'Health Tech' },
+        { value: 'sustainable_tech', label: 'Sustainable-Tech' },
+        { value: 'design_tech', label: 'Design-Tech' },
+        { value: 'marine_tech', label: 'Marine-Tech' },
     ];
 
     const tags = [
@@ -32,12 +35,12 @@ export default function FilterBlock() {
 
     // initialize from URL so the UI reflects the current page state
     const initialRole = searchParams?.get('role') ?? 'all';
-    const initialSort = searchParams?.get('sort') ?? 'sort_position';
+    const initialArea = searchParams?.get('area') ?? 'all';
     const initialKeyword = searchParams?.get('keyword') ?? '';
     const initialTag = searchParams?.get('tag') ?? '';
 
     const [role, setRole] = useState<string>(initialRole);
-    const [sort, setSort] = useState<string>(initialSort);
+    const [area, setArea] = useState<string>(initialArea);
     const [keyword, setKeyword] = useState<string>(initialKeyword);
     const [tag, setTag] = useState<string>(initialTag);
 
@@ -46,20 +49,20 @@ export default function FilterBlock() {
     useEffect(() => {
         // keep state synced if the user navigates with back/forward
         setRole(searchParams?.get('role') ?? 'all');
-        setSort(searchParams?.get('sort') ?? 'sort_position');
+        setArea(searchParams?.get('area') ?? 'all');
         setKeyword(searchParams?.get('keyword') ?? '');
         setTag(searchParams?.get('tag') ?? '');
     }, [paramString, searchParams]);
 
     function applyFilters(newParams?: {
         role?: string;
-        sort?: string;
+        area?: string;
         keyword?: string;
         tag?: string;
     }) {
         const params = new URLSearchParams(searchParams?.toString() ?? '');
         if (newParams?.role !== undefined) params.set('role', newParams.role);
-        if (newParams?.sort !== undefined) params.set('sort', newParams.sort);
+        if (newParams?.area !== undefined) params.set('area', newParams.area);
         if (newParams?.keyword !== undefined) {
             if (newParams.keyword === '') params.delete('keyword');
             else params.set('keyword', newParams.keyword);
@@ -73,17 +76,17 @@ export default function FilterBlock() {
     }
 
     function handleSearch() {
-        applyFilters({ role, sort, keyword, tag });
+        applyFilters({ role, area, keyword, tag });
     }
 
     function handleClear() {
         setRole('all');
-        setSort('sort_position');
+        setArea('all');
         setKeyword('');
         setTag('');
         applyFilters({
             role: 'all',
-            sort: 'sort_position',
+            area: 'all',
             keyword: '',
             tag: '',
         });
@@ -99,22 +102,22 @@ export default function FilterBlock() {
                     onChange={(v) => {
                         const val = String(v);
                         setRole(val);
-                        applyFilters({ role: val, sort, keyword, tag });
+                        applyFilters({ role: val, area, keyword, tag });
                     }}
                     placeholder="Sort by Role"
                     className="w-[180px]"
                 />
 
                 <Select
-                    id="position-select"
-                    options={sortOptions}
-                    value={sort}
+                    id="area-select"
+                    options={areas}
+                    value={area}
                     onChange={(v) => {
                         const val = String(v);
-                        setSort(val);
-                        applyFilters({ role, sort: val, keyword, tag });
+                        setArea(val);
+                        applyFilters({ role, area: val, keyword, tag });
                     }}
-                    placeholder="Sort by Position"
+                    placeholder="Filter by area"
                     className="w-[180px]"
                 />
 
@@ -153,7 +156,7 @@ export default function FilterBlock() {
                                 setTag(leTag.value);
                                 applyFilters({
                                     role,
-                                    sort,
+                                    area,
                                     keyword,
                                     tag: leTag.value,
                                 });
@@ -161,7 +164,7 @@ export default function FilterBlock() {
                                 setTag('');
                                 applyFilters({
                                     role,
-                                    sort,
+                                    area,
                                     keyword,
                                     tag: '',
                                 });

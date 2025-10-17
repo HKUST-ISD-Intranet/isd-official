@@ -14,6 +14,7 @@ interface FacultyCardProps {
     location?: string;
     link?: string;
     details?: string;
+    primaryApt?: string;
 }
 
 export default function FacultyCard({
@@ -26,6 +27,7 @@ export default function FacultyCard({
     location,
     link,
     details,
+    primaryApt,
 }: FacultyCardProps) {
     return (
         <div className="flex gap-component-gap-sm">
@@ -44,6 +46,11 @@ export default function FacultyCard({
                     <div className="text-h2 text-isd-font-1">{name}</div>
                     <div className="text-md text-isd-secondary">{role}</div>
                     <div className="text-md text-isd-font-3 text">
+                        {primaryApt
+                            ? `Primary appointment: ${primaryApt}`
+                            : null}
+                    </div>
+                    <div className="text-md text-isd-font-3 text">
                         {keywords.map((kw, index) => (
                             <span key={kw}>
                                 {kw}
@@ -61,6 +68,7 @@ export default function FacultyCard({
                         location={location}
                         link={link}
                         details={details}
+                        primaryApt={primaryApt}
                     />
                 </div>
 

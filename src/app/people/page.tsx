@@ -5,7 +5,6 @@ import FilterBlock from '@/components/blocks/people/FilterBlock';
 import FacultyBlock from '@/components/blocks/people/FacultyBlock';
 import StaffBlock from '@/components/blocks/people/StaffBlock';
 import faculty from '@/data/faculty.json';
-import affiliate from '@/data/affiliate.json';
 import staff from '@/data/staff.json';
 import { filterAndSortPeople, Person } from '@/lib/peopleFilter';
 
@@ -17,10 +16,10 @@ export default function PeoplePage({
     const role = Array.isArray(searchParams?.role)
         ? searchParams?.role[0]
         : (searchParams?.role ?? 'all');
-    const sort = Array.isArray(searchParams?.sort)
-        ? (searchParams?.sort[0] as 'sort_name' | 'sort_position')
-        : (searchParams?.sort as 'sort_name' | 'sort_position') ||
-          'sort_position';
+    const area = Array.isArray(searchParams?.area)
+        ? searchParams?.area[0]
+        : (searchParams?.area ?? 'all');
+    ('sort_position');
     const keyword = Array.isArray(searchParams?.keyword)
         ? searchParams?.keyword[0]
         : (searchParams?.keyword ?? '');
@@ -30,7 +29,7 @@ export default function PeoplePage({
         : (searchParams?.tag ?? '');
 
     // Default to sorting by position
-    const sortBy = sort === 'sort_name' ? 'sort_name' : 'sort_position';
+    const sortBy = 'sort_position';
 
     // Prepare filtered lists per role context
     const facultyList =
@@ -38,18 +37,8 @@ export default function PeoplePage({
             ? []
             : filterAndSortPeople(faculty as Person[], {
                   keyword,
-                  sortBy,
+                  area,
                   context: 'faculty',
-                  tag,
-              });
-
-    const affiliateList =
-        role === 'staff'
-            ? []
-            : filterAndSortPeople(affiliate as Person[], {
-                  keyword,
-                  sortBy,
-                  context: 'affiliate',
                   tag,
               });
 
@@ -58,7 +47,7 @@ export default function PeoplePage({
             ? []
             : filterAndSortPeople(staff as Person[], {
                   keyword,
-                  sortBy,
+                  area,
                   context: 'staff',
                   tag,
               });

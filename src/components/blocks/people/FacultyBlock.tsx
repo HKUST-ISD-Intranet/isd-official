@@ -59,6 +59,7 @@ export default function FacultyBlock({
                                     phone={person.phone ?? undefined}
                                     location={person.location ?? undefined}
                                     details={person.details ?? undefined}
+                                    primaryApt={person.primaryApt ?? undefined}
                                 />
                             </div>
                         ))}
