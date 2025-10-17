@@ -90,7 +90,7 @@ export default function MSTLEBlock() {
                                                 link.idMenu
                                             )
                                         }
-                                        className="text-h2 text-center pr-component-gap-sm cursor-pointer  pb-3"
+                                        className="text-h2 text-center  cursor-pointer  pb-3"
                                     >
                                         {link.title}
                                     </div>
