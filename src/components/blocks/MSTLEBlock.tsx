@@ -363,27 +363,36 @@ export default function MSTLEBlock() {
     ];
 
     return (
-        <div className="container overflow-y-clip flex flex-col py-section-gap gap-component-gap">
-            {contentMenu.map((section, index) => (
-                <div key={index}>{section.content}</div>
-            ))}
-
-            {content.map((section, index) => (
+        <>
+            {' '}
+            {activeContentId === 'edu-obj' && (
                 <div
-                    key={index}
-                    id={section.id}
-                    className={`flex flex-col gap-component-gap-sm ${
-                        activeContentId === section.id ? '' : 'hidden'
-                    }`}
-                >
-                    <h3 className="text-[36px] leading-[36px] font-bold text-isd-primary">
-                        {section.subheading}
-                    </h3>
-                    <div className="text-lg leading-[28px] text-isd-font-3">
-                        {section.content}
+                    className="dot-pattern before:bottom-[-1150px] before:left-[-115px] [--dot-color:var(--isd-secondary-1)]"
+                    // aria-hidden
+                />
+            )}
+            <div className="container overflow-y-clip flex flex-col py-section-gap gap-component-gap">
+                {contentMenu.map((section, index) => (
+                    <div key={index}>{section.content}</div>
+                ))}
+
+                {content.map((section, index) => (
+                    <div
+                        key={index}
+                        id={section.id}
+                        className={`flex flex-col gap-component-gap-sm ${
+                            activeContentId === section.id ? '' : 'hidden'
+                        }`}
+                    >
+                        <h3 className="text-[36px] leading-[36px] font-bold text-isd-primary">
+                            {section.subheading}
+                        </h3>
+                        <div className="text-lg leading-[28px] text-isd-font-3">
+                            {section.content}
+                        </div>
                     </div>
-                </div>
-            ))}
-        </div>
+                ))}
+            </div>
+        </>
     );
 }
