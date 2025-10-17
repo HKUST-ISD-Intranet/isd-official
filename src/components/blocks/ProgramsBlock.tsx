@@ -4,32 +4,32 @@ export default function ProgramBlock() {
         {
             heading: 'Undergraduate',
             content: 'BSc in Innovation, Design and Technology (IDT)',
-            link: '/academics/ug/idt',
+            link: '/academics/bsc-in-integrative-systems-and-design-isd',
         },
         {
             heading: 'Undergraduate',
             content: 'Design Minor',
-            link: '/academics/ug/design-minor',
+            link: '/academics/design-minor',
         },
         {
             heading: 'Postgraduate',
             content: 'Msc in Technology Leadership and Entrepreneurship',
-            link: '/academics/pg/tle',
+            link: '/academics/msc-tle',
         },
         {
             heading: 'Postgraduate',
             content: 'MPhil in Technology Innovation and Entrepreneurship',
-            link: '/academics/pg/tie',
+            link: '/academics/mphil-in-technology-innovation-and-entrepreneurship-tie',
         },
         {
             heading: 'Postgraduate',
             content: 'MPhil & PhD Program',
-            link: '/academics/pg/mphi-phd',
+            link: '/academics/pg/rpg',
         },
         {
             heading: 'Postgraduate',
             content: 'Early Admissions Scheme',
-            link: '/academics/pg/early-admission',
+            link: '/academics/early-admission',
         },
     ];
 
