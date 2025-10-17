@@ -133,10 +133,10 @@ export default function MSTLEBlock() {
                         <table>
                             <tbody className="leading-[16px] text-[12px]">
                                 <tr className="bg-isd-primary-2 text-isd-primary text-md text-left">
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         Entrepreneurship
                                     </td>
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         From conceptualization of products,
                                         prototype development and establishing a
                                         start-up, TLE program offers you
@@ -144,10 +144,10 @@ export default function MSTLEBlock() {
                                     </td>
                                 </tr>
                                 <tr className="bg-isd-secondary-1 text-isd-secondary text-md">
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         Technology
                                     </td>
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         Students can select technology-related
                                         courses specific to their projects, e.g.
                                         AI, computer vision, software design,
@@ -155,10 +155,10 @@ export default function MSTLEBlock() {
                                     </td>
                                 </tr>
                                 <tr className="bg-isd-primary-2 text-isd-primary text-md">
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         Business
                                     </td>
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         Exposure to business topics relevant to
                                         establishing and maintaining a start-up
                                         in the Greater Bay Area and the world.
@@ -306,38 +306,38 @@ export default function MSTLEBlock() {
                         <table>
                             <tbody className="leading-[16px] text-[12px]">
                                 <tr className="bg-isd-primary-2 text-isd-primary text-md text-left">
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         Email
                                     </td>
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         <a href="mailto:enquirytle@ust.hk">
                                             enquirytle@ust.hk
                                         </a>
                                     </td>
                                 </tr>
                                 <tr className="bg-isd-secondary-1 text-isd-secondary text-md">
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         Tel
                                     </td>
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         +852 3469 2957
                                     </td>
                                 </tr>
                                 <tr className="bg-isd-primary-2 text-isd-primary text-md">
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         Address
                                     </td>
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         Room 5591, Lift 29-30, The Hong Kong
                                         University of Science and Technology,
                                         Clear Water Bay, Hong Kong
                                     </td>
                                 </tr>
                                 <tr className="bg-isd-secondary-1 text-isd-secondary text-md">
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         Linkedin
                                     </td>
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         <a href="https://www.linkedin.com/school/hkust/">
                                             {' '}
                                             Click to view more
@@ -345,10 +345,10 @@ export default function MSTLEBlock() {
                                     </td>
                                 </tr>
                                 <tr className="bg-isd-primary-2 text-isd-primary text-md">
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         YouTube
                                     </td>
-                                    <td className="p-[12px] border-2 border-white">
+                                    <td className="p-[12px] border-x-2 border-x-white">
                                         <a href="https://www.youtube.com/user/hkust">
                                             Click to view more
                                         </a>
