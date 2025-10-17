@@ -47,6 +47,27 @@ export default function ReadMoreButton({
                     </strong>
                 );
             }
+
+            // check in part if http is found 
+            if (part.includes('http')) {
+                // split on http and https
+                const parts = part.split(/(http[s]?:\/\/[^\s]+)/g);
+                return parts.map((part, idx) => {
+                    if (part.includes('http')) {
+                        return (
+                            <a
+                                href={part}
+                                className="text-isd-primary"
+                                key={idx}
+                            >
+                                {part}
+                            </a>
+                        );
+                    }
+                    return part;
+                });
+            }
+
             // restore escaped ** placeholders
             const restored = part.replace(new RegExp(ESC, 'g'), '**');
             return <Fragment key={idx}>{restored}</Fragment>;
