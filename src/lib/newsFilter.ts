@@ -19,8 +19,6 @@ type Options = {
 export function filterAndSortNews(items: News[], options: Options = {}) {
     const { type = 'all', year = 'all', id = 0 } = options;
 
-    console.log('filterAndSortNews', items, options);
-
     let filtered = items;
 
     // filter by id

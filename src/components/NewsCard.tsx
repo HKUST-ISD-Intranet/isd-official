@@ -31,8 +31,6 @@ export default function NewsCard({
 }: NewsCardProps) {
     const router = useRouter();
 
-    console.log('pictures', pictures);
-
     return (
         <div className="flex gap-component-gap-sm">
             <div className="relative w-[221px] h-[288px] flex-shrink-0 overflow-hidden border-l-3 border-isd-primary">
