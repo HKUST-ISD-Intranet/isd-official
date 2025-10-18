@@ -29,7 +29,7 @@ export default function PeoplePage({
     return (
         <div className="min-h-screen flex flex-col pb-component-gap">
             <HeroImage image={HeroImageFile} />
-            <FilterBlock />
+    
             {/* Render blocks according to selected role */}
             {(type === 'all' || year === 'all') && (
                 <NewsEventBlock news={newsList} />

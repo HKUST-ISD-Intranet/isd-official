@@ -1,14 +1,29 @@
+'use client';
+
 import filterAndSortNews, { News } from '@/lib/newsFilter';
 import { useSearchParams, useRouter } from 'next/navigation';
-
+import Image, { StaticImageData } from 'next/image';
 import newsEvents from '@/data/news_events.json';
-import { ArrowRight, Mail, Phone, MapPin, Link2, X } from 'lucide-react';
-import { Fragment } from 'react';
+import {
+    ArrowRight,
+    Mail,
+    Phone,
+    MapPin,
+    Link2,
+    X,
+    ArrowLeft,
+    ChevronLeft,
+    ChevronRight,
+} from 'lucide-react';
+import { Fragment, useState } from 'react';
+import { resolveNewsPhoto } from '@/lib/newsImages';
 
 export default function NewsReadMoreBlock() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const params = new URLSearchParams(searchParams?.toString() ?? '');
+
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const type = 'all';
     const year = 'all';
@@ -21,6 +36,9 @@ export default function NewsReadMoreBlock() {
     });
 
     const news = newsList[0];
+
+    const imageResolve: StaticImageData = resolveNewsPhoto(news.pictures[0]);
+    console.log('imageResolve', imageResolve);
 
     function format(input: string) {
         const ESC = '\u0000_ESC_BOLD_\u0000';
@@ -61,47 +79,44 @@ export default function NewsReadMoreBlock() {
             }
 
             // Check in part if title is found
+            // Check if title present
             if (
                 part.includes('xxxTitlexxx') &&
                 part.includes('xxxEndTitlexxx')
             ) {
-                // Extraire le texte entre les balises
+                // Extract
                 const parts = part.split(/(xxxTitlexxx|xxxEndTitlexxx)/g);
+                const result = [];
 
-                // Trouver l'index de xxxTitlexxx
-                const titleIndex = parts.indexOf('xxxTitlexxx');
-                const endTitleIndex = parts.indexOf('xxxEndTitlexxx');
+                // Get all titles
+                for (let i = 0; i < parts.length; i++) {
+                    if (parts[i] === 'xxxTitlexxx') {
+                        continue;
+                    }
+                    if (parts[i] === 'xxxEndTitlexxx') {
+                        continue;
+                    }
 
-                // Vérifier si les balises sont dans le bon ordre
-                if (
-                    titleIndex !== -1 &&
-                    endTitleIndex !== -1 &&
-                    titleIndex < endTitleIndex
-                ) {
-                    // Modifier le texte entre les balises
-                    const modifiedText = parts
-                        .slice(titleIndex + 1, endTitleIndex)
-                        .join('')
-                        .toUpperCase(); // Exemple de modification
-
-                    return parts.map((part, idx) => {
-                        if (idx === titleIndex) {
-                            return null;
-                        }
-                        if (idx === endTitleIndex) {
-                            return null;
-                        }
-                        if (idx > titleIndex && idx < endTitleIndex) {
-                            return (
-                                <div className="text-isd-primary" key={idx}>
-                                    {modifiedText}
-                                </div>
-                            );
-                        }
-                        // Retourner les autres parties normalement
-                        return <span key={idx}>{part}</span>;
-                    });
+                    // check if part between title
+                    if (i > 0 && parts[i - 1] === 'xxxTitlexxx') {
+                        // Update text
+                        const modifiedText = parts[i];
+                        result.push(
+                            <div
+                                className="text-isd-primary text-h1 text-[36px]"
+                                key={result.length}
+                            >
+                                {modifiedText}
+                            </div>
+                        );
+                    } else {
+                        result.push(
+                            <span key={result.length}>{parts[i]}</span>
+                        );
+                    }
                 }
+
+                return result;
             }
 
             // restore escaped ** placeholders
@@ -117,11 +132,97 @@ export default function NewsReadMoreBlock() {
                 onClick={(e) => e.stopPropagation()}
             >
                 <div className="flex items-center gap-component-gap-sm">
-                    <div className="relative w-[221px] h-[288px] flex-shrink-0 overflow-hidden"></div>
+                    <div className="relative w-[221px] h-[288px] flex-shrink-0 overflow-hidden">
+                        {' '}
+                        <button
+                            className="text-isd-primary cursor-pointer flex gap-footer-gap  w-section-gap h-component-gap-sm items-center justify-center"
+                            onClick={() => router.back()}
+                        >
+                            <ArrowLeft size={24} />
+
+                            <span className="text-sm">Back</span>
+                        </button>
+                    </div>
 
                     <div className="flex flex-col gap-[24px]">
                         <div className="text-h2 text-isd-font-1">
                             {news.title}
+                        </div>
+
+                        <div className="w-full relative overflow-hidden">
+                            <div className="absolute -z-1 w-full h-full">
+                                {news.pictures?.map((image, index) => (
+                                    <div key={index}>
+                                        {image}
+                                        <Image
+                                            key={index}
+                                            src={imageResolve}
+                                            alt={`Carousel Image ${index + 1}`}
+                                            className={`object-cover w-full h-full absolute transition-opacity linear duration-1000 ${
+                                                index === currentIndex
+                                                    ? 'opacity-100'
+                                                    : 'opacity-0'
+                                            }`}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="absolute -z-1 w-full h-full bg-gradient-to-b via-transparent to-black"></div>
+                            <div className="absolute z-0 w-full h-full flex items-center justify-between px-12 pointer-events-none">
+                                <button
+                                    className="pointer-events-auto cursor-pointer"
+                                    onClick={() =>
+                                        setCurrentIndex(
+                                            (prevIndex) =>
+                                                (prevIndex -
+                                                    1 +
+                                                    (news.pictures
+                                                        ? news.pictures.length
+                                                        : 0)) %
+                                                (news.pictures?.length || 1)
+                                        )
+                                    }
+                                >
+                                    <ChevronLeft
+                                        color="white"
+                                        size={48}
+                                        strokeWidth={1}
+                                    />
+                                </button>
+                                <button
+                                    className="pointer-events-auto cursor-pointer"
+                                    onClick={() =>
+                                        setCurrentIndex(
+                                            (prevIndex) =>
+                                                (prevIndex + 1) %
+                                                (news.pictures?.length || 1)
+                                        )
+                                    }
+                                >
+                                    <ChevronRight
+                                        color="white"
+                                        size={48}
+                                        strokeWidth={1}
+                                    />
+                                </button>
+                            </div>
+                            <div className="absolute z-0 w-full h-full pb-3 flex items-end justify-center gap-2 px-12 pointer-events-none">
+                                {news.pictures?.map((_, index) => (
+                                    <button
+                                        key={index}
+                                        className="pointer-events-auto cursor-pointer py-2"
+                                        onClick={() => setCurrentIndex(index)}
+                                    >
+                                        <div
+                                            className={`h-0.5 w-8 ${
+                                                index === currentIndex
+                                                    ? 'bg-white'
+                                                    : 'bg-white/50'
+                                            }`}
+                                        />
+                                    </button>
+                                ))}
+                            </div>
                         </div>
 
                         <div className="flex flex-wrap gap-x-section-title-gap gap-y-[12px]">
@@ -151,14 +252,6 @@ export default function NewsReadMoreBlock() {
                         </div>
                     </div>
                 )}
-
-                <button
-                    className="text-isd-primary cursor-pointer flex gap-footer-gap bg-isd-primary-2 w-section-gap h-component-gap-sm items-center justify-center"
-                    onClick={() => router.back()}
-                >
-                    <X size={24} />
-                    <span className="text-sm">Close</span>
-                </button>
             </div>
         </>
     );

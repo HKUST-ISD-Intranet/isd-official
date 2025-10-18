@@ -2,11 +2,9 @@ import NewsCard from '@/components/NewsCard';
 import newsEvents from '@/data/news_events.json';
 
 import { News } from '@/lib/newsFilter';
+import FilterBlock from './FilterBlock';
 
 export default function NewsEventBlock({ news }: { news?: News[] }) {
-   
-   
-
     return (
         <div
             className={
@@ -14,9 +12,9 @@ export default function NewsEventBlock({ news }: { news?: News[] }) {
                 ' dot-pattern before:top-[-95px] before:right-[-60px] [--dot-color:var(--isd-primary-2)]'
             }
         >
-            <h1 className="text-h1 offset-text-background ">
-                News & Events
-            </h1>
+            <h1 className="text-h1 offset-text-background ">News & Events</h1>
+
+            <FilterBlock />
 
             {(() => {
                 const list = news && news;

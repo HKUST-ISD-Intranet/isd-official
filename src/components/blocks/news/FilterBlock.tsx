@@ -65,8 +65,8 @@ export default function FilterBlock() {
     }
 
     return (
-        <div className="bg-isd-primary-2">
-            <div className="container w-full flex pt-section-gap pb-component-gap-sm gap-component-gap-sm items-center">
+        <div>
+            <div className="container w-full flex pt-section-gap pb-component-gap-sm gap-component-gap-sm items-center text-isd-secondary">
                 <Select
                     id="type-select"
                     options={typeList}
