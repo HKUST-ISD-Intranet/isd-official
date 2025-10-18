@@ -6,10 +6,13 @@ import Image from 'next/image';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { ArrowRight, Mail, Phone, MapPin, Link2, X } from 'lucide-react';
 
+import { resolveNewsPhoto } from '@/lib/newsImages';
+
+
 interface NewsCardProps {
     title: string;
     type: string;
-    pictures: string[];
+    pictures:  string[];
     evt_date?: string;
     evt_time?: string;
     evt_location?: string;
@@ -30,13 +33,13 @@ export default function NewsCard({
     id,
 }: NewsCardProps) {
     const router = useRouter();
-
+  
     return (
         <div className="flex gap-component-gap-sm">
             <div className="relative w-[221px] h-[288px] flex-shrink-0 overflow-hidden border-l-3 border-isd-primary">
                 {/* NOTE - photo always available either a valid image or a placeholder */}
                 <Image
-                    src={pictures[0]}
+                    src={resolveNewsPhoto(pictures[0])}
                     alt={`${title}`}
                     fill
                     className="object-cover"

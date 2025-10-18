@@ -1,10 +1,10 @@
 import { StaticImageData } from 'next/image';
 
-import noneImg from '@/assets/news/noneImg.png';
+import noneImg from '@/assets/newsEvt/noneImg.png';
 
 import news_2025_04_07 from '@/assets/newsEvt/news.2025.04.07.jpg';
 import ach_2024_03_08 from '@/assets/newsEvt/ach.2024.03.08.jpg';
-import evt_2025_10_29 from '@/assets/newsEvt/evt.2024.10.29.jpg';
+import evt_2025_10_29 from '@/assets/newsEvt/evt.2024.10.29.png';
 import evt_2025_07_02 from '@/assets/newsEvt/evt.2025.07.02.png';
 import news_2025_15_10 from '@/assets/newsEvt/news.2025.15.10.png';
 import news_2025_09_02 from '@/assets/newsEvt/news.2025.09.02.png';
@@ -23,7 +23,7 @@ import news_2025_07_07_01 from '@/assets/newsEvt/news.2025.07.07.01.jpg';
 import news_2025_07_07_02 from '@/assets/newsEvt/news.2025.07.07.02.jpg';
 import news_2025_07_07_03 from '@/assets/newsEvt/news.2025.07.07.03.jpg';
 import news_2025_07_07_04 from '@/assets/newsEvt/news.2025.07.07.04.jpg';
-import evt_2025_10_22 from '@/assets/newsEvt/evt.2025.10.22.png';
+import evt_2024_10_22 from '@/assets/newsEvt/evt.2024.10.22.png';
 
 type Img = StaticImageData | string;
 
@@ -49,7 +49,7 @@ export const newsImages: Record<string, Img> = {
     'news.2025.07.07.02.jpg': news_2025_07_07_02,
     'news.2025.07.07.03.jpg': news_2025_07_07_03,
     'news.2025.07.07.04.jpg': news_2025_07_07_04,
-    'evt.2025.10.22.png': evt_2025_10_22,
+    'evt.2024.10.22.png': evt_2024_10_22,
 };
 
 /**

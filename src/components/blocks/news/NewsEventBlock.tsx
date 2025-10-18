@@ -1,10 +1,12 @@
 import NewsCard from '@/components/NewsCard';
 import newsEvents from '@/data/news_events.json';
 
-import { resolveNewsPhoto } from '@/lib/newsImages';
 import { News } from '@/lib/newsFilter';
 
 export default function NewsEventBlock({ news }: { news?: News[] }) {
+   
+   
+
     return (
         <div
             className={
