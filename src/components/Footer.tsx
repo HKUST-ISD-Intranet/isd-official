@@ -12,12 +12,7 @@ export default function Footer() {
     const navTitles = [
         {
             title: 'About ISD',
-            subheadings: [
-                'Head’s Message',
-                'What is ISD',
-                'Join Us',
-                'Contact Us',
-            ],
+            subheadings: ['Head’s Message', 'What is ISD', 'Join Us'],
         },
         {
             title: 'People',
