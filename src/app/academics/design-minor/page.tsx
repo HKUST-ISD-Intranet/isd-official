@@ -1,4 +1,4 @@
-import HeroImageFile from '@/assets/early-admission.jpg';
+import HeroImageFile from '@/assets/carousel-3.jpg';
 
 import HeroImage from '@/components/HeroImage';
 import DesignMinorBlock from '@/components/blocks/DesignMinorBlock';
