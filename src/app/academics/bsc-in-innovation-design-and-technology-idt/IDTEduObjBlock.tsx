@@ -69,7 +69,7 @@ export default function IDTEduObjBlock() {
                     </li>
                 </ul>
             </div>
-            <div className="flex flex-col gap-[24px] border-l-[5px] border-isd-primary px-component-gap-sm py-element-gap bg-isd-primary-2 p-element-gap">
+            <div className="flex flex-col gap-[24px] border-l-[5px] border-isd-primary p-component-gap-sm bg-isd-primary-2">
                 <h2 className="text-4xl font-bold text-primary">
                     Learning Outcomes
                 </h2>

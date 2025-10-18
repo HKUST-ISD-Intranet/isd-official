@@ -35,7 +35,7 @@ export default function IDTPage() {
             <div className="container overflow-clip flex flex-col py-section-gap gap-component-gap">
                 {/* FIXME - fix underline for multiple lines text */}
                 <div>
-                    <h1 className="text-h1 offset-text-background uppercase mb-9">
+                    <h1 className="text-h1 offset-text-background text-balance mb-9">
                         BSc in Innovation, Design and Technology (IDT)
                     </h1>
 

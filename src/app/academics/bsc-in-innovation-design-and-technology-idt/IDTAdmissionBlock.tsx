@@ -1,6 +1,6 @@
 export default function IDTAdmissionBlock() {
     return (
-        <div className="flex flex-col gap-[72px]">
+        <div className="flex flex-col gap-[72px] text-md">
             <div className="flex flex-col gap-[72px]">
                 {/* Application */}
                 <div className="flex flex-col gap-9">
@@ -61,7 +61,7 @@ export default function IDTAdmissionBlock() {
                                 considered for the admission.
                             </p>
                             <table className="w-fit">
-                                <tbody className="text-isd-font-1 leading-[16px] text-[12px]">
+                                <tbody className="text-isd-font-1">
                                     <tr className="bg-isd-primary-2 text-primary">
                                         <td className="p-[12px] border-x-2 border-white">
                                             Application Opens
@@ -132,7 +132,7 @@ export default function IDTAdmissionBlock() {
                                 admission.
                             </p>
                             <table className="w-fit">
-                                <tbody className="text-isd-font-1 leading-[16px] text-[12px]">
+                                <tbody className="text-isd-font-1">
                                     <tr className="bg-isd-primary-2 text-primary">
                                         <td className="p-[12px] border-x-2 border-white">
                                             Application Opens
@@ -205,7 +205,7 @@ export default function IDTAdmissionBlock() {
                                 be considered for the admission.
                             </p>
                             <table className="w-fit">
-                                <tbody className="text-isd-font-1 leading-[16px] text-[12px]">
+                                <tbody className="text-isd-font-1">
                                     <tr className="bg-isd-primary-2 text-primary">
                                         <td className="p-[12px] border-x-2 border-white">
                                             Application Opens
@@ -251,7 +251,7 @@ export default function IDTAdmissionBlock() {
                                 Schools, with details below:
                             </p>
                             <table className="w-fit">
-                                <tbody className="text-isd-font-1 leading-[16px] text-[12px]">
+                                <tbody className="text-isd-font-1">
                                     <tr className="bg-isd-primary-2 text-primary">
                                         <td className="p-[12px] border-x-2 border-white">
                                             Application Period
