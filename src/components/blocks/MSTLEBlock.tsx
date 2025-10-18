@@ -289,6 +289,7 @@ export default function MSTLEBlock() {
             ),
         },
         {
+            // FIXME: Still a bit of difference from Figma
             id: 'adm-app',
             subheading: 'Admission & Application',
             content: (
