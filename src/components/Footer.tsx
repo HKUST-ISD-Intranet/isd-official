@@ -12,16 +12,17 @@ export default function Footer() {
     const navTitles = [
         {
             title: 'About ISD',
-            subheadings: [
-                'Head’s Message',
-                'What is ISD',
-                'Join Us',
-                'Contact Us',
+            subheadings: ['Head’s Message', 'What is ISD', 'Join Us'],
+            links: [
+                '/about-isd/#heads-message',
+                '/about-isd#what-is-isd',
+                '/about-isd#join-us',
             ],
         },
         {
             title: 'People',
             subheadings: ['ISD Faculty', 'Affiliates', 'ISD Staff'],
+            links: ['/people#faculty', '/people#affiliates', '/people#staff'],
         },
         {
             title: 'Academics',
@@ -31,10 +32,17 @@ export default function Footer() {
                 'Internship & Exchange',
                 'Facilities',
             ],
+            links: [
+                '/academics#programs',
+                '/academics#scholarships',
+                '/academics#internship-and-exchange',
+                '/academics#facilities',
+            ],
         },
         {
             title: 'News & Events',
             subheadings: ['News', 'Events', 'Achievement'],
+            links: ['/news#news', '/news#events', '/news#achievement'],
         },
         {
             title: 'Student Life',
@@ -44,6 +52,13 @@ export default function Footer() {
                 'Internship',
                 'Exchange',
                 'Alumni Sharing',
+            ],
+            links: [
+                '/student-life#student-competitions',
+                '/student-life#extracurricular-activities',
+                '/student-life#internship',
+                '/student-life#exchange',
+                '/student-life#alumni-sharing',
             ],
         },
     ];
@@ -71,9 +86,11 @@ export default function Footer() {
                                         {nav.title}
                                     </h3>
                                     <div className="flex flex-col gap-[24px] text-footer">
-                                        {nav.subheadings.map((sub) => (
-                                            // TODO: add hrefs
-                                            <Link key={sub} href="">
+                                        {nav.subheadings.map((sub, index) => (
+                                            <Link
+                                                key={sub}
+                                                href={nav.links[index] ?? '#'}
+                                            >
                                                 {sub}
                                             </Link>
                                         ))}
