@@ -200,7 +200,7 @@ export default function MSTLEBlock() {
                         offered by the School Business and Management, the
                         School of Engineering, the School of Science and the
                         Division of Public Policy, as well as a 9-credit project
-                        course. For details, please refer to the {' '}
+                        course. <br/>For details, please refer to the {' '}
                         <span className="text-isd-secondary font-[700] underline">
                             <a href="https://prog-crs.hkust.edu.hk/pgprog/2024-25/msc-tle">
                                 Postgraduate Program
@@ -257,7 +257,7 @@ export default function MSTLEBlock() {
                                 </div>
                             </div>
                             <div className="text-sm flex gap-[30px] text-isd-font-3">
-                                <div className="flex-1 bg-isd-primary-2 p-element-gap">
+                                <div className="flex-1 bg-isd-primary-2 p-element-gap h-fit">
                                     <p>
                                         Technology Leadership and
                                         Entrepreneurship
@@ -400,7 +400,7 @@ export default function MSTLEBlock() {
             {' '}
             {activeContentId === 'edu-obj' && (
                 <div
-                    className="dot-pattern before:bottom-[-1150px] before:left-[-115px] [--dot-color:var(--isd-secondary-1)]"
+                    className="dot-pattern before:bottom-[-1110px] before:left-[-115px] [--dot-color:var(--isd-secondary-1)]"
                     // aria-hidden
                 />
             )}
