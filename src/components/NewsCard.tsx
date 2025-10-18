@@ -8,11 +8,10 @@ import { ArrowRight, Mail, Phone, MapPin, Link2, X } from 'lucide-react';
 
 import { resolveNewsPhoto } from '@/lib/newsImages';
 
-
 interface NewsCardProps {
     title: string;
     type: string;
-    pictures:  string[];
+    pictures: string[];
     evt_date?: string;
     evt_time?: string;
     evt_location?: string;
@@ -33,17 +32,17 @@ export default function NewsCard({
     id,
 }: NewsCardProps) {
     const router = useRouter();
-  
+
     return (
         <div className="flex gap-component-gap-sm">
-            <div className="relative w-[221px] h-[288px] flex-shrink-0 overflow-hidden border-l-3 border-isd-primary">
+            <div className="relative w-[600px] h-[288px] flex-shrink-0 overflow-hidden ">
                 {/* NOTE - photo always available either a valid image or a placeholder */}
                 <Image
                     src={resolveNewsPhoto(pictures[0])}
                     alt={`${title}`}
                     fill
                     className="object-cover"
-                    sizes="221px"
+                    sizes="600px"
                 />
             </div>
             <div className="flex flex-col justify-between flex-1 text-justify">
@@ -53,7 +52,7 @@ export default function NewsCard({
 
                     {type != 'Events' && details && (
                         <div className="text-md text-isd-font-3 text">
-                            {details.slice(0, 100)}
+                            {details.slice(0, 300)}
                         </div>
                     )}
 

@@ -11,10 +11,10 @@ export default function NewsEventBlock({ news }: { news?: News[] }) {
         <div
             className={
                 'container w-full flex flex-col pt-section-gap gap-section-title-gap' +
-                ' dot-pattern before:top-[-95px] before:right-[-60px] [--dot-color:var(--isd-secondary-1)]'
+                ' dot-pattern before:top-[-95px] before:right-[-60px] [--dot-color:var(--isd-primary-2)]'
             }
         >
-            <h1 className="text-h1 offset-text-background uppercase">
+            <h1 className="text-h1 offset-text-background ">
                 News & Events
             </h1>
 

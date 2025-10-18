@@ -30,7 +30,7 @@ type Img = StaticImageData | string;
 export const newsImages: Record<string, Img> = {
     'news.2025.04.07.jpg': news_2025_04_07,
     'ach.2024.03.08.jpg': ach_2024_03_08,
-    'evt.2024.10.29.jpg': evt_2025_10_29,
+    'evt.2024.10.29.png': evt_2025_10_29,
     'evt.2025.07.02.png': evt_2025_07_02,
     'news.2025.15.10.png': news_2025_15_10,
     'news.2025.09.02.png': news_2025_09_02,
