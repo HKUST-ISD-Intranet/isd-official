@@ -60,6 +60,50 @@ export default function NewsReadMoreBlock() {
                 });
             }
 
+            // Check in part if title is found
+            if (
+                part.includes('xxxTitlexxx') &&
+                part.includes('xxxEndTitlexxx')
+            ) {
+                // Extraire le texte entre les balises
+                const parts = part.split(/(xxxTitlexxx|xxxEndTitlexxx)/g);
+
+                // Trouver l'index de xxxTitlexxx
+                const titleIndex = parts.indexOf('xxxTitlexxx');
+                const endTitleIndex = parts.indexOf('xxxEndTitlexxx');
+
+                // Vérifier si les balises sont dans le bon ordre
+                if (
+                    titleIndex !== -1 &&
+                    endTitleIndex !== -1 &&
+                    titleIndex < endTitleIndex
+                ) {
+                    // Modifier le texte entre les balises
+                    const modifiedText = parts
+                        .slice(titleIndex + 1, endTitleIndex)
+                        .join('')
+                        .toUpperCase(); // Exemple de modification
+
+                    return parts.map((part, idx) => {
+                        if (idx === titleIndex) {
+                            return null;
+                        }
+                        if (idx === endTitleIndex) {
+                            return null;
+                        }
+                        if (idx > titleIndex && idx < endTitleIndex) {
+                            return (
+                                <div className="text-isd-primary" key={idx}>
+                                    {modifiedText}
+                                </div>
+                            );
+                        }
+                        // Retourner les autres parties normalement
+                        return <span key={idx}>{part}</span>;
+                    });
+                }
+            }
+
             // restore escaped ** placeholders
             const restored = part.replace(new RegExp(ESC, 'g'), '**');
             return <Fragment key={idx}>{restored}</Fragment>;
@@ -78,12 +122,6 @@ export default function NewsReadMoreBlock() {
                     <div className="flex flex-col gap-[24px]">
                         <div className="text-h2 text-isd-font-1">
                             {news.title}
-                        </div>
-
-                        <div className="flex flex-col gap-footer-gap">
-                            <div className="text-md text-isd-secondary">
-                                {news.type}
-                            </div>
                         </div>
 
                         <div className="flex flex-wrap gap-x-section-title-gap gap-y-[12px]">
@@ -106,12 +144,6 @@ export default function NewsReadMoreBlock() {
 
                 {news.details && (
                     <div className="flex flex-col gap-[24px]">
-                        <div className="flex items-center h-section-title-gap border-b border-b-isd-font-2">
-                            <h2 className="text-h2 text-isd-primary">
-                                Details
-                            </h2>
-                        </div>
-
                         <div className="text-md text-isd-font-3 text-start">
                             <div className="whitespace-pre-wrap">
                                 <span>{format(news.details)}</span>
