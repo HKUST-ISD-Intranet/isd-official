@@ -80,10 +80,10 @@ export default function MSTLEBlock() {
                                 &lsquo;Will I be the next technology leader and
                                 change the world?&rsquo;
                             </span>{' '}
-                            This may be the question in your mind when you browse
-                            this website. We will soon arrange an Info Session to
-                            introduce the beauty of TLE. Please stay tuned to our
-                            website.
+                            This may be the question in your mind when you
+                            browse this website. We will soon arrange an Info
+                            Session to introduce the beauty of TLE. Please stay
+                            tuned to our website.
                         </p>
                         <div className="flex flex-col gap-[24px]">
                             <h2 className="font-bold text-[36px] leading-[36px] text-isd-primary">
@@ -91,21 +91,23 @@ export default function MSTLEBlock() {
                             </h2>
                             <div className="flex flex-col gap-[12px]">
                                 <p>
-                                    Master of Science in Technology Leadership and
-                                    Entrepreneurship (TLE) program uniquely offers
-                                    technological and business learning components, as well
-                                    as entrepreneurial components paving the way for a
-                                    start-up. It is perfect for students who are:
+                                    Master of Science in Technology Leadership
+                                    and Entrepreneurship (TLE) program uniquely
+                                    offers technological and business learning
+                                    components, as well as entrepreneurial
+                                    components paving the way for a start-up. It
+                                    is perfect for students who are:
                                 </p>
                                 <div>
                                     <div className="text-isd-secondary font-[700]">
-                                        interested in building a strategic technical
-                                        advantage into their product.
+                                        interested in building a strategic
+                                        technical advantage into their product.
                                     </div>
                                     <div className="text-isd-secondary font-[700]">
-                                        eager to access advanced facilities, know-hows, and
-                                        a talent pool for prototyping and launching their
-                                        product into the market.
+                                        eager to access advanced facilities,
+                                        know-hows, and a talent pool for
+                                        prototyping and launching their product
+                                        into the market.
                                     </div>
                                 </div>
                             </div>
@@ -117,13 +119,14 @@ export default function MSTLEBlock() {
                         </h2>
                         <div className="gap-[12px] flex flex-col text-md">
                             <p>
-                                Upon completion of the program, graduates will be
-                                able to:
+                                Upon completion of the program, graduates will
+                                be able to:
                             </p>
                             <ul>
                                 <li className="flex before:text-center before:content-['•'] leading-[26px] before:w-component-gap-sm">
-                                    identify a product or a service that can make a
-                                    positive impact in some segments of society.
+                                    identify a product or a service that can
+                                    make a positive impact in some segments of
+                                    society.
                                 </li>
                                 <li className="flex before:text-center before:content-['•'] leading-[26px] before:w-component-gap-sm">
                                     use design principles to design a product.
@@ -149,9 +152,9 @@ export default function MSTLEBlock() {
                                         </td>
                                         <td className="p-[12px] border-x-2 border-x-white">
                                             From conceptualization of products,
-                                            prototype development and establishing a
-                                            start-up, TLE program offers you
-                                            essential training.
+                                            prototype development and
+                                            establishing a start-up, TLE program
+                                            offers you essential training.
                                         </td>
                                     </tr>
                                     <tr className="bg-isd-secondary-1 text-isd-secondary text-md">
@@ -159,10 +162,10 @@ export default function MSTLEBlock() {
                                             Technology
                                         </td>
                                         <td className="p-[12px] border-x-2 border-x-white">
-                                            Students can select technology-related
-                                            courses specific to their projects, e.g.
-                                            AI, computer vision, software design,
-                                            etc.
+                                            Students can select
+                                            technology-related courses specific
+                                            to their projects, e.g. AI, computer
+                                            vision, software design, etc.
                                         </td>
                                     </tr>
                                     <tr className="bg-isd-primary-2 text-isd-primary text-md">
@@ -170,9 +173,10 @@ export default function MSTLEBlock() {
                                             Business
                                         </td>
                                         <td className="p-[12px] border-x-2 border-x-white">
-                                            Exposure to business topics relevant to
-                                            establishing and maintaining a start-up
-                                            in the Greater Bay Area and the world.
+                                            Exposure to business topics relevant
+                                            to establishing and maintaining a
+                                            start-up in the Greater Bay Area and
+                                            the world.
                                         </td>
                                     </tr>
                                 </tbody>
@@ -412,9 +416,11 @@ export default function MSTLEBlock() {
                             activeContentId === section.id ? '' : 'hidden'
                         }`}
                     >
-                        <h3 className="text-[36px] leading-[36px] font-bold text-isd-primary">
-                            {section.subheading}
-                        </h3>
+                        {section.subheading && (
+                            <h3 className="text-[36px] leading-[36px] font-bold text-isd-primary">
+                                {section.subheading}
+                            </h3>
+                        )}
                         <div className="text-md leading-[28px] text-isd-font-1">
                             {section.content}
                         </div>
