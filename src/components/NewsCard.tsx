@@ -52,7 +52,11 @@ export default function NewsCard({
 
                     {type != 'Events' && details && (
                         <div className="text-md text-isd-font-3 text">
-                            {details.slice(0, 300)}
+                            {details
+                                .slice(0, 300)
+                                .replaceAll('xTx', '')
+                                .replaceAll('xETx', '')}
+                            ...{' '}
                         </div>
                     )}
 

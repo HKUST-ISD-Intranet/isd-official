@@ -1,18 +1,18 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import Select from '../../Select';
+import SelectNews from '../../SelectNews';
 import { useRouter, useSearchParams } from 'next/navigation';
 
 export default function FilterBlock() {
     const typeList = [
-        { value: 'all', label: 'All Types' },
+        { value: 'all', label: 'All Category' },
         { value: 'News', label: 'News' },
         { value: 'Events', label: 'Events' },
         { value: 'Achievements', label: 'Achievements' },
     ];
 
-    const yearList = [{ value: 'all', label: 'All Years' }];
+    const yearList = [{ value: 'all', label: 'Year' }];
 
     // from current year to 10 years ago
     for (
@@ -66,8 +66,8 @@ export default function FilterBlock() {
 
     return (
         <div>
-            <div className="container w-full flex pt-section-gap pb-component-gap-sm gap-component-gap-sm items-center text-isd-secondary">
-                <Select
+            <div className="container w-full flex">
+                <SelectNews
                     id="type-select"
                     options={typeList}
                     value={type}
@@ -80,7 +80,7 @@ export default function FilterBlock() {
                     className="w-[180px]"
                 />
 
-                <Select
+                <SelectNews
                     id="year-select"
                     options={yearList}
                     value={year}

@@ -1,10 +1,25 @@
+'use client';
+
 import NewsCard from '@/components/NewsCard';
 import newsEvents from '@/data/news_events.json';
 
 import { News } from '@/lib/newsFilter';
 import FilterBlock from './FilterBlock';
+import { ChevronsDown } from 'lucide-react';
+import { useState } from 'react';
 
 export default function NewsEventBlock({ news }: { news?: News[] }) {
+    // only first 5 records
+
+    const [totalRecords, setTotalRecords] = useState(5);
+
+    let slicedNews = news?.slice(0, totalRecords);
+
+    function loadMore(): void {
+        setTotalRecords(totalRecords + 5);
+        slicedNews = news?.slice(0, totalRecords);
+    }
+
     return (
         <div
             className={
@@ -12,12 +27,16 @@ export default function NewsEventBlock({ news }: { news?: News[] }) {
                 ' dot-pattern before:top-[-95px] before:right-[-60px] [--dot-color:var(--isd-primary-2)]'
             }
         >
-            <h1 className="text-h1 offset-text-background ">News & Events</h1>
-
-            <FilterBlock />
+            <div className="flex justify-between">
+                {' '}
+                <h1 className="text-h1 offset-text-background ">
+                    News & Events
+                </h1>{' '}
+                <FilterBlock />
+            </div>
 
             {(() => {
-                const list = news && news;
+                const list = slicedNews && slicedNews;
 
                 if (!list || list.length === 0) {
                     return (
@@ -44,6 +63,15 @@ export default function NewsEventBlock({ news }: { news?: News[] }) {
                                 />
                             </div>
                         ))}
+
+                        {totalRecords < newsEvents.length && (
+                            <div
+                                className="flex justify-center text-lg text-isd-secondary border-b-1 mx-auto"
+                                onClick={() => loadMore()}
+                            >
+                                Load More <ChevronsDown />
+                            </div>
+                        )}
                     </div>
                 );
             })()}

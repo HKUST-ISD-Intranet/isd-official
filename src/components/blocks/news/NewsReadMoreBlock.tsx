@@ -1,8 +1,6 @@
-'use client';
-
 import filterAndSortNews, { News } from '@/lib/newsFilter';
 import { useSearchParams, useRouter } from 'next/navigation';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import newsEvents from '@/data/news_events.json';
 import {
     ArrowRight,
@@ -36,9 +34,8 @@ export default function NewsReadMoreBlock() {
     });
 
     const news = newsList[0];
-
-    const imageResolve: StaticImageData = resolveNewsPhoto(news.pictures[0]);
-    console.log('imageResolve', imageResolve);
+    const pictures = news.pictures ?? [];
+    console.log(pictures);
 
     function format(input: string) {
         const ESC = '\u0000_ESC_BOLD_\u0000';
@@ -80,25 +77,22 @@ export default function NewsReadMoreBlock() {
 
             // Check in part if title is found
             // Check if title present
-            if (
-                part.includes('xxxTitlexxx') &&
-                part.includes('xxxEndTitlexxx')
-            ) {
+            if (part.includes('xTx') && part.includes('xETx')) {
                 // Extract
-                const parts = part.split(/(xxxTitlexxx|xxxEndTitlexxx)/g);
+                const parts = part.split(/(xTx|xETx)/g);
                 const result = [];
 
                 // Get all titles
                 for (let i = 0; i < parts.length; i++) {
-                    if (parts[i] === 'xxxTitlexxx') {
+                    if (parts[i] === 'xTx') {
                         continue;
                     }
-                    if (parts[i] === 'xxxEndTitlexxx') {
+                    if (parts[i] === 'xETx') {
                         continue;
                     }
 
                     // check if part between title
-                    if (i > 0 && parts[i - 1] === 'xxxTitlexxx') {
+                    if (i > 0 && parts[i - 1] === 'xTx') {
                         // Update text
                         const modifiedText = parts[i];
                         result.push(
@@ -128,123 +122,116 @@ export default function NewsReadMoreBlock() {
     return (
         <>
             <div
-                className="flex flex-col bg-white m-[198px] p-component-gap gap-section-title-gap items-center"
+                className="flex flex-col bg-white mx-[198px] mt-[41px] items-center"
                 onClick={(e) => e.stopPropagation()}
             >
-                <div className="flex items-center gap-component-gap-sm">
-                    <div className="relative w-[221px] h-[288px] flex-shrink-0 overflow-hidden">
-                        {' '}
-                        <button
-                            className="text-isd-primary cursor-pointer flex gap-footer-gap  w-section-gap h-component-gap-sm items-center justify-center"
-                            onClick={() => router.back()}
-                        >
-                            <ArrowLeft size={24} />
+                <div className="mb-[41px]">
+                    {' '}
+                    <button
+                        className="text-isd-primary cursor-pointer flex"
+                        onClick={() => router.back()}
+                    >
+                        <ArrowLeft size={24} />
 
-                            <span className="text-sm">Back</span>
-                        </button>
+                        <span className="text-sm">Back</span>
+                    </button>
+                </div>
+
+                <div className="flex flex-col gap-[48px]">
+                    <div className="text-h2 text-isd-font-1 ">{news.title}</div>
+
+                    {pictures?.map((image, index) => (
+                        <Image
+                            key={index}
+                            src={resolveNewsPhoto(image)}
+                            alt={`Carousel Image ${index + 1}`}
+                            className={` w-full h-full  transition-opacity linear duration-1000 ${
+                                index === currentIndex
+                                    ? 'opacity-100'
+                                    : 'opacity-0'
+                            }`}
+                        />
+                    ))}
+
+                    <div className="w-full relative overflow-hidden">
+                        <div className="absolute -z-1 w-full h-full"></div>
+                        <div className="absolute -z-1 w-full h-full bg-gradient-to-b via-transparent to-black"></div>
+                        <div className="absolute z-0 w-full h-full flex items-center justify-between px-12 pointer-events-none">
+                            <button
+                                className="pointer-events-auto cursor-pointer"
+                                onClick={() =>
+                                    setCurrentIndex(
+                                        (prevIndex) =>
+                                            (prevIndex -
+                                                1 +
+                                                (news.pictures
+                                                    ? news.pictures.length
+                                                    : 0)) %
+                                            (news.pictures?.length || 1)
+                                    )
+                                }
+                            >
+                                <ChevronLeft
+                                    color="white"
+                                    size={48}
+                                    strokeWidth={1}
+                                />
+                            </button>
+                            <button
+                                className="pointer-events-auto cursor-pointer"
+                                onClick={() =>
+                                    setCurrentIndex(
+                                        (prevIndex) =>
+                                            (prevIndex + 1) %
+                                            news.pictures.length
+                                    )
+                                }
+                            >
+                                <ChevronRight
+                                    color="white"
+                                    size={48}
+                                    strokeWidth={1}
+                                />
+                            </button>
+                        </div>
+                        <div className="absolute z-0 w-full h-full pb-3 flex items-end justify-center gap-2 px-12 pointer-events-none">
+                            {news.pictures?.map((_, index) => (
+                                <button
+                                    key={index}
+                                    className="pointer-events-auto cursor-pointer py-2"
+                                    onClick={() => setCurrentIndex(index)}
+                                >
+                                    <div
+                                        className={`h-0.5 w-8 ${
+                                            index === currentIndex
+                                                ? 'bg-white'
+                                                : 'bg-white/50'
+                                        }`}
+                                    />
+                                </button>
+                            ))}
+                        </div>
                     </div>
 
-                    <div className="flex flex-col gap-[24px]">
-                        <div className="text-h2 text-isd-font-1">
-                            {news.title}
-                        </div>
-
-                        <div className="w-full relative overflow-hidden">
-                            <div className="absolute -z-1 w-full h-full">
-                                {news.pictures?.map((image, index) => (
-                                    <div key={index}>
-                                        {image}
-                                        <Image
-                                            key={index}
-                                            src={imageResolve}
-                                            alt={`Carousel Image ${index + 1}`}
-                                            className={`object-cover w-full h-full absolute transition-opacity linear duration-1000 ${
-                                                index === currentIndex
-                                                    ? 'opacity-100'
-                                                    : 'opacity-0'
-                                            }`}
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-                            <div className="absolute -z-1 w-full h-full bg-gradient-to-b via-transparent to-black"></div>
-                            <div className="absolute z-0 w-full h-full flex items-center justify-between px-12 pointer-events-none">
-                                <button
-                                    className="pointer-events-auto cursor-pointer"
-                                    onClick={() =>
-                                        setCurrentIndex(
-                                            (prevIndex) =>
-                                                (prevIndex -
-                                                    1 +
-                                                    (news.pictures
-                                                        ? news.pictures.length
-                                                        : 0)) %
-                                                (news.pictures?.length || 1)
-                                        )
-                                    }
-                                >
-                                    <ChevronLeft
-                                        color="white"
-                                        size={48}
-                                        strokeWidth={1}
+                    <div className="flex flex-wrap gap-x-section-title-gap gap-y-[12px]">
+                        {news.evt_location && (
+                            <div className="flex gap-[12px] items-center">
+                                <div className="p-[9px] rounded-full bg-isd-primary-2">
+                                    <MapPin
+                                        size={24}
+                                        className="text-isd-primary"
                                     />
-                                </button>
-                                <button
-                                    className="pointer-events-auto cursor-pointer"
-                                    onClick={() =>
-                                        setCurrentIndex(
-                                            (prevIndex) =>
-                                                (prevIndex + 1) %
-                                                (news.pictures?.length || 1)
-                                        )
-                                    }
-                                >
-                                    <ChevronRight
-                                        color="white"
-                                        size={48}
-                                        strokeWidth={1}
-                                    />
-                                </button>
-                            </div>
-                            <div className="absolute z-0 w-full h-full pb-3 flex items-end justify-center gap-2 px-12 pointer-events-none">
-                                {news.pictures?.map((_, index) => (
-                                    <button
-                                        key={index}
-                                        className="pointer-events-auto cursor-pointer py-2"
-                                        onClick={() => setCurrentIndex(index)}
-                                    >
-                                        <div
-                                            className={`h-0.5 w-8 ${
-                                                index === currentIndex
-                                                    ? 'bg-white'
-                                                    : 'bg-white/50'
-                                            }`}
-                                        />
-                                    </button>
-                                ))}
-                            </div>
-                        </div>
-
-                        <div className="flex flex-wrap gap-x-section-title-gap gap-y-[12px]">
-                            {news.evt_location && (
-                                <div className="flex gap-[12px] items-center">
-                                    <div className="p-[9px] rounded-full bg-isd-primary-2">
-                                        <MapPin
-                                            size={24}
-                                            className="text-isd-primary"
-                                        />
-                                    </div>
-                                    <span className="text-isd-primary text-md">
-                                        {news.evt_location}
-                                    </span>
                                 </div>
-                            )}
-                        </div>
+                                <span className="text-isd-primary text-md">
+                                    {news.evt_location}
+                                </span>
+                            </div>
+                        )}
                     </div>
                 </div>
 
                 {news.details && (
-                    <div className="flex flex-col gap-[24px]">
+                    <div className="flex flex-col ">
                         <div className="text-md text-isd-font-3 text-start">
                             <div className="whitespace-pre-wrap">
                                 <span>{format(news.details)}</span>
