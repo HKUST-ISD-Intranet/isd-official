@@ -34,7 +34,6 @@ export default function ProgramBlock() {
     ];
 
     return (
-        // <div>
         <div className="dot-pattern before:top-[-95px] before:right-[10px] [--dot-color:var(--isd-secondary-1)]">
             <div className="container relative overflow-clip flex flex-col py-section-gap gap-section-title-gap">
                 <h1 className="text-h1 offset-text-background uppercase">
@@ -51,6 +50,10 @@ export default function ProgramBlock() {
                     ))}
                 </div>
             </div>
+            <div
+                className="dot-pattern before:bottom-[25px] before:left-[-90px] [--dot-color:var(--isd-secondary-1)] "
+                aria-hidden
+            />
         </div>
     );
 }
