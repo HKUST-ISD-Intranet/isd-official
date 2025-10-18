@@ -2,7 +2,7 @@ export default function ProgramContactBlock() {
     return (
         <div className="flex flex-col items-start gap-[24px]">
             <h2 className="text-[36px] leading-[36px] font-bold text-isd-primary">
-                Application and Financial Assistance
+                Program Contact
             </h2>
             <p>
                 For inquiries, please contact the Program Office{' '}
