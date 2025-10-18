@@ -1,4 +1,5 @@
 'use client';
+import { Plus } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 
 export default function MSTLEBlock() {
@@ -34,13 +35,13 @@ export default function MSTLEBlock() {
         {
             content: (
                 <div className="flex flex-col gap-component-gap-sm">
-                    <div className="flex flex-col">
+                    <div className="flex flex-col gap-component-gap-sm">
                         <h1 className="text-h1 offset-text-background text-isd-font-1 ">
                             Master of Science in Technology Leadership and
                             Entrepreneurship
                         </h1>
-                        <div className="w-auto overflow-clip pt-section-gap gap-section-title-gap">
-                            <div className="w-full flex items-center justify-start gap-component-gap-sm divide-isd-font-2/30 text-isd-font-2">
+                        <div className="w-auto overflow-clip">
+                            <div className="w-full flex items-center gap-component-gap-sm text-isd-font-2">
                                 {menu.map((link) => (
                                     <div
                                         key={link.id}
@@ -51,13 +52,13 @@ export default function MSTLEBlock() {
                                                 link.idMenu
                                             )
                                         }
-                                        className={`text-h2 text-center cursor-pointer pb-3 ${
+                                        className={`text-h2 h-[60px] flex items-center box-border cursor-pointer ${
                                             activeMenuId === link.idMenu
                                                 ? 'text-isd-secondary border-b-3 border-isd-secondary'
                                                 : 'text-isd-font-2'
                                         }`}
                                     >
-                                        {link.title}
+                                        <span>{link.title}</span>
                                     </div>
                                 ))}
                             </div>
@@ -71,101 +72,112 @@ export default function MSTLEBlock() {
     const content = [
         {
             id: 'edu-obj',
-            subheading: 'Educational Objectives',
             content: (
-                <div className="flex flex-col gap-component-gap-sm">
-                    <p className="text-isd-font-1">
-                        <span className="text-isd-secondary font-[700]">
-                            &lsquo;Will I be the next technology leader and
-                            change the world?&rsquo;
-                        </span>{' '}
-                        This may be the question in your mind when you browse
-                        this website. We will soon arrange an Info Session to
-                        introduce the beauty of TLE. Please stay tuned to our
-                        website.
-                    </p>
-                    <p>
-                        Master of Science in Technology Leadership and
-                        Entrepreneurship (TLE) program uniquely offers
-                        technological and business learning components, as well
-                        as entrepreneurial components paving the way for a
-                        start-up. It is perfect for students who are:
-                    </p>
-                    <div>
-                        <div className="text-isd-secondary font-[700]">
-                            interested in building a strategic technical
-                            advantage into their product.
-                        </div>
-                        <div className="text-isd-secondary font-[700]">
-                            eager to access advanced facilities, know-hows, and
-                            a talent pool for prototyping and launching their
-                            product into the market.
+                <div className="flex flex-col gap-component-gap">
+                    <div className="flex flex-col gap-component-gap-sm">
+                        <p className="text-isd-font-1">
+                            <span className="text-isd-secondary font-[700]">
+                                &lsquo;Will I be the next technology leader and
+                                change the world?&rsquo;
+                            </span>{' '}
+                            This may be the question in your mind when you browse
+                            this website. We will soon arrange an Info Session to
+                            introduce the beauty of TLE. Please stay tuned to our
+                            website.
+                        </p>
+                        <div className="flex flex-col gap-[24px]">
+                            <h2 className="font-bold text-[36px] leading-[36px] text-isd-primary">
+                                Educational Objectives
+                            </h2>
+                            <div className="flex flex-col gap-[12px]">
+                                <p>
+                                    Master of Science in Technology Leadership and
+                                    Entrepreneurship (TLE) program uniquely offers
+                                    technological and business learning components, as well
+                                    as entrepreneurial components paving the way for a
+                                    start-up. It is perfect for students who are:
+                                </p>
+                                <div>
+                                    <div className="text-isd-secondary font-[700]">
+                                        interested in building a strategic technical
+                                        advantage into their product.
+                                    </div>
+                                    <div className="text-isd-secondary font-[700]">
+                                        eager to access advanced facilities, know-hows, and
+                                        a talent pool for prototyping and launching their
+                                        product into the market.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div className="flex flex-col gap-[18px] border-l-5 bg-isd-primary-2 border-l-isd-primary text-isd-font-1 p-component-gap-sm">
-                        <p className="text-h2 leading-[32px] text-isd-primary">
+                    <div className="flex flex-col gap-[24px] border-l-5 bg-isd-primary-2 border-l-isd-primary text-isd-font-1 p-component-gap-sm">
+                        <h2 className="font-bold text-[36px] leading-[36px] text-isd-primary">
                             Learning Outcomes
-                        </p>
-                        <p>
-                            Upon completion of the program, graduates will be
-                            able to:
-                        </p>
-                        <ul>
-                            <li className="flex before:text-center before:content-['•'] leading-[26px] before:w-component-gap-sm">
-                                identify a product or a service that can make a
-                                positive impact in some segments of society.
-                            </li>
-                            <li className="flex before:text-center before:content-['•'] leading-[26px] before:w-component-gap-sm">
-                                use design principles to design a product.
-                            </li>
-                            <li className="flex before:text-center before:content-['•'] leading-[26px] before:w-component-gap-sm">
-                                work effectively as an entrepreneur, product
-                                developer, or project manager.
-                            </li>
-                        </ul>
+                        </h2>
+                        <div className="gap-[12px] flex flex-col text-md">
+                            <p>
+                                Upon completion of the program, graduates will be
+                                able to:
+                            </p>
+                            <ul>
+                                <li className="flex before:text-center before:content-['•'] leading-[26px] before:w-component-gap-sm">
+                                    identify a product or a service that can make a
+                                    positive impact in some segments of society.
+                                </li>
+                                <li className="flex before:text-center before:content-['•'] leading-[26px] before:w-component-gap-sm">
+                                    use design principles to design a product.
+                                </li>
+                                <li className="flex before:text-center before:content-['•'] leading-[26px] before:w-component-gap-sm">
+                                    work effectively as an entrepreneur, product
+                                    developer, or project manager.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <h3 className="text-[36px] leading-[36px] font-bold font-isd-font-1 text-isd-primary">
-                        Major Components
-                    </h3>
-                    <div className="flex-1 flex flex-col gap-[12px]">
-                        <table>
-                            <tbody className="leading-[16px] text-[12px]">
-                                <tr className="bg-isd-primary-2 text-isd-primary text-md text-left">
-                                    <td className="p-[12px] border-x-2 border-x-white">
-                                        Entrepreneurship
-                                    </td>
-                                    <td className="p-[12px] border-x-2 border-x-white">
-                                        From conceptualization of products,
-                                        prototype development and establishing a
-                                        start-up, TLE program offers you
-                                        essential training.
-                                    </td>
-                                </tr>
-                                <tr className="bg-isd-secondary-1 text-isd-secondary text-md">
-                                    <td className="p-[12px] border-x-2 border-x-white">
-                                        Technology
-                                    </td>
-                                    <td className="p-[12px] border-x-2 border-x-white">
-                                        Students can select technology-related
-                                        courses specific to their projects, e.g.
-                                        AI, computer vision, software design,
-                                        etc.
-                                    </td>
-                                </tr>
-                                <tr className="bg-isd-primary-2 text-isd-primary text-md">
-                                    <td className="p-[12px] border-x-2 border-x-white">
-                                        Business
-                                    </td>
-                                    <td className="p-[12px] border-x-2 border-x-white">
-                                        Exposure to business topics relevant to
-                                        establishing and maintaining a start-up
-                                        in the Greater Bay Area and the world.
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div className="flex flex-col gap-[24px]">
+                        <h2 className="text-[36px] leading-[36px] font-bold font-isd-font-1 text-isd-primary">
+                            Major Components
+                        </h2>
+                        <div className="flex-1 flex flex-col gap-[12px]">
+                            <table>
+                                <tbody className="leading-[16px] text-[12px]">
+                                    <tr className="bg-isd-primary-2 text-isd-primary text-md text-left">
+                                        <td className="p-[12px] border-x-2 border-x-white">
+                                            Entrepreneurship
+                                        </td>
+                                        <td className="p-[12px] border-x-2 border-x-white">
+                                            From conceptualization of products,
+                                            prototype development and establishing a
+                                            start-up, TLE program offers you
+                                            essential training.
+                                        </td>
+                                    </tr>
+                                    <tr className="bg-isd-secondary-1 text-isd-secondary text-md">
+                                        <td className="p-[12px] border-x-2 border-x-white">
+                                            Technology
+                                        </td>
+                                        <td className="p-[12px] border-x-2 border-x-white">
+                                            Students can select technology-related
+                                            courses specific to their projects, e.g.
+                                            AI, computer vision, software design,
+                                            etc.
+                                        </td>
+                                    </tr>
+                                    <tr className="bg-isd-primary-2 text-isd-primary text-md">
+                                        <td className="p-[12px] border-x-2 border-x-white">
+                                            Business
+                                        </td>
+                                        <td className="p-[12px] border-x-2 border-x-white">
+                                            Exposure to business topics relevant to
+                                            establishing and maintaining a start-up
+                                            in the Greater Bay Area and the world.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             ),
@@ -210,31 +222,46 @@ export default function MSTLEBlock() {
                     </div>
 
                     <table className="flex items-center justify-between w-full">
-                        <tbody>
-                            <tr className="text-h2 font-bold">
-                                <td className=" flex flex-col  bg-isd-primary-2 text-isd-primary p-component-gap-sm rounded-md  min-w-80 h-2.0">
-                                    Core Courses (9 credits)
-                                </td>
-                                <td className="p-component-gap-sm">+</td>
-                                <td className="flex flex-col  bg-isd-secondary-1  text-isd-secondary p-component-gap-sm rounded-md ">
-                                    Elective Courses (12 credits)
-                                </td>
-                                <td className="p-component-gap-sm">+</td>
-                                <td className="flex flex-col  bg-isd-primary-2 text-isd-primary p-component-gap-sm rounded-md ">
-                                    TLE Project (9 credits)
-                                </td>
-                            </tr>
-                            <tr className="text-sm">
-                                <td className="flex flex-col  bg-isd-primary-2  text-isd-font-3 p-component-gap-sm rounded-md ">
+                        <div className="flex flex-col gap-element-gap">
+                            <div className="text-h2 font-bold flex items-center gap-[6px] text-center">
+                                <div className="bg-isd-primary-2 text-isd-primary p-element-gap min-w-80 flex-1">
+                                    Core Courses
+                                    <br />
+                                    (9 credits)
+                                </div>
+                                <div>
+                                    <Plus
+                                        className="mx-element-gap-sm text-isd-primary"
+                                        size={24}
+                                    />
+                                </div>
+                                <div className="bg-isd-secondary-1 text-isd-secondary p-element-gap flex-1">
+                                    Elective Courses
+                                    <br />
+                                    (12 credits)
+                                </div>
+                                <div>
+                                    <Plus
+                                        className="mx-element-gap-sm text-isd-primary"
+                                        size={24}
+                                    />
+                                </div>
+                                <div className="bg-isd-primary-2 text-isd-primary p-element-gap flex-1">
+                                    TLE Project
+                                    <br />
+                                    (9 credits)
+                                </div>
+                            </div>
+                            <div className="text-sm flex gap-[30px] text-isd-font-3">
+                                <div className="flex-1 bg-isd-primary-2 p-element-gap">
                                     <p>
                                         Technology Leadership and
                                         Entrepreneurship
                                     </p>
                                     <p>Product Development and Prototyping</p>
                                     <p>Start-up Workshop</p>
-                                </td>
-                                <td className="p-component-gap-sm"> </td>
-                                <td className="flex flex-col  bg-isd-secondary-1  text-isd-font-3 p-component-gap-sm rounded-md max-w-200">
+                                </div>
+                                <div className="flex-1 bg-isd-secondary-1 p-element-gap">
                                     Elective courses are a selection of
                                     entrepreneurship and leadership as well as
                                     technology and science related courses
@@ -242,9 +269,10 @@ export default function MSTLEBlock() {
                                     Business and Management, the School of
                                     Engineering, the School of Science, and the
                                     Academy of Interdisciplinary Studies.
-                                </td>
-                            </tr>
-                        </tbody>
+                                </div>
+                                <div className="flex-1 p-element-gap" />
+                            </div>
+                        </div>
                     </table>
 
                     <div className="text-isd-font-3 text-sm">
@@ -260,7 +288,7 @@ export default function MSTLEBlock() {
             id: 'adm-app',
             subheading: 'Admission & Application',
             content: (
-                <div className="flex flex-col gap-component-gap-sm">
+                <div className="flex flex-col gap-component-gap-sm items-start">
                     <p className="text-isd-font-1">
                         Applicants should have obtained a bachelor&apos;s degree
                         from a recognized institution, or an approved equivalent
@@ -277,7 +305,7 @@ export default function MSTLEBlock() {
                         recommended.
                     </p>
 
-                    <div className="bg-isd-primary-2 text-md font-bold text-isd-primary p-5 text-center w-1/6">
+                    <div className="bg-isd-primary-2 text-md font-bold text-isd-primary px-[36px] py-[10px] text-center">
                         Apply Now
                     </div>
 
@@ -293,7 +321,7 @@ export default function MSTLEBlock() {
                     </p>
 
                     <a className="cursor-pointer" href="/people">
-                        <div className="bg-isd-primary-2 text-md font-bold text-isd-primary p-5 text-center w-1/6">
+                        <div className="bg-isd-primary-2 text-md font-bold text-isd-primary px-[36px] py-[10px] text-center">
                             ISD Faculty List
                         </div>
                     </a>
@@ -380,14 +408,14 @@ export default function MSTLEBlock() {
                     <div
                         key={index}
                         id={section.id}
-                        className={`flex flex-col gap-component-gap-sm ${
+                        className={`flex flex-col gap-[24px] ${
                             activeContentId === section.id ? '' : 'hidden'
                         }`}
                     >
                         <h3 className="text-[36px] leading-[36px] font-bold text-isd-primary">
                             {section.subheading}
                         </h3>
-                        <div className="text-lg leading-[28px] text-isd-font-3">
+                        <div className="text-md leading-[28px] text-isd-font-1">
                             {section.content}
                         </div>
                     </div>
