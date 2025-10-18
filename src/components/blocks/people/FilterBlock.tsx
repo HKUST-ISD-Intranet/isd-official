@@ -104,7 +104,7 @@ export default function FilterBlock() {
                         setRole(val);
                         applyFilters({ role: val, area, keyword, tag });
                     }}
-                    placeholder="Sort by Role"
+                    placeholder="Filter by Role"
                     className="w-[180px]"
                 />
 
