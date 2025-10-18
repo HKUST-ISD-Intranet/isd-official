@@ -14,7 +14,8 @@ export default function ApplicationAndFinancialAssistanceBlock() {
                 >
                     Program Catalog
                 </a>
-                .Typically, all qualified students accepted to HKUST MPhil
+                .<br />
+                Typically, all qualified students accepted to HKUST MPhil
                 programs will receive{' '}
                 <a
                     href="https://fytgs.hkust.edu.hk/admissions/Admission-to-Hong-Kong-Campus/submitting-an-application/scholarships-and-fees"
