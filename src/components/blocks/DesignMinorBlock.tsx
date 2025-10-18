@@ -89,10 +89,10 @@ export default function DesignMinorBlock() {
                         href="https://registry.hkust.edu.hk/resource-library/minor-program-ug"
                         className="font-bold text-isd-secondary underline"
                     >
-                        ARO's Minor Programs
-                    </a>
+                        ARO&apos;s Minor Programs
+                    </a>{' '}
                     website (ITSC login required) and pay attention to the
-                    department's deadlines.
+                    department&apos;s deadlines.
                 </p>
             ),
         },
@@ -115,33 +115,25 @@ export default function DesignMinorBlock() {
 
     return (
         <>
-            <div className="container overflow-y-clip flex flex-col pt-section-gap gap-component-gap-sm dot-pattern before:top-[-95px] before:-mr-component-gap-sm before:right-0 [--dot-color:var(--isd-primary-2)]">
-                <h1 className="text-h1 offset-text-background text-isd-font-1 ">
+            <div className="container overflow-y-clip flex flex-col py-section-gap gap-component-gap-sm dot-pattern before:top-[-95px] before:-mr-component-gap-sm before:right-0 [--dot-color:var(--isd-primary-2)] text-md leading-[28px] text-isd-font-1">
+                <h1 className="text-h1 offset-text-background text-isd-font-1">
                     Design Minor
                 </h1>
-                <div className="">
-                    <h2 className="text-sm  tracking-wide text-isd-font-1">
-                        Design for good. Design for a difference.
-                    </h2>
-                </div>
-            </div>
 
-            <div className="container overflow-y-clip flex flex-col mt-component-gap-sm">
-                {content.map((section, index) => (
-                    <div
-                        key={index}
-                        className="flex flex-col mb-component-gap "
-                    >
-                        {section.subheading && (
-                            <h3 className="text-[36px] leading-[36px] font-bold font-isd-font-1 text-isd-primary">
-                                {section.subheading}
-                            </h3>
-                        )}
-                        <div className="text-lg leading-[28px] text-isd-font-3 mt-component-gap-sm">
+                <p>Design for good. Design for a difference.</p>
+
+                <div className="flex flex-col gap-component-gap">
+                    {content.map((section, index) => (
+                        <div key={index} className="flex flex-col gap-[24px]">
+                            {section.subheading && (
+                                <h3 className="text-[36px] leading-[36px] font-bold font-isd-font-1 text-isd-primary">
+                                    {section.subheading}
+                                </h3>
+                            )}
                             {section.content}
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </>
     );
