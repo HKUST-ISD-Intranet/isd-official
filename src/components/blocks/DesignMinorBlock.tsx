@@ -114,8 +114,8 @@ export default function DesignMinorBlock() {
     ];
 
     return (
-        <>
-            <div className="container overflow-y-clip flex flex-col py-section-gap gap-component-gap-sm dot-pattern before:top-[-95px] before:-mr-component-gap-sm before:right-0 [--dot-color:var(--isd-primary-2)] text-md leading-[28px] text-isd-font-1">
+        <div className="w-full dot-pattern before:top-[-120px] before:right-[10px] [--dot-color:var(--isd-primary-2)]">
+            <div className="container overflow-y-clip flex flex-col py-section-gap gap-component-gap-sm text-md leading-[28px] text-isd-font-1">
                 <h1 className="text-h1 offset-text-background text-isd-font-1">
                     Design Minor
                 </h1>
@@ -135,6 +135,6 @@ export default function DesignMinorBlock() {
                     ))}
                 </div>
             </div>
-        </>
+        </div>
     );
 }
