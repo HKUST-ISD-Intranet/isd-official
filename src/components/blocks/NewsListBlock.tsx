@@ -122,7 +122,7 @@ export default function NewsListBlock() {
 
                 <div className="flex flex-col lg:divide-y lg:gap-0 gap-component-gap-sm lg:py-0 py-component-gap-sm divide-isd-primary-3">
                     {visibleItems.map((item) => {
-                        const href = `/news/${item.id}`;
+                        const href = `${item.id}`;
                         const img = resolveImages(item.pictures)[0];
                         const formattedDate = formatDate(item.date);
                         if (item.type === 'events') {
