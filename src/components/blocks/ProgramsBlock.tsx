@@ -19,7 +19,7 @@ export default function ProgramBlock() {
         {
             heading: 'Postgraduate',
             content: 'MPhil in Technology Innovation and Entrepreneurship',
-            link: '/academics/mphil-in-technology-innovation-and-entrepreneurship-tie',
+            link: '/academics/mphil-in-tie',
         },
         {
             heading: 'Postgraduate',
